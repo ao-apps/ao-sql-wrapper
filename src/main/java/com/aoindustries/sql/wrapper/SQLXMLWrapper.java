@@ -22,7 +22,6 @@
  */
 package com.aoindustries.sql.wrapper;
 
-import com.aoindustries.lang.AutoCloseableE;
 import java.sql.SQLException;
 import java.sql.SQLXML;
 import javax.xml.transform.Result;
@@ -33,7 +32,7 @@ import javax.xml.transform.Source;
  *
  * @author  AO Industries, Inc.
  */
-public interface SQLXMLWrapper extends Wrapper, SQLXML, AutoCloseableE<SQLException> {
+public interface SQLXMLWrapper extends Wrapper, SQLXML, AutoCloseable {
 
 	/**
 	 * Gets the SQL XML that is wrapped.

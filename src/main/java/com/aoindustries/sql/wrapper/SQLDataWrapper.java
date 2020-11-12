@@ -22,7 +22,6 @@
  */
 package com.aoindustries.sql.wrapper;
 
-import com.aoindustries.lang.AutoCloseableE;
 import java.sql.SQLData;
 import java.sql.SQLException;
 import java.sql.SQLInput;
@@ -33,7 +32,7 @@ import java.sql.SQLOutput;
  *
  * @author  AO Industries, Inc.
  */
-public interface SQLDataWrapper extends Wrapper, SQLData, AutoCloseableE<SQLException> {
+public interface SQLDataWrapper extends Wrapper, SQLData, AutoCloseable {
 
 	/**
 	 * Gets the SQL data that is wrapped.

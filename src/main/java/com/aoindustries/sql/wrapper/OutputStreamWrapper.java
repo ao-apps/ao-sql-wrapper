@@ -22,7 +22,6 @@
  */
 package com.aoindustries.sql.wrapper;
 
-import com.aoindustries.lang.AutoCloseableE;
 import java.io.IOException;
 import java.io.OutputStream;
 
@@ -31,7 +30,7 @@ import java.io.OutputStream;
  *
  * @author  AO Industries, Inc.
  */
-public class OutputStreamWrapper extends OutputStream implements Wrapper, AutoCloseableE<IOException> {
+public class OutputStreamWrapper extends OutputStream implements Wrapper {
 
 	private final ConnectionWrapperImpl connectionWrapper;
 	private final OutputStream wrapped;

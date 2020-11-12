@@ -22,7 +22,6 @@
  */
 package com.aoindustries.sql.wrapper;
 
-import com.aoindustries.lang.AutoCloseableE;
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.CharBuffer;
@@ -32,7 +31,7 @@ import java.nio.CharBuffer;
  *
  * @author  AO Industries, Inc.
  */
-public class ReaderWrapper extends Reader implements Wrapper, AutoCloseableE<IOException> {
+public class ReaderWrapper extends Reader implements Wrapper {
 
 	private final ConnectionWrapperImpl connectionWrapper;
 	private final Reader wrapped;

@@ -22,7 +22,6 @@
  */
 package com.aoindustries.sql.wrapper;
 
-import com.aoindustries.lang.AutoCloseableE;
 import java.io.IOException;
 import java.io.Writer;
 
@@ -31,7 +30,7 @@ import java.io.Writer;
  *
  * @author  AO Industries, Inc.
  */
-public class WriterWrapper extends Writer implements Wrapper, AutoCloseableE<IOException> {
+public class WriterWrapper extends Writer implements Wrapper {
 
 	private final ConnectionWrapperImpl connectionWrapper;
 	private final Writer wrapped;

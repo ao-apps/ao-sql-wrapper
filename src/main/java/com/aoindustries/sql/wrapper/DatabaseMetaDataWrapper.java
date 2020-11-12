@@ -22,7 +22,6 @@
  */
 package com.aoindustries.sql.wrapper;
 
-import com.aoindustries.lang.AutoCloseableE;
 import java.sql.DatabaseMetaData;
 import java.sql.RowIdLifetime;
 import java.sql.SQLException;
@@ -32,7 +31,7 @@ import java.sql.SQLException;
  *
  * @author  AO Industries, Inc.
  */
-public interface DatabaseMetaDataWrapper extends Wrapper, DatabaseMetaData, AutoCloseableE<SQLException> {
+public interface DatabaseMetaDataWrapper extends Wrapper, DatabaseMetaData, AutoCloseable {
 
 	/**
 	 * Gets the database meta data that is wrapped.

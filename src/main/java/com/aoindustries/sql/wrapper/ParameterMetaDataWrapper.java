@@ -22,7 +22,6 @@
  */
 package com.aoindustries.sql.wrapper;
 
-import com.aoindustries.lang.AutoCloseableE;
 import java.sql.ParameterMetaData;
 import java.sql.SQLException;
 
@@ -31,7 +30,7 @@ import java.sql.SQLException;
  *
  * @author  AO Industries, Inc.
  */
-public interface ParameterMetaDataWrapper extends Wrapper, ParameterMetaData, AutoCloseableE<SQLException> {
+public interface ParameterMetaDataWrapper extends Wrapper, ParameterMetaData, AutoCloseable {
 
 	/**
 	 * Gets the parameter meta data that is wrapped.
