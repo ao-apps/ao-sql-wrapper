@@ -74,8 +74,6 @@ public class ArrayWrapperImpl implements ArrayWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapResultSet(java.sql.ResultSet)
 	 */
 	@Override
@@ -84,8 +82,6 @@ public class ArrayWrapperImpl implements ArrayWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapResultSet(java.sql.ResultSet)
 	 */
 	@Override
@@ -95,8 +91,6 @@ public class ArrayWrapperImpl implements ArrayWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapResultSet(java.sql.ResultSet)
 	 */
 	@Override
@@ -105,8 +99,6 @@ public class ArrayWrapperImpl implements ArrayWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapResultSet(java.sql.ResultSet)
 	 */
 	@Override

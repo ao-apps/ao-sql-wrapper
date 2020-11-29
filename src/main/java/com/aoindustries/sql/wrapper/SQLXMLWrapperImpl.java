@@ -93,8 +93,6 @@ public class SQLXMLWrapperImpl implements SQLXMLWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -103,8 +101,6 @@ public class SQLXMLWrapperImpl implements SQLXMLWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapOutputStream(java.io.OutputStream)
 	 */
 	@Override
@@ -113,8 +109,6 @@ public class SQLXMLWrapperImpl implements SQLXMLWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapReader(java.io.Reader)
 	 */
 	@Override
@@ -123,8 +117,6 @@ public class SQLXMLWrapperImpl implements SQLXMLWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapWriter(Writer)
 	 */
 	@Override

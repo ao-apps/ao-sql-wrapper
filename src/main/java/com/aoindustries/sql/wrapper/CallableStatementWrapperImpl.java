@@ -123,8 +123,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapRef(java.sql.Ref)
 	 */
 	@Override
@@ -133,8 +131,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapBlob(java.sql.Blob)
 	 */
 	@Override
@@ -143,8 +139,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapClob(java.sql.Clob)
 	 */
 	@Override
@@ -153,8 +147,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapArray(java.sql.Array)
 	 */
 	@Override
@@ -163,8 +155,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -173,8 +163,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -183,8 +171,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -193,8 +179,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapRef(java.sql.Ref)
 	 */
 	@Override
@@ -203,8 +187,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapBlob(java.sql.Blob)
 	 */
 	@Override
@@ -213,8 +195,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapClob(java.sql.Clob)
 	 */
 	@Override
@@ -223,8 +203,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapArray(java.sql.Array)
 	 */
 	@Override
@@ -233,8 +211,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapRowId(java.sql.RowId)
 	 */
 	@Override
@@ -243,8 +219,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapRowId(java.sql.RowId)
 	 */
 	@Override
@@ -253,8 +227,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapRowId(java.sql.RowId) 
 	 */
 	@Override
@@ -263,8 +235,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -273,8 +243,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapNClob(java.sql.NClob) 
 	 */
 	@Override
@@ -283,8 +251,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -293,8 +259,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -303,8 +267,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -313,8 +275,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapNClob(java.sql.NClob)
 	 */
 	@Override
@@ -323,8 +283,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapNClob(java.sql.NClob)
 	 */
 	@Override
@@ -333,8 +291,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapSQLXML(java.sql.SQLXML) 
 	 */
 	@Override
@@ -343,8 +299,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapSQLXML(java.sql.SQLXML)
 	 */
 	@Override
@@ -353,8 +307,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapSQLXML(java.sql.SQLXML)
 	 */
 	@Override
@@ -363,8 +315,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapReader(java.io.Reader)
 	 */
 	@Override
@@ -373,8 +323,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapReader(java.io.Reader)
 	 */
 	@Override
@@ -383,8 +331,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapReader(java.io.Reader)
 	 */
 	@Override
@@ -393,8 +339,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapReader(java.io.Reader)
 	 */
 	@Override
@@ -403,8 +347,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapBlob(java.sql.Blob)
 	 */
 	@Override
@@ -413,8 +355,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapClob(java.sql.Clob)
 	 */
 	@Override
@@ -423,8 +363,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -433,8 +371,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -443,8 +379,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -453,8 +387,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -463,8 +395,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -473,8 +403,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -483,8 +411,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -493,8 +419,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -503,8 +427,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -513,8 +435,6 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override

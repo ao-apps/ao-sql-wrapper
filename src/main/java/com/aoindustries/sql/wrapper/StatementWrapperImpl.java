@@ -63,8 +63,6 @@ public class StatementWrapperImpl implements StatementWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapResultSet(java.sql.ResultSet)
 	 */
 	@Override
@@ -73,8 +71,6 @@ public class StatementWrapperImpl implements StatementWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapResultSet(java.sql.ResultSet)
 	 */
 	@Override
@@ -90,8 +86,6 @@ public class StatementWrapperImpl implements StatementWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapResultSet(java.sql.ResultSet)
 	 */
 	@Override

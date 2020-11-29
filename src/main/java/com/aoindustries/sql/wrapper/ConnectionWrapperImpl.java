@@ -986,8 +986,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapStatement(java.sql.Statement)
 	 */
 	@Override
@@ -996,8 +994,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
 	 */
 	@Override
@@ -1006,8 +1002,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapCallableStatement(java.sql.CallableStatement)
 	 */
 	@Override
@@ -1027,8 +1021,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapDatabaseMetaData(java.sql.DatabaseMetaData)
 	 */
 	@Override
@@ -1037,8 +1029,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapStatement(java.sql.Statement)
 	 */
 	@Override
@@ -1047,8 +1037,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
 	 */
 	@Override
@@ -1057,8 +1045,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapCallableStatement(java.sql.CallableStatement)
 	 */
 	@Override
@@ -1067,8 +1053,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapSavepoint(java.sql.Savepoint)
 	 */
 	@Override
@@ -1077,8 +1061,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapSavepoint(java.sql.Savepoint)
 	 */
 	@Override
@@ -1087,8 +1069,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapSavepoint(java.sql.Savepoint)
 	 */
 	@Override
@@ -1097,8 +1077,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapSavepoint(java.sql.Savepoint)
 	 */
 	@Override
@@ -1107,8 +1085,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapStatement(java.sql.Statement)
 	 */
 	@Override
@@ -1117,8 +1093,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
 	 */
 	@Override
@@ -1127,8 +1101,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapCallableStatement(java.sql.CallableStatement)
 	 */
 	@Override
@@ -1137,8 +1109,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
 	 */
 	@Override
@@ -1147,8 +1117,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
 	 */
 	@Override
@@ -1157,8 +1125,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
 	 */
 	@Override
@@ -1167,8 +1133,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapClob(java.sql.Clob)
 	 */
 	@Override
@@ -1177,8 +1141,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapBlob(java.sql.Blob)
 	 */
 	@Override
@@ -1187,8 +1149,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapNClob(java.sql.NClob)
 	 */
 	@Override
@@ -1197,8 +1157,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapSQLXML(java.sql.SQLXML)
 	 */
 	@Override
@@ -1207,8 +1165,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapArray(com.aoindustries.sql.StatementWrapperImpl, java.sql.Array)
 	 */
 	@Override
@@ -1217,8 +1173,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapStruct(java.sql.Struct)
 	 */
 	@Override

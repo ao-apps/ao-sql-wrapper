@@ -73,8 +73,6 @@ public class SQLDataWrapperImpl implements SQLDataWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  SQLInputWrapperImpl#close()
 	 */
 	@Override
@@ -85,8 +83,6 @@ public class SQLDataWrapperImpl implements SQLDataWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  SQLOutputWrapperImpl#close()
 	 */
 	@Override

@@ -163,8 +163,6 @@ public class SQLOutputWrapperImpl implements SQLOutputWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -173,8 +171,6 @@ public class SQLOutputWrapperImpl implements SQLOutputWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -183,8 +179,6 @@ public class SQLOutputWrapperImpl implements SQLOutputWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -193,8 +187,6 @@ public class SQLOutputWrapperImpl implements SQLOutputWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapSQLData(java.sql.SQLData)
 	 */
 	@Override
@@ -205,8 +197,6 @@ public class SQLOutputWrapperImpl implements SQLOutputWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapRef(java.sql.Ref)
 	 */
 	@Override
@@ -215,8 +205,6 @@ public class SQLOutputWrapperImpl implements SQLOutputWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapBlob(java.sql.Blob)
 	 */
 	@Override
@@ -225,8 +213,6 @@ public class SQLOutputWrapperImpl implements SQLOutputWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapClob(java.sql.Clob)
 	 */
 	@Override
@@ -235,8 +221,6 @@ public class SQLOutputWrapperImpl implements SQLOutputWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapStruct(java.sql.Struct)
 	 */
 	@Override
@@ -245,8 +229,6 @@ public class SQLOutputWrapperImpl implements SQLOutputWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapArray(java.sql.Array)
 	 */
 	@Override
@@ -255,8 +237,6 @@ public class SQLOutputWrapperImpl implements SQLOutputWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapNClob(java.sql.NClob)
 	 */
 	@Override
@@ -265,8 +245,6 @@ public class SQLOutputWrapperImpl implements SQLOutputWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapRowId(java.sql.RowId)
 	 */
 	@Override
@@ -275,8 +253,6 @@ public class SQLOutputWrapperImpl implements SQLOutputWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapSQLXML(java.sql.SQLXML)
 	 */
 	@Override

@@ -266,8 +266,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -276,8 +274,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -287,8 +283,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -297,8 +291,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -307,8 +299,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -318,8 +308,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -328,8 +316,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapResultSetMetaData(java.sql.ResultSetMetaData)
 	 */
 	@Override
@@ -338,8 +324,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapReader(java.io.Reader)
 	 */
 	@Override
@@ -348,8 +332,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapReader(java.io.Reader)
 	 */
 	@Override
@@ -358,8 +340,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -368,8 +348,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -378,8 +356,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -388,8 +364,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -398,8 +372,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -408,8 +380,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -418,8 +388,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapStatement(java.sql.Statement)
 	 */
 	@Override
@@ -428,8 +396,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapRef(java.sql.Ref)
 	 */
 	@Override
@@ -438,8 +404,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapBlob(java.sql.Blob)
 	 */
 	@Override
@@ -448,8 +412,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapClob(java.sql.Clob)
 	 */
 	@Override
@@ -458,8 +420,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapArray(java.sql.Array)
 	 */
 	@Override
@@ -468,8 +428,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapRef(java.sql.Ref)
 	 */
 	@Override
@@ -478,8 +436,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapBlob(java.sql.Blob)
 	 */
 	@Override
@@ -488,8 +444,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapClob(java.sql.Clob)
 	 */
 	@Override
@@ -498,8 +452,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapArray(java.sql.Array)
 	 */
 	@Override
@@ -508,8 +460,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapRef(java.sql.Ref)
 	 */
 	@Override
@@ -518,8 +468,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapRef(java.sql.Ref)
 	 */
 	@Override
@@ -528,8 +476,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapBlob(java.sql.Blob)
 	 */
 	@Override
@@ -538,8 +484,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapBlob(java.sql.Blob)
 	 */
 	@Override
@@ -548,8 +492,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapClob(java.sql.Clob)
 	 */
 	@Override
@@ -558,8 +500,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapClob(java.sql.Clob)
 	 */
 	@Override
@@ -568,8 +508,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapArray(java.sql.Array)
 	 */
 	@Override
@@ -578,8 +516,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapArray(java.sql.Array)
 	 */
 	@Override
@@ -588,8 +524,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapRowId(java.sql.RowId)
 	 */
 	@Override
@@ -598,8 +532,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapRowId(java.sql.RowId)
 	 */
 	@Override
@@ -608,8 +540,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapRowId(java.sql.RowId)
 	 */
 	@Override
@@ -618,8 +548,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapRowId(java.sql.RowId)
 	 */
 	@Override
@@ -628,8 +556,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapNClob(java.sql.NClob) 
 	 */
 	@Override
@@ -638,8 +564,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapNClob(java.sql.NClob) 
 	 */
 	@Override
@@ -648,8 +572,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapNClob(java.sql.NClob) 
 	 */
 	@Override
@@ -658,8 +580,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapNClob(java.sql.NClob) 
 	 */
 	@Override
@@ -668,8 +588,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapSQLXML(java.sql.SQLXML) 
 	 */
 	@Override
@@ -678,8 +596,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapSQLXML(java.sql.SQLXML) 
 	 */
 	@Override
@@ -688,8 +604,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapSQLXML(java.sql.SQLXML) 
 	 */
 	@Override
@@ -698,8 +612,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapSQLXML(java.sql.SQLXML) 
 	 */
 	@Override
@@ -708,8 +620,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapReader(java.io.Reader)
 	 */
 	@Override
@@ -718,8 +628,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #wrapReader(java.io.Reader)
 	 */
 	@Override
@@ -728,8 +636,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -738,8 +644,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -748,8 +652,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -758,8 +660,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -768,8 +668,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -778,8 +676,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -788,8 +684,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -798,8 +692,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -808,8 +700,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -818,8 +708,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -828,8 +716,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -838,8 +724,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -848,8 +732,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -858,8 +740,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -868,8 +748,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -878,8 +756,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -888,8 +764,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -898,8 +772,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -908,8 +780,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -918,8 +788,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -928,8 +796,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -938,8 +804,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -948,8 +812,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -958,8 +820,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapInputStream(java.io.InputStream)
 	 */
 	@Override
@@ -968,8 +828,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -978,8 +836,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -988,8 +844,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
@@ -998,8 +852,6 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 *
 	 * @see  #unwrapReader(java.io.Reader)
 	 */
 	@Override
