@@ -29,7 +29,7 @@ along with ao-sql-wrapper.  If not, see <http://www.gnu.org/licenses />.
 		<relativePath>../ao-oss-parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.aoindustries</groupId><artifactId>ao-sql-wrapper</artifactId><version>1.0.1-SNAPSHOT</version>
+	<groupId>com.aoindustries</groupId><artifactId>ao-sql-wrapper</artifactId><version>1.0.1</version>
 	<packaging>bundle</packaging>
 
 	<properties>
@@ -70,7 +70,7 @@ along with ao-sql-wrapper.  If not, see <http://www.gnu.org/licenses />.
 		<connection>scm:git:git://github.com/aoindustries/ao-sql-wrapper.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/ao-sql-wrapper.git</developerConnection>
 		<url>https://github.com/aoindustries/ao-sql-wrapper</url>
-		<tag>HEAD</tag>
+		<tag>ao-sql-wrapper-1.0.1</tag>
 	</scm>
 
 	<issueManagement>
