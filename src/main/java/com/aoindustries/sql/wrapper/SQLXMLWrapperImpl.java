@@ -56,6 +56,11 @@ public class SQLXMLWrapperImpl implements SQLXMLWrapper {
 		return wrapped;
 	}
 
+	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
+
 	/**
 	 * Wraps an {@link InputStream}, if not already wrapped by this wrapper.
 	 *

@@ -78,6 +78,11 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 		return wrapped;
 	}
 
+	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
+
 	/**
 	 * Creates a new {@link ArrayWrapperImpl}.
 	 *

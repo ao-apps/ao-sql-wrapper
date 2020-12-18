@@ -50,4 +50,9 @@ public class RefWrapperImpl implements RefWrapper {
 	public Ref getWrapped() {
 		return wrapped;
 	}
+
+	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
 }

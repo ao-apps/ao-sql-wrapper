@@ -56,6 +56,11 @@ public class InputStreamWrapper extends InputStream implements Wrapper {
 	}
 
 	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
+
+	@Override
 	public int read() throws IOException {
 		return getWrapped().read();
 	}

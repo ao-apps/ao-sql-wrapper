@@ -63,6 +63,11 @@ public class SQLOutputWrapperImpl implements SQLOutputWrapper {
 		return wrapped;
 	}
 
+	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
+
 	/**
 	 * Unwraps an {@link Array}, if wrapped by this wrapper.
 	 *

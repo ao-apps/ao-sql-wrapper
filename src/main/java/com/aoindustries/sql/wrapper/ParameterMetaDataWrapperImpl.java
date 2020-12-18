@@ -50,4 +50,9 @@ public class ParameterMetaDataWrapperImpl implements ParameterMetaDataWrapper {
 	public ParameterMetaData getWrapped() {
 		return wrapped;
 	}
+
+	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
 }

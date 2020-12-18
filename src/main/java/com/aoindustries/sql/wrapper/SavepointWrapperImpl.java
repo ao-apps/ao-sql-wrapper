@@ -53,6 +53,11 @@ public class SavepointWrapperImpl implements SavepointWrapper {
 	}
 
 	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
+
+	@Override
 	public void close() throws SQLException {
 		getConnectionWrapper().releaseSavepoint(this);
 	}

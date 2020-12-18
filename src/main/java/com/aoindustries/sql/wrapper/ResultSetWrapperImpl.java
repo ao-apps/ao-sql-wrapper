@@ -73,6 +73,11 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
 		return wrapped;
 	}
 
+	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
+
 	/**
 	 * Wraps an {@link Array}, if not already wrapped by this wrapper.
 	 *

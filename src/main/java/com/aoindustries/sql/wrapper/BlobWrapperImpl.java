@@ -54,6 +54,11 @@ public class BlobWrapperImpl implements BlobWrapper {
 		return wrapped;
 	}
 
+	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
+
 	/**
 	 * Unwraps a {@link Blob}, if wrapped by this wrapper.
 	 *

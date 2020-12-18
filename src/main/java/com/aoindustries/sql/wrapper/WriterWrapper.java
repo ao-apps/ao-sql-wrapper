@@ -56,6 +56,11 @@ public class WriterWrapper extends Writer implements Wrapper {
 	}
 
 	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
+
+	@Override
 	public void write(int c) throws IOException {
 		getWrapped().write(c);
 	}

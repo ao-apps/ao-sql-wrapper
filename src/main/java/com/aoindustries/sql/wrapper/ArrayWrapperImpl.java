@@ -64,6 +64,11 @@ public class ArrayWrapperImpl implements ArrayWrapper {
 		return wrapped;
 	}
 
+	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
+
 	/**
 	 * Wraps a {@link ResultSet}, if not already wrapped by this wrapper.
 	 *

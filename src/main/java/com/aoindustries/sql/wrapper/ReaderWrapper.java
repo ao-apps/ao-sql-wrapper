@@ -57,6 +57,11 @@ public class ReaderWrapper extends Reader implements Wrapper {
 	}
 
 	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
+
+	@Override
 	public int read(CharBuffer target) throws IOException {
 		return getWrapped().read(target);
 	}

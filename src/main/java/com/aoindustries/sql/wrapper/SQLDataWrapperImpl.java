@@ -54,6 +54,11 @@ public class SQLDataWrapperImpl implements SQLDataWrapper {
 		return wrapped;
 	}
 
+	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
+
 	/**
 	 * Wraps a {@link SQLInput}, if not already wrapped by this wrapper.
 	 *

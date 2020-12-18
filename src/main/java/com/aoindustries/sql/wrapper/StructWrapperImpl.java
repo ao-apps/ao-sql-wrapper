@@ -50,4 +50,9 @@ public class StructWrapperImpl implements StructWrapper {
 	public Struct getWrapped() {
 		return wrapped;
 	}
+
+	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
 }

@@ -56,6 +56,11 @@ public class OutputStreamWrapper extends OutputStream implements Wrapper {
 	}
 
 	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
+
+	@Override
 	public void write(int b) throws IOException {
 		getWrapped().write(b);
 	}

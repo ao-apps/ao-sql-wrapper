@@ -56,6 +56,11 @@ public class ClobWrapperImpl implements ClobWrapper {
 		return wrapped;
 	}
 
+	@Override
+	public String toString() {
+		return getWrapped().toString();
+	}
+
 	/**
 	 * Unwraps a {@link Clob}, if wrapped by this wrapper.
 	 *
