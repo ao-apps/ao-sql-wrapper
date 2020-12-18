@@ -37,7 +37,7 @@ along with ao-sql-wrapper.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2020-11-02T21:58:59-06:00"
-		dateModified="2020-12-18T16:52:24-06:00"
+		dateModified="2020-12-18T17:02:49-06:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -46,17 +46,26 @@ along with ao-sql-wrapper.  If not, see <http://www.gnu.org/licenses />.
 				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{project.scm.url}"
-			>
-				<ul>
-					<li>
-						All wrapper implementations now delegate <code>toString()</code> to the wrapped object.
-						This allows access to meaningful information from the wrapped objects, such as the
-						<ao:a href="https://jdbc.postgresql.org/">PostgreSQL JDBC Driver</ao:a> providing the full SQL
-						query on <code>PreparedStatement.toString()</code>.
-					</li>
-				</ul>
-			</changelog:release>
+			/>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.0.1"
+			datePublished="2020-12-18T17:02:49-06:00"
+			groupId="@{project.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{project.scm.url}"
+		>
+			<ul>
+				<li>
+					All wrapper implementations now delegate <code>toString()</code> to the wrapped object.
+					This allows access to meaningful information from the wrapped objects, such as the
+					<ao:a href="https://jdbc.postgresql.org/">PostgreSQL JDBC Driver</ao:a> providing the full SQL
+					query on <code>PreparedStatement.toString()</code>.
+				</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
