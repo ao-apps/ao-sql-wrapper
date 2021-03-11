@@ -1,6 +1,6 @@
 /*
  * ao-sql-wrapper - JDBC API wrapper.
- * Copyright (C) 2020  AO Industries, Inc.
+ * Copyright (C) 2020, 2021  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -65,7 +65,7 @@ public interface ArrayWrapper extends Wrapper, Array, AutoCloseable {
 	}
 
 	@Override
-	default Object getArray(Map<String,Class<?>> map) throws SQLException {
+	default Object getArray(Map<String, Class<?>> map) throws SQLException {
 		// TODO: How can we wrap SQLData on UDT maps?
 		return getWrapped().getArray(map);
 	}
@@ -76,7 +76,7 @@ public interface ArrayWrapper extends Wrapper, Array, AutoCloseable {
 	}
 
 	@Override
-	default Object getArray(long index, int count, Map<String,Class<?>> map) throws SQLException {
+	default Object getArray(long index, int count, Map<String, Class<?>> map) throws SQLException {
 		// TODO: How can we wrap SQLData on UDT maps?
 		return getWrapped().getArray(index, count, map);
 	}
@@ -85,13 +85,13 @@ public interface ArrayWrapper extends Wrapper, Array, AutoCloseable {
 	ResultSetWrapper getResultSet() throws SQLException;
 
 	@Override
-	ResultSetWrapper getResultSet(Map<String,Class<?>> map) throws SQLException;
+	ResultSetWrapper getResultSet(Map<String, Class<?>> map) throws SQLException;
 
 	@Override
 	ResultSetWrapper getResultSet(long index, int count) throws SQLException;
 
 	@Override
-	ResultSetWrapper getResultSet(long index, int count, Map<String,Class<?>> map) throws SQLException;
+	ResultSetWrapper getResultSet(long index, int count, Map<String, Class<?>> map) throws SQLException;
 
 	@Override
 	default void free() throws SQLException {

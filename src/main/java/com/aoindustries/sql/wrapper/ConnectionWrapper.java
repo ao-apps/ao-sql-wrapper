@@ -1,6 +1,6 @@
 /*
  * ao-sql-wrapper - JDBC API wrapper.
- * Copyright (C) 2020  AO Industries, Inc.
+ * Copyright (C) 2020, 2021  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -150,13 +150,13 @@ public interface ConnectionWrapper extends Wrapper, Connection {
 	CallableStatementWrapper prepareCall(String sql, int resultSetType, int resultSetConcurrency) throws SQLException;
 
 	@Override
-	default Map<String,Class<?>> getTypeMap() throws SQLException {
+	default Map<String, Class<?>> getTypeMap() throws SQLException {
 		// TODO: How can we wrap SQLData on UDT maps?
 		return getWrapped().getTypeMap();
 	}
 
 	@Override
-	default void setTypeMap(Map<String,Class<?>> map) throws SQLException {
+	default void setTypeMap(Map<String, Class<?>> map) throws SQLException {
 		// TODO: How can we wrap SQLData on UDT maps?
 		getWrapped().setTypeMap(map);
 	}

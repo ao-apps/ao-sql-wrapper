@@ -1,6 +1,6 @@
 /*
  * ao-sql-wrapper - JDBC API wrapper.
- * Copyright (C) 2020  AO Industries, Inc.
+ * Copyright (C) 2020, 2021  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -594,7 +594,7 @@ public interface ResultSetWrapper extends Wrapper, ResultSet {
 	StatementWrapper getStatement() throws SQLException;
 
 	@Override
-	default Object getObject(int columnIndex, Map<String,Class<?>> map) throws SQLException {
+	default Object getObject(int columnIndex, Map<String, Class<?>> map) throws SQLException {
 		// TODO: How can we wrap SQLData on UDT maps?
 		return getWrapped().getObject(columnIndex, map);
 	}
@@ -612,7 +612,7 @@ public interface ResultSetWrapper extends Wrapper, ResultSet {
 	ArrayWrapper getArray(int columnIndex) throws SQLException;
 
 	@Override
-	default Object getObject(String columnLabel, Map<String,Class<?>> map) throws SQLException {
+	default Object getObject(String columnLabel, Map<String, Class<?>> map) throws SQLException {
 		// TODO: How can we wrap SQLData on UDT maps?
 		return getWrapped().getObject(columnLabel, map);
 	}

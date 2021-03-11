@@ -1,6 +1,6 @@
 /*
  * ao-sql-wrapper - JDBC API wrapper.
- * Copyright (C) 2020  AO Industries, Inc.
+ * Copyright (C) 2020, 2021  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -53,7 +53,7 @@ public interface RefWrapper extends Wrapper, Ref, AutoCloseable {
 	}
 
 	@Override
-	default Object getObject(Map<String,Class<?>> map) throws SQLException {
+	default Object getObject(Map<String, Class<?>> map) throws SQLException {
 		// TODO: How can we wrap SQLData on UDT maps?
 		return getWrapped().getObject(map);
 	}

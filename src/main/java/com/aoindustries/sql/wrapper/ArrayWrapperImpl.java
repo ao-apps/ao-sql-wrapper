@@ -1,6 +1,6 @@
 /*
  * ao-sql-wrapper - JDBC API wrapper.
- * Copyright (C) 2020  AO Industries, Inc.
+ * Copyright (C) 2020, 2021  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -90,7 +90,7 @@ public class ArrayWrapperImpl implements ArrayWrapper {
 	 * @see  #wrapResultSet(java.sql.ResultSet)
 	 */
 	@Override
-	public ResultSetWrapperImpl getResultSet(Map<String,Class<?>> map) throws SQLException {
+	public ResultSetWrapperImpl getResultSet(Map<String, Class<?>> map) throws SQLException {
 		// TODO: How can we wrap SQLData on UDT maps?
 		return wrapResultSet(getWrapped().getResultSet(map));
 	}
@@ -107,7 +107,7 @@ public class ArrayWrapperImpl implements ArrayWrapper {
 	 * @see  #wrapResultSet(java.sql.ResultSet)
 	 */
 	@Override
-	public ResultSetWrapperImpl getResultSet(long index, int count, Map<String,Class<?>> map) throws SQLException {
+	public ResultSetWrapperImpl getResultSet(long index, int count, Map<String, Class<?>> map) throws SQLException {
 		// TODO: How can we wrap SQLData on UDT maps?
 		return wrapResultSet(getWrapped().getResultSet(index, count, map));
 	}
