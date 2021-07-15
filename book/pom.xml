@@ -85,6 +85,11 @@ along with ao-sql-wrapper.  If not, see <http://www.gnu.org/licenses />.
 		<url>https://github.com/aoindustries/ao-sql-wrapper/issues</url>
 	</issueManagement>
 
+	<ciManagement>
+		<system>GitHub Actions</system>
+		<url>https://github.com/aoindustries/ao-sql-wrapper/actions</url>
+	</ciManagement>
+
 	<repositories>
 		<!-- Repository required here, too, so can find parent -->
 		<repository>
