@@ -9,6 +9,12 @@
 
 [![Build](https://github.com/aoindustries/ao-sql-wrapper/workflows/Build/badge.svg?branch=master)](https://github.com/aoindustries/ao-sql-wrapper/actions?query=workflow%3ABuild)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.aoapps/ao-sql-wrapper/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.aoapps/ao-sql-wrapper)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-sql-wrapper&metric=alert_status)](https://sonarcloud.io/dashboard?branch=master&id=com.aoapps%3Aao-sql-wrapper)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-sql-wrapper&metric=ncloc)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-sql-wrapper&metric=ncloc)  
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-sql-wrapper&metric=reliability_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-sql-wrapper&metric=Reliability)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-sql-wrapper&metric=security_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-sql-wrapper&metric=Security)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-sql-wrapper&metric=sqale_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-sql-wrapper&metric=Maintainability)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-sql-wrapper&metric=coverage)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-sql-wrapper&metric=Coverage)
 
 JDBC API wrapper.
 
