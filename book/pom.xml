@@ -74,20 +74,20 @@ along with ao-sql-wrapper.  If not, see <http://www.gnu.org/licenses />.
 	</developers>
 
 	<scm>
-		<connection>scm:git:git://github.com/aoindustries/ao-sql-wrapper.git</connection>
-		<developerConnection>scm:git:git@github.com:aoindustries/ao-sql-wrapper.git</developerConnection>
-		<url>https://github.com/aoindustries/ao-sql-wrapper</url>
+		<connection>scm:git:git://github.com/ao-apps/ao-sql-wrapper.git</connection>
+		<developerConnection>scm:git:git@github.com:ao-apps/ao-sql-wrapper.git</developerConnection>
+		<url>https://github.com/ao-apps/ao-sql-wrapper</url>
 		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/aoindustries/ao-sql-wrapper/issues</url>
+		<url>https://github.com/ao-apps/ao-sql-wrapper/issues</url>
 	</issueManagement>
 
 	<ciManagement>
 		<system>GitHub Actions</system>
-		<url>https://github.com/aoindustries/ao-sql-wrapper/actions</url>
+		<url>https://github.com/ao-apps/ao-sql-wrapper/actions</url>
 	</ciManagement>
 
 	<repositories>

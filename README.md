@@ -1,4 +1,4 @@
-# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://github.com/aoindustries) [AO OSS](https://github.com/aoindustries/ao-oss) / [SQL](https://github.com/aoindustries/ao-sql) / [Wrapper](https://github.com/aoindustries/ao-sql-wrapper)
+# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://github.com/ao-apps) [AO OSS](https://github.com/ao-apps/ao-oss) / [SQL](https://github.com/ao-apps/ao-sql) / [Wrapper](https://github.com/ao-apps/ao-sql-wrapper)
 
 [![project: current stable](https://oss.aoapps.com/ao-badges/project-current-stable.svg)](https://aoindustries.com/life-cycle#project-current-stable)
 [![management: production](https://oss.aoapps.com/ao-badges/management-production.svg)](https://aoindustries.com/life-cycle#management-production)
@@ -7,7 +7,7 @@
 [![semantic versioning: 2.0.0](https://oss.aoapps.com/ao-badges/semver-2.0.0.svg)](http://semver.org/spec/v2.0.0.html)
 [![license: LGPL v3](https://oss.aoapps.com/ao-badges/license-lgpl-3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
-[![Build](https://github.com/aoindustries/ao-sql-wrapper/workflows/Build/badge.svg?branch=master)](https://github.com/aoindustries/ao-sql-wrapper/actions?query=workflow%3ABuild)
+[![Build](https://github.com/ao-apps/ao-sql-wrapper/workflows/Build/badge.svg?branch=master)](https://github.com/ao-apps/ao-sql-wrapper/actions?query=workflow%3ABuild)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.aoapps/ao-sql-wrapper/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.aoapps/ao-sql-wrapper)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-sql-wrapper&metric=alert_status)](https://sonarcloud.io/dashboard?branch=master&id=com.aoapps%3Aao-sql-wrapper)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-sql-wrapper&metric=ncloc)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-sql-wrapper&metric=ncloc)  
@@ -23,7 +23,7 @@ JDBC API wrapper.
 * [Changelog](https://oss.aoapps.com/sql/wrapper/changelog)
 * [API Docs](https://oss.aoapps.com/sql/wrapper/apidocs/)
 * [Maven Central Repository](https://search.maven.org/artifact/com.aoapps/ao-sql-wrapper)
-* [GitHub](https://github.com/aoindustries/ao-sql-wrapper)
+* [GitHub](https://github.com/ao-apps/ao-sql-wrapper)
 
 ## Contact Us
 For questions or support, please [contact us](https://aoindustries.com/contact):
