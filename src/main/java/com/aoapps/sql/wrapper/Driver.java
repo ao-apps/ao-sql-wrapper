@@ -58,7 +58,7 @@ public class Driver extends DriverWrapper {
 	public static synchronized boolean register() throws SQLException {
 		if(registered == null) {
 			Driver d = new Driver();
-			DriverManager.registerDriver(d, () -> d.onDeregister());
+			DriverManager.registerDriver(d, d::onDeregister);
 			registered = d;
 			return true;
 		} else {
