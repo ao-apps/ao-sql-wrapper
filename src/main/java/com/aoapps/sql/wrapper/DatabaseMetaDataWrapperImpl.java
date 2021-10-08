@@ -131,7 +131,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
 	 * @see  #wrapResultSet(java.sql.ResultSet)
 	 */
 	@Override
-	public ResultSetWrapperImpl getTables(String catalog, String schemaPattern, String tableNamePattern, String types[]) throws SQLException {
+	public ResultSetWrapperImpl getTables(String catalog, String schemaPattern, String tableNamePattern, String[] types) throws SQLException {
 		return wrapResultSet(getWrapped().getTables(catalog, schemaPattern, tableNamePattern, types));
 	}
 

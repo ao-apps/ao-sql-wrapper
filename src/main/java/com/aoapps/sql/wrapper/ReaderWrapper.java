@@ -72,12 +72,12 @@ public class ReaderWrapper extends Reader implements Wrapper {
 	}
 
 	@Override
-	public int read(char cbuf[]) throws IOException {
+	public int read(char[] cbuf) throws IOException {
 		return getWrapped().read(cbuf);
 	}
 
 	@Override
-	public int read(char cbuf[], int off, int len) throws IOException {
+	public int read(char[] cbuf, int off, int len) throws IOException {
 		return getWrapped().read(cbuf, off, len);
 	}
 

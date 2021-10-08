@@ -62,7 +62,7 @@ public interface BlobWrapper extends Wrapper, Blob, AutoCloseable {
 	InputStreamWrapper getBinaryStream() throws SQLException;
 
 	@Override
-	default long position(byte pattern[], long start) throws SQLException {
+	default long position(byte[] pattern, long start) throws SQLException {
 		return getWrapped().position(pattern, start);
 	}
 

@@ -113,7 +113,7 @@ public interface PreparedStatementWrapper extends StatementWrapper, PreparedStat
 	}
 
 	@Override
-	default void setBytes(int parameterIndex, byte x[]) throws SQLException {
+	default void setBytes(int parameterIndex, byte[] x) throws SQLException {
 		getWrapped().setBytes(parameterIndex, x);
 	}
 

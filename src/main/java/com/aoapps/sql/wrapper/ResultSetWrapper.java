@@ -428,7 +428,7 @@ public interface ResultSetWrapper extends Wrapper, ResultSet {
 	}
 
 	@Override
-	default void updateBytes(int columnIndex, byte x[]) throws SQLException {
+	default void updateBytes(int columnIndex, byte[] x) throws SQLException {
 		getWrapped().updateBytes(columnIndex, x);
 	}
 
@@ -517,7 +517,7 @@ public interface ResultSetWrapper extends Wrapper, ResultSet {
 	}
 
 	@Override
-	default void updateBytes(String columnLabel, byte x[]) throws SQLException {
+	default void updateBytes(String columnLabel, byte[] x) throws SQLException {
 		getWrapped().updateBytes(columnLabel, x);
 	}
 

@@ -258,7 +258,7 @@ public interface CallableStatementWrapper extends PreparedStatementWrapper, Call
 	}
 
 	@Override
-	default void setBytes(String parameterName, byte x[]) throws SQLException {
+	default void setBytes(String parameterName, byte[] x) throws SQLException {
 		getWrapped().setBytes(parameterName, x);
 	}
 

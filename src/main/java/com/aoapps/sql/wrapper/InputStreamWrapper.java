@@ -66,12 +66,12 @@ public class InputStreamWrapper extends InputStream implements Wrapper {
 	}
 
 	@Override
-	public int read(byte b[]) throws IOException {
+	public int read(byte[] b) throws IOException {
 		return getWrapped().read(b);
 	}
 
 	@Override
-	public int read(byte b[], int off, int len) throws IOException {
+	public int read(byte[] b, int off, int len) throws IOException {
 		return getWrapped().read(b, off, len);
 	}
 

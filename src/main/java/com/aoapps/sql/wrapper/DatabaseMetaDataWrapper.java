@@ -663,7 +663,7 @@ public interface DatabaseMetaDataWrapper extends Wrapper, DatabaseMetaData, Auto
 	ResultSetWrapper getProcedureColumns(String catalog, String schemaPattern, String procedureNamePattern, String columnNamePattern) throws SQLException;
 
 	@Override
-	ResultSetWrapper getTables(String catalog, String schemaPattern, String tableNamePattern, String types[]) throws SQLException;
+	ResultSetWrapper getTables(String catalog, String schemaPattern, String tableNamePattern, String[] types) throws SQLException;
 
 	@Override
 	ResultSetWrapper getSchemas() throws SQLException;

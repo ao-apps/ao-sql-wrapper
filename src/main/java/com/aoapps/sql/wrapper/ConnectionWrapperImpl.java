@@ -1125,7 +1125,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	 * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
 	 */
 	@Override
-	public PreparedStatementWrapperImpl prepareStatement(String sql, int columnIndexes[]) throws SQLException {
+	public PreparedStatementWrapperImpl prepareStatement(String sql, int[] columnIndexes) throws SQLException {
 		return wrapPreparedStatement(getWrapped().prepareStatement(sql, columnIndexes));
 	}
 
@@ -1133,7 +1133,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
 	 * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
 	 */
 	@Override
-	public PreparedStatementWrapperImpl prepareStatement(String sql, String columnNames[]) throws SQLException {
+	public PreparedStatementWrapperImpl prepareStatement(String sql, String[] columnNames) throws SQLException {
 		return wrapPreparedStatement(getWrapped().prepareStatement(sql, columnNames));
 	}
 

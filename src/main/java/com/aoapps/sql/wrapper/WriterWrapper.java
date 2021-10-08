@@ -66,12 +66,12 @@ public class WriterWrapper extends Writer implements Wrapper {
 	}
 
 	@Override
-	public void write(char cbuf[]) throws IOException {
+	public void write(char[] cbuf) throws IOException {
 		getWrapped().write(cbuf);
 	}
 
 	@Override
-	public void write(char cbuf[], int off, int len) throws IOException {
+	public void write(char[] cbuf, int off, int len) throws IOException {
 		getWrapped().write(cbuf, off, len);
 	}
 

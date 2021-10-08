@@ -66,12 +66,12 @@ public class OutputStreamWrapper extends OutputStream implements Wrapper {
 	}
 
 	@Override
-	public void write(byte b[]) throws IOException {
+	public void write(byte[] b) throws IOException {
 		getWrapped().write(b);
 	}
 
 	@Override
-	public void write(byte b[], int off, int len) throws IOException {
+	public void write(byte[] b, int off, int len) throws IOException {
 		getWrapped().write(b, off, len);
 	}
 

@@ -187,12 +187,12 @@ public interface StatementWrapper extends Wrapper, Statement {
 	}
 
 	@Override
-	default int executeUpdate(String sql, int columnIndexes[]) throws SQLException {
+	default int executeUpdate(String sql, int[] columnIndexes) throws SQLException {
 		return getWrapped().executeUpdate(sql, columnIndexes);
 	}
 
 	@Override
-	default int executeUpdate(String sql, String columnNames[]) throws SQLException {
+	default int executeUpdate(String sql, String[] columnNames) throws SQLException {
 		return getWrapped().executeUpdate(sql, columnNames);
 	}
 
@@ -202,12 +202,12 @@ public interface StatementWrapper extends Wrapper, Statement {
 	}
 
 	@Override
-	default boolean execute(String sql, int columnIndexes[]) throws SQLException {
+	default boolean execute(String sql, int[] columnIndexes) throws SQLException {
 		return getWrapped().execute(sql, columnIndexes);
 	}
 
 	@Override
-	default boolean execute(String sql, String columnNames[]) throws SQLException {
+	default boolean execute(String sql, String[] columnNames) throws SQLException {
 		return getWrapped().execute(sql, columnNames);
 	}
 
@@ -272,12 +272,12 @@ public interface StatementWrapper extends Wrapper, Statement {
 	}
 
 	@Override
-	default long executeLargeUpdate(String sql, int columnIndexes[]) throws SQLException {
+	default long executeLargeUpdate(String sql, int[] columnIndexes) throws SQLException {
 		return getWrapped().executeLargeUpdate(sql, columnIndexes);
 	}
 
 	@Override
-	default long executeLargeUpdate(String sql, String columnNames[]) throws SQLException {
+	default long executeLargeUpdate(String sql, String[] columnNames) throws SQLException {
 		return getWrapped().executeLargeUpdate(sql, columnNames);
 	}
 
