@@ -41,7 +41,7 @@ public abstract class DriverWrapper implements Driver {
 
 	private static final String JDBC_SCHEMA = "jdbc:";
 
-	public DriverWrapper() {}
+	protected DriverWrapper() {}
 
 	@Override
 	public String toString() {
