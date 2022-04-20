@@ -36,80 +36,80 @@ import java.util.Optional;
  */
 public class ArrayWrapperImpl implements ArrayWrapper {
 
-	private final ConnectionWrapperImpl connectionWrapper;
-	private final StatementWrapperImpl stmtWrapper;
-	private final Array wrapped;
+  private final ConnectionWrapperImpl connectionWrapper;
+  private final StatementWrapperImpl stmtWrapper;
+  private final Array wrapped;
 
-	public ArrayWrapperImpl(ConnectionWrapperImpl connectionWrapper, StatementWrapperImpl stmtWrapper, Array wrapped) {
-		this.connectionWrapper = connectionWrapper;
-		this.stmtWrapper = stmtWrapper;
-		this.wrapped = wrapped;
-	}
+  public ArrayWrapperImpl(ConnectionWrapperImpl connectionWrapper, StatementWrapperImpl stmtWrapper, Array wrapped) {
+    this.connectionWrapper = connectionWrapper;
+    this.stmtWrapper = stmtWrapper;
+    this.wrapped = wrapped;
+  }
 
-	/**
-	 * Gets the connection wrapper.
-	 */
-	protected ConnectionWrapperImpl getConnectionWrapper() {
-		return connectionWrapper;
-	}
+  /**
+   * Gets the connection wrapper.
+   */
+  protected ConnectionWrapperImpl getConnectionWrapper() {
+    return connectionWrapper;
+  }
 
-	/**
-	 * Gets the statement wrapper.
-	 */
-	protected Optional<? extends StatementWrapperImpl> getStatementWrapper() {
-		return Optional.ofNullable(stmtWrapper);
-	}
+  /**
+   * Gets the statement wrapper.
+   */
+  protected Optional<? extends StatementWrapperImpl> getStatementWrapper() {
+    return Optional.ofNullable(stmtWrapper);
+  }
 
-	@Override
-	public Array getWrapped() {
-		return wrapped;
-	}
+  @Override
+  public Array getWrapped() {
+    return wrapped;
+  }
 
-	@Override
-	public String toString() {
-		return getWrapped().toString();
-	}
+  @Override
+  public String toString() {
+    return getWrapped().toString();
+  }
 
-	/**
-	 * Wraps a {@link ResultSet}, if not already wrapped by this wrapper.
-	 *
-	 * @see  ConnectionWrapperImpl#wrapResultSet(com.aoapps.sql.wrapper.StatementWrapperImpl, java.sql.ResultSet)
-	 */
-	protected ResultSetWrapperImpl wrapResultSet(ResultSet results) throws SQLException {
-		return getConnectionWrapper().wrapResultSet(getStatementWrapper().orElse(null), results);
-	}
+  /**
+   * Wraps a {@link ResultSet}, if not already wrapped by this wrapper.
+   *
+   * @see  ConnectionWrapperImpl#wrapResultSet(com.aoapps.sql.wrapper.StatementWrapperImpl, java.sql.ResultSet)
+   */
+  protected ResultSetWrapperImpl wrapResultSet(ResultSet results) throws SQLException {
+    return getConnectionWrapper().wrapResultSet(getStatementWrapper().orElse(null), results);
+  }
 
-	/**
-	 * @see  #wrapResultSet(java.sql.ResultSet)
-	 */
-	@Override
-	public ResultSetWrapperImpl getResultSet() throws SQLException {
-		return wrapResultSet(getWrapped().getResultSet());
-	}
+  /**
+   * @see  #wrapResultSet(java.sql.ResultSet)
+   */
+  @Override
+  public ResultSetWrapperImpl getResultSet() throws SQLException {
+    return wrapResultSet(getWrapped().getResultSet());
+  }
 
-	/**
-	 * @see  #wrapResultSet(java.sql.ResultSet)
-	 */
-	@Override
-	public ResultSetWrapperImpl getResultSet(Map<String, Class<?>> map) throws SQLException {
-		// TODO: How can we wrap SQLData on UDT maps?
-		return wrapResultSet(getWrapped().getResultSet(map));
-	}
+  /**
+   * @see  #wrapResultSet(java.sql.ResultSet)
+   */
+  @Override
+  public ResultSetWrapperImpl getResultSet(Map<String, Class<?>> map) throws SQLException {
+    // TODO: How can we wrap SQLData on UDT maps?
+    return wrapResultSet(getWrapped().getResultSet(map));
+  }
 
-	/**
-	 * @see  #wrapResultSet(java.sql.ResultSet)
-	 */
-	@Override
-	public ResultSetWrapperImpl getResultSet(long index, int count) throws SQLException {
-		return wrapResultSet(getWrapped().getResultSet(index, count));
-	}
+  /**
+   * @see  #wrapResultSet(java.sql.ResultSet)
+   */
+  @Override
+  public ResultSetWrapperImpl getResultSet(long index, int count) throws SQLException {
+    return wrapResultSet(getWrapped().getResultSet(index, count));
+  }
 
-	/**
-	 * @see  #wrapResultSet(java.sql.ResultSet)
-	 */
-	@Override
-	public ResultSetWrapperImpl getResultSet(long index, int count, Map<String, Class<?>> map) throws SQLException {
-		// TODO: How can we wrap SQLData on UDT maps?
-		return wrapResultSet(getWrapped().getResultSet(index, count, map));
-	}
+  /**
+   * @see  #wrapResultSet(java.sql.ResultSet)
+   */
+  @Override
+  public ResultSetWrapperImpl getResultSet(long index, int count, Map<String, Class<?>> map) throws SQLException {
+    // TODO: How can we wrap SQLData on UDT maps?
+    return wrapResultSet(getWrapped().getResultSet(index, count, map));
+  }
 }

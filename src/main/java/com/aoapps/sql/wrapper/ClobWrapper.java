@@ -33,72 +33,72 @@ import java.sql.SQLException;
  */
 public interface ClobWrapper extends Wrapper, Clob, AutoCloseable {
 
-	/**
-	 * Gets the clob that is wrapped.
-	 */
-	@Override
-	Clob getWrapped();
+  /**
+   * Gets the clob that is wrapped.
+   */
+  @Override
+  Clob getWrapped();
 
-	/**
-	 * Calls {@link #free()}
-	 *
-	 * @see  #free()
-	 */
-	@Override
-	default void close() throws SQLException {
-		free();
-	}
+  /**
+   * Calls {@link #free()}
+   *
+   * @see  #free()
+   */
+  @Override
+  default void close() throws SQLException {
+    free();
+  }
 
-	@Override
-	default long length() throws SQLException {
-		return getWrapped().length();
-	}
+  @Override
+  default long length() throws SQLException {
+    return getWrapped().length();
+  }
 
-	@Override
-	default String getSubString(long pos, int length) throws SQLException {
-		return getWrapped().getSubString(pos, length);
-	}
+  @Override
+  default String getSubString(long pos, int length) throws SQLException {
+    return getWrapped().getSubString(pos, length);
+  }
 
-	@Override
-	ReaderWrapper getCharacterStream() throws SQLException;
+  @Override
+  ReaderWrapper getCharacterStream() throws SQLException;
 
-	@Override
-	InputStreamWrapper getAsciiStream() throws SQLException;
+  @Override
+  InputStreamWrapper getAsciiStream() throws SQLException;
 
-	@Override
-	default long position(String searchstr, long start) throws SQLException {
-		return getWrapped().position(searchstr, start);
-	}
+  @Override
+  default long position(String searchstr, long start) throws SQLException {
+    return getWrapped().position(searchstr, start);
+  }
 
-	@Override
-	long position(Clob searchstr, long start) throws SQLException;
+  @Override
+  long position(Clob searchstr, long start) throws SQLException;
 
-	@Override
-	default int setString(long pos, String str) throws SQLException {
-		return getWrapped().setString(pos, str);
-	}
+  @Override
+  default int setString(long pos, String str) throws SQLException {
+    return getWrapped().setString(pos, str);
+  }
 
-	@Override
-	default int setString(long pos, String str, int offset, int len) throws SQLException {
-		return getWrapped().setString(pos, str, offset, len);
-	}
+  @Override
+  default int setString(long pos, String str, int offset, int len) throws SQLException {
+    return getWrapped().setString(pos, str, offset, len);
+  }
 
-	@Override
-	OutputStreamWrapper setAsciiStream(long pos) throws SQLException;
+  @Override
+  OutputStreamWrapper setAsciiStream(long pos) throws SQLException;
 
-	@Override
-	WriterWrapper setCharacterStream(long pos) throws SQLException;
+  @Override
+  WriterWrapper setCharacterStream(long pos) throws SQLException;
 
-	@Override
-	default void truncate(long len) throws SQLException {
-		getWrapped().truncate(len);
-	}
+  @Override
+  default void truncate(long len) throws SQLException {
+    getWrapped().truncate(len);
+  }
 
-	@Override
-	default void free() throws SQLException {
-		getWrapped().free();
-	}
+  @Override
+  default void free() throws SQLException {
+    getWrapped().free();
+  }
 
-	@Override
-	ReaderWrapper getCharacterStream(long pos, long length) throws SQLException;
+  @Override
+  ReaderWrapper getCharacterStream(long pos, long length) throws SQLException;
 }

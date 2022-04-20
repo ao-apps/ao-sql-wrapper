@@ -32,12 +32,12 @@ import java.sql.NClob;
  */
 public class NClobWrapperImpl extends ClobWrapperImpl implements NClobWrapper {
 
-	public NClobWrapperImpl(ConnectionWrapperImpl connectionWrapper, NClob wrapped) {
-		super(connectionWrapper, wrapped);
-	}
+  public NClobWrapperImpl(ConnectionWrapperImpl connectionWrapper, NClob wrapped) {
+    super(connectionWrapper, wrapped);
+  }
 
-	@Override
-	public NClob getWrapped() {
-		return (NClob)super.getWrapped();
-	}
+  @Override
+  public NClob getWrapped() {
+    return (NClob)super.getWrapped();
+  }
 }

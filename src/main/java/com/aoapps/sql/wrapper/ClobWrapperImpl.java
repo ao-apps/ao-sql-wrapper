@@ -37,121 +37,121 @@ import java.sql.SQLException;
  */
 public class ClobWrapperImpl implements ClobWrapper {
 
-	private final ConnectionWrapperImpl connectionWrapper;
-	private final Clob wrapped;
+  private final ConnectionWrapperImpl connectionWrapper;
+  private final Clob wrapped;
 
-	public ClobWrapperImpl(ConnectionWrapperImpl connectionWrapper, Clob wrapped) {
-		this.connectionWrapper = connectionWrapper;
-		this.wrapped = wrapped;
-	}
+  public ClobWrapperImpl(ConnectionWrapperImpl connectionWrapper, Clob wrapped) {
+    this.connectionWrapper = connectionWrapper;
+    this.wrapped = wrapped;
+  }
 
-	/**
-	 * Gets the connection wrapper.
-	 */
-	protected ConnectionWrapperImpl getConnectionWrapper() {
-		return connectionWrapper;
-	}
+  /**
+   * Gets the connection wrapper.
+   */
+  protected ConnectionWrapperImpl getConnectionWrapper() {
+    return connectionWrapper;
+  }
 
-	@Override
-	public Clob getWrapped() {
-		return wrapped;
-	}
+  @Override
+  public Clob getWrapped() {
+    return wrapped;
+  }
 
-	@Override
-	public String toString() {
-		return getWrapped().toString();
-	}
+  @Override
+  public String toString() {
+    return getWrapped().toString();
+  }
 
-	/**
-	 * Unwraps a {@link Clob}, if wrapped by this wrapper.
-	 *
-	 * @see  ConnectionWrapperImpl#unwrapClob(java.sql.Clob)
-	 */
-	protected Clob unwrapClob(Clob clob) {
-		return getConnectionWrapper().unwrapClob(clob);
-	}
+  /**
+   * Unwraps a {@link Clob}, if wrapped by this wrapper.
+   *
+   * @see  ConnectionWrapperImpl#unwrapClob(java.sql.Clob)
+   */
+  protected Clob unwrapClob(Clob clob) {
+    return getConnectionWrapper().unwrapClob(clob);
+  }
 
-	/**
-	 * Wraps an {@link InputStream}, if not already wrapped by this wrapper.
-	 *
-	 * @see  ConnectionWrapperImpl#wrapInputStream(java.io.InputStream)
-	 */
-	protected InputStreamWrapper wrapInputStream(InputStream in) {
-		return getConnectionWrapper().wrapInputStream(in);
-	}
+  /**
+   * Wraps an {@link InputStream}, if not already wrapped by this wrapper.
+   *
+   * @see  ConnectionWrapperImpl#wrapInputStream(java.io.InputStream)
+   */
+  protected InputStreamWrapper wrapInputStream(InputStream in) {
+    return getConnectionWrapper().wrapInputStream(in);
+  }
 
-	/**
-	 * Wraps an {@link OutputStream}, if not already wrapped by this wrapper.
-	 *
-	 * @see  ConnectionWrapperImpl#wrapOutputStream(java.io.OutputStream)
-	 */
-	protected OutputStreamWrapper wrapOutputStream(OutputStream out) {
-		return getConnectionWrapper().wrapOutputStream(out);
-	}
+  /**
+   * Wraps an {@link OutputStream}, if not already wrapped by this wrapper.
+   *
+   * @see  ConnectionWrapperImpl#wrapOutputStream(java.io.OutputStream)
+   */
+  protected OutputStreamWrapper wrapOutputStream(OutputStream out) {
+    return getConnectionWrapper().wrapOutputStream(out);
+  }
 
-	/**
-	 * Wraps a {@link Reader}, if not already wrapped by this wrapper.
-	 *
-	 * @see  ConnectionWrapperImpl#wrapReader(java.sql.Reader)
-	 */
-	protected ReaderWrapper wrapReader(Reader in) {
-		return getConnectionWrapper().wrapReader(in);
-	}
+  /**
+   * Wraps a {@link Reader}, if not already wrapped by this wrapper.
+   *
+   * @see  ConnectionWrapperImpl#wrapReader(java.sql.Reader)
+   */
+  protected ReaderWrapper wrapReader(Reader in) {
+    return getConnectionWrapper().wrapReader(in);
+  }
 
-	/**
-	 * Wraps a {@link Writer}, if not already wrapped by this wrapper.
-	 *
-	 * @see  ConnectionWrapperImpl#wrapWriter(java.io.Writer)
-	 */
-	protected WriterWrapper wrapWriter(Writer out) {
-		return getConnectionWrapper().wrapWriter(out);
-	}
+  /**
+   * Wraps a {@link Writer}, if not already wrapped by this wrapper.
+   *
+   * @see  ConnectionWrapperImpl#wrapWriter(java.io.Writer)
+   */
+  protected WriterWrapper wrapWriter(Writer out) {
+    return getConnectionWrapper().wrapWriter(out);
+  }
 
-	/**
-	 * @see  #wrapReader(java.io.Reader)
-	 */
-	@Override
-	public ReaderWrapper getCharacterStream() throws SQLException {
-		return wrapReader(getWrapped().getCharacterStream());
-	}
+  /**
+   * @see  #wrapReader(java.io.Reader)
+   */
+  @Override
+  public ReaderWrapper getCharacterStream() throws SQLException {
+    return wrapReader(getWrapped().getCharacterStream());
+  }
 
-	/**
-	 * @see  #wrapInputStream(java.io.InputStream)
-	 */
-	@Override
-	public InputStreamWrapper getAsciiStream() throws SQLException {
-		return wrapInputStream(getWrapped().getAsciiStream());
-	}
+  /**
+   * @see  #wrapInputStream(java.io.InputStream)
+   */
+  @Override
+  public InputStreamWrapper getAsciiStream() throws SQLException {
+    return wrapInputStream(getWrapped().getAsciiStream());
+  }
 
-	/**
-	 * @see  #unwrapClob(java.sql.Clob)
-	 */
-	@Override
-	public long position(Clob pattern, long start) throws SQLException {
-		return getWrapped().position(unwrapClob(pattern), start);
-	}
+  /**
+   * @see  #unwrapClob(java.sql.Clob)
+   */
+  @Override
+  public long position(Clob pattern, long start) throws SQLException {
+    return getWrapped().position(unwrapClob(pattern), start);
+  }
 
-	/**
-	 * @see  #wrapOutputStream(java.io.OutputStream)
-	 */
-	@Override
-	public OutputStreamWrapper setAsciiStream(long pos) throws SQLException {
-		return wrapOutputStream(getWrapped().setAsciiStream(pos));
-	}
+  /**
+   * @see  #wrapOutputStream(java.io.OutputStream)
+   */
+  @Override
+  public OutputStreamWrapper setAsciiStream(long pos) throws SQLException {
+    return wrapOutputStream(getWrapped().setAsciiStream(pos));
+  }
 
-	/**
-	 * @see  #wrapWriter(Writer)
-	 */
-	@Override
-	public WriterWrapper setCharacterStream(long pos) throws SQLException {
-		return wrapWriter(getWrapped().setCharacterStream(pos));
-	}
+  /**
+   * @see  #wrapWriter(Writer)
+   */
+  @Override
+  public WriterWrapper setCharacterStream(long pos) throws SQLException {
+    return wrapWriter(getWrapped().setCharacterStream(pos));
+  }
 
-	/**
-	 * @see  #wrapReader(java.io.Reader)
-	 */
-	@Override
-	public ReaderWrapper getCharacterStream(long pos, long length) throws SQLException {
-		return wrapReader(getWrapped().getCharacterStream(pos, length));
-	}
+  /**
+   * @see  #wrapReader(java.io.Reader)
+   */
+  @Override
+  public ReaderWrapper getCharacterStream(long pos, long length) throws SQLException {
+    return wrapReader(getWrapped().getCharacterStream(pos, length));
+  }
 }

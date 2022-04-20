@@ -32,28 +32,28 @@ import java.sql.ResultSetMetaData;
  */
 public class ResultSetMetaDataWrapperImpl implements ResultSetMetaDataWrapper {
 
-	private final ConnectionWrapperImpl connectionWrapper;
-	private final ResultSetMetaData wrapped;
+  private final ConnectionWrapperImpl connectionWrapper;
+  private final ResultSetMetaData wrapped;
 
-	public ResultSetMetaDataWrapperImpl(ConnectionWrapperImpl connectionWrapper, ResultSetMetaData wrapped) {
-		this.connectionWrapper = connectionWrapper;
-		this.wrapped = wrapped;
-	}
+  public ResultSetMetaDataWrapperImpl(ConnectionWrapperImpl connectionWrapper, ResultSetMetaData wrapped) {
+    this.connectionWrapper = connectionWrapper;
+    this.wrapped = wrapped;
+  }
 
-	/**
-	 * Gets the connection wrapper.
-	 */
-	protected ConnectionWrapperImpl getConnectionWrapper() {
-		return connectionWrapper;
-	}
+  /**
+   * Gets the connection wrapper.
+   */
+  protected ConnectionWrapperImpl getConnectionWrapper() {
+    return connectionWrapper;
+  }
 
-	@Override
-	public ResultSetMetaData getWrapped() {
-		return wrapped;
-	}
+  @Override
+  public ResultSetMetaData getWrapped() {
+    return wrapped;
+  }
 
-	@Override
-	public String toString() {
-		return getWrapped().toString();
-	}
+  @Override
+  public String toString() {
+    return getWrapped().toString();
+  }
 }

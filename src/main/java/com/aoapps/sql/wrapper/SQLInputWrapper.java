@@ -38,139 +38,139 @@ import java.sql.Timestamp;
  */
 public interface SQLInputWrapper extends Wrapper, SQLInput, AutoCloseable {
 
-	/**
-	 * Gets the SQL input that is wrapped.
-	 */
-	@Override
-	SQLInput getWrapped();
+  /**
+   * Gets the SQL input that is wrapped.
+   */
+  @Override
+  SQLInput getWrapped();
 
-	/**
-	 * Releases resources associated with this wrapper.
-	 *
-	 * @see  SQLDataWrapperImpl#readSQL(java.sql.SQLInput, java.lang.String)
-	 */
-	@Override
-	default void close() throws SQLException {
-		// Do nothing by default
-	}
+  /**
+   * Releases resources associated with this wrapper.
+   *
+   * @see  SQLDataWrapperImpl#readSQL(java.sql.SQLInput, java.lang.String)
+   */
+  @Override
+  default void close() throws SQLException {
+    // Do nothing by default
+  }
 
-	@Override
-	default String readString() throws SQLException {
-		return getWrapped().readString();
-	}
+  @Override
+  default String readString() throws SQLException {
+    return getWrapped().readString();
+  }
 
-	@Override
-	default boolean readBoolean() throws SQLException {
-		return getWrapped().readBoolean();
-	}
+  @Override
+  default boolean readBoolean() throws SQLException {
+    return getWrapped().readBoolean();
+  }
 
-	@Override
-	default byte readByte() throws SQLException {
-		return getWrapped().readByte();
-	}
+  @Override
+  default byte readByte() throws SQLException {
+    return getWrapped().readByte();
+  }
 
-	@Override
-	default short readShort() throws SQLException {
-		return getWrapped().readShort();
-	}
+  @Override
+  default short readShort() throws SQLException {
+    return getWrapped().readShort();
+  }
 
-	@Override
-	default int readInt() throws SQLException {
-		return getWrapped().readInt();
-	}
+  @Override
+  default int readInt() throws SQLException {
+    return getWrapped().readInt();
+  }
 
-	@Override
-	default long readLong() throws SQLException {
-		return getWrapped().readLong();
-	}
+  @Override
+  default long readLong() throws SQLException {
+    return getWrapped().readLong();
+  }
 
-	@Override
-	default float readFloat() throws SQLException {
-		return getWrapped().readFloat();
-	}
+  @Override
+  default float readFloat() throws SQLException {
+    return getWrapped().readFloat();
+  }
 
-	@Override
-	default double readDouble() throws SQLException {
-		return getWrapped().readDouble();
-	}
+  @Override
+  default double readDouble() throws SQLException {
+    return getWrapped().readDouble();
+  }
 
-	@Override
-	default BigDecimal readBigDecimal() throws SQLException {
-		return getWrapped().readBigDecimal();
-	}
+  @Override
+  default BigDecimal readBigDecimal() throws SQLException {
+    return getWrapped().readBigDecimal();
+  }
 
-	@Override
-	default byte[] readBytes() throws SQLException {
-		return getWrapped().readBytes();
-	}
+  @Override
+  default byte[] readBytes() throws SQLException {
+    return getWrapped().readBytes();
+  }
 
-	@Override
-	default Date readDate() throws SQLException {
-		return getWrapped().readDate();
-	}
+  @Override
+  default Date readDate() throws SQLException {
+    return getWrapped().readDate();
+  }
 
-	@Override
-	default Time readTime() throws SQLException {
-		return getWrapped().readTime();
-	}
+  @Override
+  default Time readTime() throws SQLException {
+    return getWrapped().readTime();
+  }
 
-	@Override
-	default Timestamp readTimestamp() throws SQLException {
-		return getWrapped().readTimestamp();
-	}
+  @Override
+  default Timestamp readTimestamp() throws SQLException {
+    return getWrapped().readTimestamp();
+  }
 
-	@Override
-	ReaderWrapper readCharacterStream() throws SQLException;
+  @Override
+  ReaderWrapper readCharacterStream() throws SQLException;
 
-	@Override
-	InputStreamWrapper readAsciiStream() throws SQLException;
+  @Override
+  InputStreamWrapper readAsciiStream() throws SQLException;
 
-	@Override
-	InputStreamWrapper readBinaryStream() throws SQLException;
+  @Override
+  InputStreamWrapper readBinaryStream() throws SQLException;
 
-	@Override
-	default Object readObject() throws SQLException {
-		return getWrapped().readObject();
-	}
+  @Override
+  default Object readObject() throws SQLException {
+    return getWrapped().readObject();
+  }
 
-	@Override
-	RefWrapper readRef() throws SQLException;
+  @Override
+  RefWrapper readRef() throws SQLException;
 
-	@Override
-	BlobWrapper readBlob() throws SQLException;
+  @Override
+  BlobWrapper readBlob() throws SQLException;
 
-	@Override
-	ClobWrapper readClob() throws SQLException;
+  @Override
+  ClobWrapper readClob() throws SQLException;
 
-	@Override
-	ArrayWrapper readArray() throws SQLException;
+  @Override
+  ArrayWrapper readArray() throws SQLException;
 
-	@Override
-	default boolean wasNull() throws SQLException {
-		return getWrapped().wasNull();
-	}
+  @Override
+  default boolean wasNull() throws SQLException {
+    return getWrapped().wasNull();
+  }
 
-	@Override
-	default URL readURL() throws SQLException {
-		return getWrapped().readURL();
-	}
+  @Override
+  default URL readURL() throws SQLException {
+    return getWrapped().readURL();
+  }
 
-	@Override
-	NClobWrapper readNClob() throws SQLException;
+  @Override
+  NClobWrapper readNClob() throws SQLException;
 
-	@Override
-	default String readNString() throws SQLException {
-		return getWrapped().readNString();
-	}
+  @Override
+  default String readNString() throws SQLException {
+    return getWrapped().readNString();
+  }
 
-	@Override
-	SQLXMLWrapper readSQLXML() throws SQLException;
+  @Override
+  SQLXMLWrapper readSQLXML() throws SQLException;
 
-	@Override
-	RowIdWrapper readRowId() throws SQLException;
+  @Override
+  RowIdWrapper readRowId() throws SQLException;
 
-	@Override
-	default <T> T readObject(Class<T> type) throws SQLException {
-		return getWrapped().readObject(type);
-	}
+  @Override
+  default <T> T readObject(Class<T> type) throws SQLException {
+    return getWrapped().readObject(type);
+  }
 }

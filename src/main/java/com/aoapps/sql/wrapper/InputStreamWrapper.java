@@ -34,88 +34,88 @@ import java.io.InputStream;
  */
 public class InputStreamWrapper extends InputStream implements Wrapper, NoClose {
 
-	private final ConnectionWrapperImpl connectionWrapper;
-	private final InputStream wrapped;
+  private final ConnectionWrapperImpl connectionWrapper;
+  private final InputStream wrapped;
 
-	public InputStreamWrapper(ConnectionWrapperImpl connectionWrapper, InputStream wrapped) {
-		this.connectionWrapper = connectionWrapper;
-		this.wrapped = wrapped;
-	}
+  public InputStreamWrapper(ConnectionWrapperImpl connectionWrapper, InputStream wrapped) {
+    this.connectionWrapper = connectionWrapper;
+    this.wrapped = wrapped;
+  }
 
-	/**
-	 * Gets the connection wrapper.
-	 */
-	protected ConnectionWrapperImpl getConnectionWrapper() {
-		return connectionWrapper;
-	}
+  /**
+   * Gets the connection wrapper.
+   */
+  protected ConnectionWrapperImpl getConnectionWrapper() {
+    return connectionWrapper;
+  }
 
-	/**
-	 * Gets the input stream that is wrapped.
-	 */
-	@Override
-	public InputStream getWrapped() {
-		return wrapped;
-	}
+  /**
+   * Gets the input stream that is wrapped.
+   */
+  @Override
+  public InputStream getWrapped() {
+    return wrapped;
+  }
 
-	@Override
-	public boolean isNoClose() {
-		InputStream in = getWrapped();
-		return (in instanceof NoClose) && ((NoClose)in).isNoClose();
-	}
+  @Override
+  public boolean isNoClose() {
+    InputStream in = getWrapped();
+    return (in instanceof NoClose) && ((NoClose)in).isNoClose();
+  }
 
-	@Override
-	public String toString() {
-		return getWrapped().toString();
-	}
+  @Override
+  public String toString() {
+    return getWrapped().toString();
+  }
 
-	@Override
-	public int read() throws IOException {
-		return getWrapped().read();
-	}
+  @Override
+  public int read() throws IOException {
+    return getWrapped().read();
+  }
 
-	@Override
-	public int read(byte[] b) throws IOException {
-		return getWrapped().read(b);
-	}
+  @Override
+  public int read(byte[] b) throws IOException {
+    return getWrapped().read(b);
+  }
 
-	@Override
-	public int read(byte[] b, int off, int len) throws IOException {
-		return getWrapped().read(b, off, len);
-	}
+  @Override
+  public int read(byte[] b, int off, int len) throws IOException {
+    return getWrapped().read(b, off, len);
+  }
 
-	// Java 9: byte[] readAllBytes() throws IOException;
-	// Java 11: byte[] readNBytes(int len) throws IOException;
-	// Java 9: int readNBytes(byte[] b, int off, int len) throws IOException;
+  // Java 9: byte[] readAllBytes() throws IOException;
+  // Java 11: byte[] readNBytes(int len) throws IOException;
+  // Java 9: int readNBytes(byte[] b, int off, int len) throws IOException;
 
-	@Override
-	public long skip(long n) throws IOException {
-		return getWrapped().skip(n);
-	}
+  @Override
+  public long skip(long n) throws IOException {
+    return getWrapped().skip(n);
+  }
 
-	@Override
-	public int available() throws IOException {
-		return getWrapped().available();
-	}
+  @Override
+  public int available() throws IOException {
+    return getWrapped().available();
+  }
 
-	@Override
-	public void close() throws IOException {
-		getWrapped().close();
-	}
+  @Override
+  public void close() throws IOException {
+    getWrapped().close();
+  }
 
-	@Override
-	public void mark(int readlimit) {
-		getWrapped().mark(readlimit);
-	}
+  @Override
+  public void mark(int readlimit) {
+    getWrapped().mark(readlimit);
+  }
 
-	@Override
-	public void reset() throws IOException {
-		getWrapped().reset();
-	}
+  @Override
+  public void reset() throws IOException {
+    getWrapped().reset();
+  }
 
-	@Override
-	public boolean markSupported() {
-		return getWrapped().markSupported();
-	}
+  @Override
+  public boolean markSupported() {
+    return getWrapped().markSupported();
+  }
 
-	// Java 9: long transferTo(OutputStream out) throws IOException;
+  // Java 9: long transferTo(OutputStream out) throws IOException;
 }

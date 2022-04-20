@@ -33,33 +33,33 @@ import java.sql.Savepoint;
  */
 public class SavepointWrapperImpl implements SavepointWrapper {
 
-	private final ConnectionWrapperImpl connectionWrapper;
-	private final Savepoint wrapped;
+  private final ConnectionWrapperImpl connectionWrapper;
+  private final Savepoint wrapped;
 
-	public SavepointWrapperImpl(ConnectionWrapperImpl connectionWrapper, Savepoint wrapped) {
-		this.connectionWrapper = connectionWrapper;
-		this.wrapped = wrapped;
-	}
+  public SavepointWrapperImpl(ConnectionWrapperImpl connectionWrapper, Savepoint wrapped) {
+    this.connectionWrapper = connectionWrapper;
+    this.wrapped = wrapped;
+  }
 
-	/**
-	 * Gets the connection wrapper.
-	 */
-	protected ConnectionWrapperImpl getConnectionWrapper() {
-		return connectionWrapper;
-	}
+  /**
+   * Gets the connection wrapper.
+   */
+  protected ConnectionWrapperImpl getConnectionWrapper() {
+    return connectionWrapper;
+  }
 
-	@Override
-	public Savepoint getWrapped() {
-		return wrapped;
-	}
+  @Override
+  public Savepoint getWrapped() {
+    return wrapped;
+  }
 
-	@Override
-	public String toString() {
-		return getWrapped().toString();
-	}
+  @Override
+  public String toString() {
+    return getWrapped().toString();
+  }
 
-	@Override
-	public void close() throws SQLException {
-		getConnectionWrapper().releaseSavepoint(this);
-	}
+  @Override
+  public void close() throws SQLException {
+    getConnectionWrapper().releaseSavepoint(this);
+  }
 }

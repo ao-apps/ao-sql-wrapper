@@ -32,50 +32,50 @@ import java.sql.RowId;
  */
 public class RowIdWrapperImpl implements RowIdWrapper {
 
-	private final ConnectionWrapperImpl connectionWrapper;
-	private final RowId wrapped;
+  private final ConnectionWrapperImpl connectionWrapper;
+  private final RowId wrapped;
 
-	public RowIdWrapperImpl(ConnectionWrapperImpl connectionWrapper, RowId wrapped) {
-		this.connectionWrapper = connectionWrapper;
-		this.wrapped = wrapped;
-	}
+  public RowIdWrapperImpl(ConnectionWrapperImpl connectionWrapper, RowId wrapped) {
+    this.connectionWrapper = connectionWrapper;
+    this.wrapped = wrapped;
+  }
 
-	/**
-	 * Gets the connection wrapper.
-	 */
-	protected ConnectionWrapperImpl getConnectionWrapper() {
-		return connectionWrapper;
-	}
+  /**
+   * Gets the connection wrapper.
+   */
+  protected ConnectionWrapperImpl getConnectionWrapper() {
+    return connectionWrapper;
+  }
 
-	@Override
-	public RowId getWrapped() {
-		return wrapped;
-	}
+  @Override
+  public RowId getWrapped() {
+    return wrapped;
+  }
 
-	/**
-	 * Unwraps a {@link RowId}, if wrapped by this wrapper.
-	 *
-	 * @see  ConnectionWrapperImpl#unwrapRowId(java.sql.RowId)
-	 */
-	protected RowId unwrapRowId(RowId rowId) {
-		return getConnectionWrapper().unwrapRowId(rowId);
-	}
+  /**
+   * Unwraps a {@link RowId}, if wrapped by this wrapper.
+   *
+   * @see  ConnectionWrapperImpl#unwrapRowId(java.sql.RowId)
+   */
+  protected RowId unwrapRowId(RowId rowId) {
+    return getConnectionWrapper().unwrapRowId(rowId);
+  }
 
-	@Override
-	public boolean equals(Object obj) {
-		if(obj instanceof RowId) {
-			obj = unwrapRowId((RowId)obj);
-		}
-		return getWrapped().equals(obj);
-	}
+  @Override
+  public boolean equals(Object obj) {
+    if (obj instanceof RowId) {
+      obj = unwrapRowId((RowId)obj);
+    }
+    return getWrapped().equals(obj);
+  }
 
-	@Override
-	public String toString() {
-		return getWrapped().toString();
-	}
+  @Override
+  public String toString() {
+    return getWrapped().toString();
+  }
 
-	@Override
-	public int hashCode() {
-		return getWrapped().hashCode();
-	}
+  @Override
+  public int hashCode() {
+    return getWrapped().hashCode();
+  }
 }

@@ -33,31 +33,31 @@ import java.sql.SQLException;
  */
 public interface RowIdWrapper extends Wrapper, RowId, AutoCloseable {
 
-	/**
-	 * Gets the row ID that is wrapped.
-	 */
-	@Override
-	RowId getWrapped();
+  /**
+   * Gets the row ID that is wrapped.
+   */
+  @Override
+  RowId getWrapped();
 
-	/**
-	 * Releases resources associated with this wrapper.
-	 */
-	@Override
-	default void close() throws SQLException {
-		// Do nothing by default
-	}
+  /**
+   * Releases resources associated with this wrapper.
+   */
+  @Override
+  default void close() throws SQLException {
+    // Do nothing by default
+  }
 
-	@Override
-	boolean equals(Object obj);
+  @Override
+  boolean equals(Object obj);
 
-	@Override
-	default byte[] getBytes() {
-		return getWrapped().getBytes();
-	}
+  @Override
+  default byte[] getBytes() {
+    return getWrapped().getBytes();
+  }
 
-	@Override
-	String toString();
+  @Override
+  String toString();
 
-	@Override
-	int hashCode();
+  @Override
+  int hashCode();
 }

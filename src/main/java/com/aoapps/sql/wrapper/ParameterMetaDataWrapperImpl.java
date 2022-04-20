@@ -32,28 +32,28 @@ import java.sql.ParameterMetaData;
  */
 public class ParameterMetaDataWrapperImpl implements ParameterMetaDataWrapper {
 
-	private final ConnectionWrapperImpl connectionWrapper;
-	private final ParameterMetaData wrapped;
+  private final ConnectionWrapperImpl connectionWrapper;
+  private final ParameterMetaData wrapped;
 
-	public ParameterMetaDataWrapperImpl(ConnectionWrapperImpl connectionWrapper, ParameterMetaData wrapped) {
-		this.connectionWrapper = connectionWrapper;
-		this.wrapped = wrapped;
-	}
+  public ParameterMetaDataWrapperImpl(ConnectionWrapperImpl connectionWrapper, ParameterMetaData wrapped) {
+    this.connectionWrapper = connectionWrapper;
+    this.wrapped = wrapped;
+  }
 
-	/**
-	 * Gets the connection wrapper.
-	 */
-	protected ConnectionWrapperImpl getConnectionWrapper() {
-		return connectionWrapper;
-	}
+  /**
+   * Gets the connection wrapper.
+   */
+  protected ConnectionWrapperImpl getConnectionWrapper() {
+    return connectionWrapper;
+  }
 
-	@Override
-	public ParameterMetaData getWrapped() {
-		return wrapped;
-	}
+  @Override
+  public ParameterMetaData getWrapped() {
+    return wrapped;
+  }
 
-	@Override
-	public String toString() {
-		return getWrapped().toString();
-	}
+  @Override
+  public String toString() {
+    return getWrapped().toString();
+  }
 }

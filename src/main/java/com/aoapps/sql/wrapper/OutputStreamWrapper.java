@@ -34,62 +34,62 @@ import java.io.OutputStream;
  */
 public class OutputStreamWrapper extends OutputStream implements Wrapper, NoClose {
 
-	private final ConnectionWrapperImpl connectionWrapper;
-	private final OutputStream wrapped;
+  private final ConnectionWrapperImpl connectionWrapper;
+  private final OutputStream wrapped;
 
-	public OutputStreamWrapper(ConnectionWrapperImpl connectionWrapper, OutputStream wrapped) {
-		this.connectionWrapper = connectionWrapper;
-		this.wrapped = wrapped;
-	}
+  public OutputStreamWrapper(ConnectionWrapperImpl connectionWrapper, OutputStream wrapped) {
+    this.connectionWrapper = connectionWrapper;
+    this.wrapped = wrapped;
+  }
 
-	/**
-	 * Gets the connection wrapper.
-	 */
-	protected ConnectionWrapperImpl getConnectionWrapper() {
-		return connectionWrapper;
-	}
+  /**
+   * Gets the connection wrapper.
+   */
+  protected ConnectionWrapperImpl getConnectionWrapper() {
+    return connectionWrapper;
+  }
 
-	/**
-	 * Gets the output stream that is wrapped.
-	 */
-	@Override
-	public OutputStream getWrapped() {
-		return wrapped;
-	}
+  /**
+   * Gets the output stream that is wrapped.
+   */
+  @Override
+  public OutputStream getWrapped() {
+    return wrapped;
+  }
 
-	@Override
-	public boolean isNoClose() {
-		OutputStream out = getWrapped();
-		return (out instanceof NoClose) && ((NoClose)out).isNoClose();
-	}
+  @Override
+  public boolean isNoClose() {
+    OutputStream out = getWrapped();
+    return (out instanceof NoClose) && ((NoClose)out).isNoClose();
+  }
 
-	@Override
-	public String toString() {
-		return getWrapped().toString();
-	}
+  @Override
+  public String toString() {
+    return getWrapped().toString();
+  }
 
-	@Override
-	public void write(int b) throws IOException {
-		getWrapped().write(b);
-	}
+  @Override
+  public void write(int b) throws IOException {
+    getWrapped().write(b);
+  }
 
-	@Override
-	public void write(byte[] b) throws IOException {
-		getWrapped().write(b);
-	}
+  @Override
+  public void write(byte[] b) throws IOException {
+    getWrapped().write(b);
+  }
 
-	@Override
-	public void write(byte[] b, int off, int len) throws IOException {
-		getWrapped().write(b, off, len);
-	}
+  @Override
+  public void write(byte[] b, int off, int len) throws IOException {
+    getWrapped().write(b, off, len);
+  }
 
-	@Override
-	public void flush() throws IOException {
-		getWrapped().flush();
-	}
+  @Override
+  public void flush() throws IOException {
+    getWrapped().flush();
+  }
 
-	@Override
-	public void close() throws IOException {
-		getWrapped().close();
-	}
+  @Override
+  public void close() throws IOException {
+    getWrapped().close();
+  }
 }

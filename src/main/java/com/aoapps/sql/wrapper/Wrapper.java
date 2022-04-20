@@ -33,36 +33,44 @@ import java.sql.SQLException;
  */
 public interface Wrapper extends java.sql.Wrapper {
 
-	/**
-	 * Gets the wrapper that is wrapped.
-	 * <p>
-	 * Note: This does not return {@link java.sql.Wrapper} because we use {@link Wrapper} on some objects that are not
-	 * themselves {@link java.sql.Wrapper}, such as {@link Array}.
-	 * </p>
-	 */
-	Object getWrapped();
+  /**
+   * Gets the wrapper that is wrapped.
+   * <p>
+   * Note: This does not return {@link java.sql.Wrapper} because we use {@link Wrapper} on some objects that are not
+   * themselves {@link java.sql.Wrapper}, such as {@link Array}.
+   * </p>
+   */
+  Object getWrapped();
 
-	@Override
-	default <T> T unwrap(Class<T> iface) throws SQLException {
-		if(iface.isInstance(this)) return iface.cast(this);
-		Object wrapped = getWrapped();
-		if(iface.isInstance(wrapped)) return iface.cast(wrapped);
-		if(wrapped instanceof Wrapper) {
-			return ((Wrapper)wrapped).unwrap(iface);
-		} else {
-			throw new SQLException("Nothing to unwrap for " + iface.getName());
-		}
-	}
+  @Override
+  default <T> T unwrap(Class<T> iface) throws SQLException {
+    if (iface.isInstance(this)) {
+      return iface.cast(this);
+    }
+    Object wrapped = getWrapped();
+    if (iface.isInstance(wrapped)) {
+      return iface.cast(wrapped);
+    }
+    if (wrapped instanceof Wrapper) {
+      return ((Wrapper)wrapped).unwrap(iface);
+    } else {
+      throw new SQLException("Nothing to unwrap for " + iface.getName());
+    }
+  }
 
-	@Override
-	default boolean isWrapperFor(Class<?> iface) throws SQLException {
-		if(iface.isInstance(this)) return true;
-		Object wrapped = getWrapped();
-		if(iface.isInstance(wrapped)) return true;
-		if(wrapped instanceof Wrapper) {
-			return ((Wrapper)wrapped).isWrapperFor(iface);
-		} else {
-			return false;
-		}
-	}
+  @Override
+  default boolean isWrapperFor(Class<?> iface) throws SQLException {
+    if (iface.isInstance(this)) {
+      return true;
+    }
+    Object wrapped = getWrapped();
+    if (iface.isInstance(wrapped)) {
+      return true;
+    }
+    if (wrapped instanceof Wrapper) {
+      return ((Wrapper)wrapped).isWrapperFor(iface);
+    } else {
+      return false;
+    }
+  }
 }

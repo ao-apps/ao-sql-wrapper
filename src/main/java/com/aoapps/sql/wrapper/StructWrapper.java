@@ -34,33 +34,33 @@ import java.util.Map;
  */
 public interface StructWrapper extends Wrapper, Struct, AutoCloseable {
 
-	/**
-	 * Gets the struct that is wrapped.
-	 */
-	@Override
-	Struct getWrapped();
+  /**
+   * Gets the struct that is wrapped.
+   */
+  @Override
+  Struct getWrapped();
 
-	/**
-	 * Releases resources associated with this wrapper.
-	 */
-	@Override
-	default void close() throws SQLException {
-		// Do nothing by default
-	}
+  /**
+   * Releases resources associated with this wrapper.
+   */
+  @Override
+  default void close() throws SQLException {
+    // Do nothing by default
+  }
 
-	@Override
-	default String getSQLTypeName() throws SQLException {
-		return getWrapped().getSQLTypeName();
-	}
+  @Override
+  default String getSQLTypeName() throws SQLException {
+    return getWrapped().getSQLTypeName();
+  }
 
-	@Override
-	default Object[] getAttributes() throws SQLException {
-		return getWrapped().getAttributes();
-	}
+  @Override
+  default Object[] getAttributes() throws SQLException {
+    return getWrapped().getAttributes();
+  }
 
-	@Override
-	default Object[] getAttributes(Map<String, Class<?>> map) throws SQLException {
-		// TODO: How can we wrap SQLData on UDT maps?
-		return getWrapped().getAttributes(map);
-	}
+  @Override
+  default Object[] getAttributes(Map<String, Class<?>> map) throws SQLException {
+    // TODO: How can we wrap SQLData on UDT maps?
+    return getWrapped().getAttributes(map);
+  }
 }

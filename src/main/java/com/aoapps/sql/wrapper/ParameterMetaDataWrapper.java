@@ -33,62 +33,62 @@ import java.sql.SQLException;
  */
 public interface ParameterMetaDataWrapper extends Wrapper, ParameterMetaData, AutoCloseable {
 
-	/**
-	 * Gets the parameter meta data that is wrapped.
-	 */
-	@Override
-	ParameterMetaData getWrapped();
+  /**
+   * Gets the parameter meta data that is wrapped.
+   */
+  @Override
+  ParameterMetaData getWrapped();
 
-	/**
-	 * Releases resources associated with this wrapper.
-	 */
-	@Override
-	default void close() throws SQLException {
-		// Do nothing by default
-	}
+  /**
+   * Releases resources associated with this wrapper.
+   */
+  @Override
+  default void close() throws SQLException {
+    // Do nothing by default
+  }
 
-	@Override
-	default int getParameterCount() throws SQLException {
-		return getWrapped().getParameterCount();
-	}
+  @Override
+  default int getParameterCount() throws SQLException {
+    return getWrapped().getParameterCount();
+  }
 
-	@Override
-	default int isNullable(int param) throws SQLException {
-		return getWrapped().isNullable(param);
-	}
+  @Override
+  default int isNullable(int param) throws SQLException {
+    return getWrapped().isNullable(param);
+  }
 
-	@Override
-	default boolean isSigned(int param) throws SQLException {
-		return getWrapped().isSigned(param);
-	}
+  @Override
+  default boolean isSigned(int param) throws SQLException {
+    return getWrapped().isSigned(param);
+  }
 
-	@Override
-	default int getPrecision(int param) throws SQLException {
-		return getWrapped().getPrecision(param);
-	}
+  @Override
+  default int getPrecision(int param) throws SQLException {
+    return getWrapped().getPrecision(param);
+  }
 
-	@Override
-	default int getScale(int param) throws SQLException {
-		return getWrapped().getScale(param);
-	}
+  @Override
+  default int getScale(int param) throws SQLException {
+    return getWrapped().getScale(param);
+  }
 
-	@Override
-	default int getParameterType(int param) throws SQLException {
-		return getWrapped().getParameterType(param);
-	}
+  @Override
+  default int getParameterType(int param) throws SQLException {
+    return getWrapped().getParameterType(param);
+  }
 
-	@Override
-	default String getParameterTypeName(int param) throws SQLException {
-		return getWrapped().getParameterTypeName(param);
-	}
+  @Override
+  default String getParameterTypeName(int param) throws SQLException {
+    return getWrapped().getParameterTypeName(param);
+  }
 
-	@Override
-	default String getParameterClassName(int param) throws SQLException {
-		return getWrapped().getParameterClassName(param);
-	}
+  @Override
+  default String getParameterClassName(int param) throws SQLException {
+    return getWrapped().getParameterClassName(param);
+  }
 
-	@Override
-	default int getParameterMode(int param) throws SQLException {
-		return getWrapped().getParameterMode(param);
-	}
+  @Override
+  default int getParameterMode(int param) throws SQLException {
+    return getWrapped().getParameterMode(param);
+  }
 }

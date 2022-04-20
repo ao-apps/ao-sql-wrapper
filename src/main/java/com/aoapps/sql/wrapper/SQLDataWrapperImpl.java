@@ -35,66 +35,66 @@ import java.sql.SQLOutput;
  */
 public class SQLDataWrapperImpl implements SQLDataWrapper {
 
-	private final ConnectionWrapperImpl connectionWrapper;
-	private final SQLData wrapped;
+  private final ConnectionWrapperImpl connectionWrapper;
+  private final SQLData wrapped;
 
-	public SQLDataWrapperImpl(ConnectionWrapperImpl connectionWrapper, SQLData wrapped) {
-		this.connectionWrapper = connectionWrapper;
-		this.wrapped = wrapped;
-	}
+  public SQLDataWrapperImpl(ConnectionWrapperImpl connectionWrapper, SQLData wrapped) {
+    this.connectionWrapper = connectionWrapper;
+    this.wrapped = wrapped;
+  }
 
-	/**
-	 * Gets the connection wrapper.
-	 */
-	protected ConnectionWrapperImpl getConnectionWrapper() {
-		return connectionWrapper;
-	}
+  /**
+   * Gets the connection wrapper.
+   */
+  protected ConnectionWrapperImpl getConnectionWrapper() {
+    return connectionWrapper;
+  }
 
-	@Override
-	public SQLData getWrapped() {
-		return wrapped;
-	}
+  @Override
+  public SQLData getWrapped() {
+    return wrapped;
+  }
 
-	@Override
-	public String toString() {
-		return getWrapped().toString();
-	}
+  @Override
+  public String toString() {
+    return getWrapped().toString();
+  }
 
-	/**
-	 * Wraps a {@link SQLInput}, if not already wrapped by this wrapper.
-	 *
-	 * @see  ConnectionWrapperImpl#wrapSQLInput(java.sql.SQLInput)
-	 */
-	protected SQLInputWrapperImpl wrapSQLInput(SQLInput sqlInput) {
-		return getConnectionWrapper().wrapSQLInput(sqlInput);
-	}
+  /**
+   * Wraps a {@link SQLInput}, if not already wrapped by this wrapper.
+   *
+   * @see  ConnectionWrapperImpl#wrapSQLInput(java.sql.SQLInput)
+   */
+  protected SQLInputWrapperImpl wrapSQLInput(SQLInput sqlInput) {
+    return getConnectionWrapper().wrapSQLInput(sqlInput);
+  }
 
-	/**
-	 * Wraps a {@link SQLOutput}, if not already wrapped by this wrapper.
-	 *
-	 * @see  ConnectionWrapperImpl#wrapSQLOutput(java.sql.SQLOutput)
-	 */
-	protected SQLOutputWrapperImpl wrapSQLOutput(SQLOutput sqlOutput) {
-		return getConnectionWrapper().wrapSQLOutput(sqlOutput);
-	}
+  /**
+   * Wraps a {@link SQLOutput}, if not already wrapped by this wrapper.
+   *
+   * @see  ConnectionWrapperImpl#wrapSQLOutput(java.sql.SQLOutput)
+   */
+  protected SQLOutputWrapperImpl wrapSQLOutput(SQLOutput sqlOutput) {
+    return getConnectionWrapper().wrapSQLOutput(sqlOutput);
+  }
 
-	/**
-	 * @see  SQLInputWrapperImpl#close()
-	 */
-	@Override
-	public void readSQL(SQLInput stream, String typeName) throws SQLException {
-		try (SQLInputWrapperImpl streamWrapper = wrapSQLInput(stream)) {
-			getWrapped().readSQL(streamWrapper, typeName);
-		}
-	}
+  /**
+   * @see  SQLInputWrapperImpl#close()
+   */
+  @Override
+  public void readSQL(SQLInput stream, String typeName) throws SQLException {
+    try (SQLInputWrapperImpl streamWrapper = wrapSQLInput(stream)) {
+      getWrapped().readSQL(streamWrapper, typeName);
+    }
+  }
 
-	/**
-	 * @see  SQLOutputWrapperImpl#close()
-	 */
-	@Override
-	public void writeSQL(SQLOutput stream) throws SQLException {
-		try (SQLOutputWrapperImpl streamWrapper = wrapSQLOutput(stream)) {
-			getWrapped().writeSQL(streamWrapper);
-		}
-	}
+  /**
+   * @see  SQLOutputWrapperImpl#close()
+   */
+  @Override
+  public void writeSQL(SQLOutput stream) throws SQLException {
+    try (SQLOutputWrapperImpl streamWrapper = wrapSQLOutput(stream)) {
+      getWrapped().writeSQL(streamWrapper);
+    }
+  }
 }

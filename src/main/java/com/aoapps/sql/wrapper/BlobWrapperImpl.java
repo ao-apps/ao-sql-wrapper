@@ -35,87 +35,87 @@ import java.sql.SQLException;
  */
 public class BlobWrapperImpl implements BlobWrapper {
 
-	private final ConnectionWrapperImpl connectionWrapper;
-	private final Blob wrapped;
+  private final ConnectionWrapperImpl connectionWrapper;
+  private final Blob wrapped;
 
-	public BlobWrapperImpl(ConnectionWrapperImpl connectionWrapper, Blob wrapped) {
-		this.connectionWrapper = connectionWrapper;
-		this.wrapped = wrapped;
-	}
+  public BlobWrapperImpl(ConnectionWrapperImpl connectionWrapper, Blob wrapped) {
+    this.connectionWrapper = connectionWrapper;
+    this.wrapped = wrapped;
+  }
 
-	/**
-	 * Gets the connection wrapper.
-	 */
-	protected ConnectionWrapperImpl getConnectionWrapper() {
-		return connectionWrapper;
-	}
+  /**
+   * Gets the connection wrapper.
+   */
+  protected ConnectionWrapperImpl getConnectionWrapper() {
+    return connectionWrapper;
+  }
 
-	@Override
-	public Blob getWrapped() {
-		return wrapped;
-	}
+  @Override
+  public Blob getWrapped() {
+    return wrapped;
+  }
 
-	@Override
-	public String toString() {
-		return getWrapped().toString();
-	}
+  @Override
+  public String toString() {
+    return getWrapped().toString();
+  }
 
-	/**
-	 * Unwraps a {@link Blob}, if wrapped by this wrapper.
-	 *
-	 * @see  ConnectionWrapperImpl#unwrapBlob(java.sql.Blob)
-	 */
-	protected Blob unwrapBlob(Blob blob) {
-		return getConnectionWrapper().unwrapBlob(blob);
-	}
+  /**
+   * Unwraps a {@link Blob}, if wrapped by this wrapper.
+   *
+   * @see  ConnectionWrapperImpl#unwrapBlob(java.sql.Blob)
+   */
+  protected Blob unwrapBlob(Blob blob) {
+    return getConnectionWrapper().unwrapBlob(blob);
+  }
 
-	/**
-	 * Wraps an {@link InputStream}, if not already wrapped by this wrapper.
-	 *
-	 * @see  ConnectionWrapperImpl#wrapInputStream(java.io.InputStream)
-	 */
-	protected InputStreamWrapper wrapInputStream(InputStream in) {
-		return getConnectionWrapper().wrapInputStream(in);
-	}
+  /**
+   * Wraps an {@link InputStream}, if not already wrapped by this wrapper.
+   *
+   * @see  ConnectionWrapperImpl#wrapInputStream(java.io.InputStream)
+   */
+  protected InputStreamWrapper wrapInputStream(InputStream in) {
+    return getConnectionWrapper().wrapInputStream(in);
+  }
 
-	/**
-	 * Wraps an {@link OutputStream}, if not already wrapped by this wrapper.
-	 *
-	 * @see  ConnectionWrapperImpl#wrapOutputStream(java.io.OutputStream)
-	 */
-	protected OutputStreamWrapper wrapOutputStream(OutputStream out) {
-		return getConnectionWrapper().wrapOutputStream(out);
-	}
+  /**
+   * Wraps an {@link OutputStream}, if not already wrapped by this wrapper.
+   *
+   * @see  ConnectionWrapperImpl#wrapOutputStream(java.io.OutputStream)
+   */
+  protected OutputStreamWrapper wrapOutputStream(OutputStream out) {
+    return getConnectionWrapper().wrapOutputStream(out);
+  }
 
-	/**
-	 * @see  #wrapInputStream(java.io.InputStream)
-	 */
-	@Override
-	public InputStreamWrapper getBinaryStream() throws SQLException {
-		return wrapInputStream(getWrapped().getBinaryStream());
-	}
+  /**
+   * @see  #wrapInputStream(java.io.InputStream)
+   */
+  @Override
+  public InputStreamWrapper getBinaryStream() throws SQLException {
+    return wrapInputStream(getWrapped().getBinaryStream());
+  }
 
-	/**
-	 * @see  #unwrapBlob(java.sql.Blob)
-	 */
-	@Override
-	public long position(Blob pattern, long start) throws SQLException {
-		return getWrapped().position(unwrapBlob(pattern), start);
-	}
+  /**
+   * @see  #unwrapBlob(java.sql.Blob)
+   */
+  @Override
+  public long position(Blob pattern, long start) throws SQLException {
+    return getWrapped().position(unwrapBlob(pattern), start);
+  }
 
-	/**
-	 * @see  #wrapOutputStream(java.io.OutputStream)
-	 */
-	@Override
-	public OutputStreamWrapper setBinaryStream(long pos) throws SQLException {
-		return wrapOutputStream(getWrapped().setBinaryStream(pos));
-	}
+  /**
+   * @see  #wrapOutputStream(java.io.OutputStream)
+   */
+  @Override
+  public OutputStreamWrapper setBinaryStream(long pos) throws SQLException {
+    return wrapOutputStream(getWrapped().setBinaryStream(pos));
+  }
 
-	/**
-	 * @see  #wrapInputStream(java.io.InputStream)
-	 */
-	@Override
-	public InputStreamWrapper getBinaryStream(long pos, long length) throws SQLException {
-		return wrapInputStream(getWrapped().getBinaryStream(pos, length));
-	}
+  /**
+   * @see  #wrapInputStream(java.io.InputStream)
+   */
+  @Override
+  public InputStreamWrapper getBinaryStream(long pos, long length) throws SQLException {
+    return wrapInputStream(getWrapped().getBinaryStream(pos, length));
+  }
 }

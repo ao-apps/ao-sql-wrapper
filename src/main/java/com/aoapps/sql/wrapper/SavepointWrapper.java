@@ -34,27 +34,27 @@ import java.sql.Savepoint;
  */
 public interface SavepointWrapper extends Wrapper, Savepoint, AutoCloseable {
 
-	/**
-	 * Gets the savepoint that is wrapped.
-	 */
-	@Override
-	Savepoint getWrapped();
+  /**
+   * Gets the savepoint that is wrapped.
+   */
+  @Override
+  Savepoint getWrapped();
 
-	/**
-	 * Calls {@link Connection#releaseSavepoint(java.sql.Savepoint)}
-	 *
-	 * @see  Connection#releaseSavepoint(java.sql.Savepoint)
-	 */
-	@Override
-	void close() throws SQLException;
+  /**
+   * Calls {@link Connection#releaseSavepoint(java.sql.Savepoint)}
+   *
+   * @see  Connection#releaseSavepoint(java.sql.Savepoint)
+   */
+  @Override
+  void close() throws SQLException;
 
-	@Override
-	default int getSavepointId() throws SQLException {
-		return getWrapped().getSavepointId();
-	}
+  @Override
+  default int getSavepointId() throws SQLException {
+    return getWrapped().getSavepointId();
+  }
 
-	@Override
-	default String getSavepointName() throws SQLException {
-		return getWrapped().getSavepointName();
-	}
+  @Override
+  default String getSavepointName() throws SQLException {
+    return getWrapped().getSavepointName();
+  }
 }

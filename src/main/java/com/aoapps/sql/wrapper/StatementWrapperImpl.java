@@ -34,68 +34,68 @@ import java.sql.Statement;
  */
 public class StatementWrapperImpl implements StatementWrapper {
 
-	private final ConnectionWrapperImpl connectionWrapper;
-	private final Statement wrapped;
+  private final ConnectionWrapperImpl connectionWrapper;
+  private final Statement wrapped;
 
-	public StatementWrapperImpl(ConnectionWrapperImpl connectionWrapper, Statement wrapped) {
-		this.connectionWrapper = connectionWrapper;
-		this.wrapped = wrapped;
-	}
+  public StatementWrapperImpl(ConnectionWrapperImpl connectionWrapper, Statement wrapped) {
+    this.connectionWrapper = connectionWrapper;
+    this.wrapped = wrapped;
+  }
 
-	/**
-	 * Gets the connection wrapper.
-	 */
-	protected ConnectionWrapperImpl getConnectionWrapper() {
-		return connectionWrapper;
-	}
+  /**
+   * Gets the connection wrapper.
+   */
+  protected ConnectionWrapperImpl getConnectionWrapper() {
+    return connectionWrapper;
+  }
 
-	@Override
-	public Statement getWrapped() {
-		return wrapped;
-	}
+  @Override
+  public Statement getWrapped() {
+    return wrapped;
+  }
 
-	@Override
-	public String toString() {
-		return getWrapped().toString();
-	}
+  @Override
+  public String toString() {
+    return getWrapped().toString();
+  }
 
-	/**
-	 * Wraps a {@link ResultSet}, if not already wrapped by this wrapper.
-	 *
-	 * @see  ConnectionWrapperImpl#wrapResultSet(com.aoapps.sql.wrapper.StatementWrapperImpl, java.sql.ResultSet)
-	 */
-	protected ResultSetWrapperImpl wrapResultSet(ResultSet results) throws SQLException {
-		return getConnectionWrapper().wrapResultSet(this, results);
-	}
+  /**
+   * Wraps a {@link ResultSet}, if not already wrapped by this wrapper.
+   *
+   * @see  ConnectionWrapperImpl#wrapResultSet(com.aoapps.sql.wrapper.StatementWrapperImpl, java.sql.ResultSet)
+   */
+  protected ResultSetWrapperImpl wrapResultSet(ResultSet results) throws SQLException {
+    return getConnectionWrapper().wrapResultSet(this, results);
+  }
 
-	/**
-	 * @see  #wrapResultSet(java.sql.ResultSet)
-	 */
-	@Override
-	public ResultSetWrapperImpl executeQuery(String sql) throws SQLException {
-		return wrapResultSet(getWrapped().executeQuery(sql));
-	}
+  /**
+   * @see  #wrapResultSet(java.sql.ResultSet)
+   */
+  @Override
+  public ResultSetWrapperImpl executeQuery(String sql) throws SQLException {
+    return wrapResultSet(getWrapped().executeQuery(sql));
+  }
 
-	/**
-	 * @see  #wrapResultSet(java.sql.ResultSet)
-	 */
-	@Override
-	public ResultSetWrapperImpl getResultSet() throws SQLException {
-		return wrapResultSet(getWrapped().getResultSet());
-	}
+  /**
+   * @see  #wrapResultSet(java.sql.ResultSet)
+   */
+  @Override
+  public ResultSetWrapperImpl getResultSet() throws SQLException {
+    return wrapResultSet(getWrapped().getResultSet());
+  }
 
-	@Override
-	public ConnectionWrapperImpl getConnection() throws SQLException {
-		ConnectionWrapperImpl _connectionWrapper = getConnectionWrapper();
-		assert getWrapped().getConnection() == _connectionWrapper.getWrapped();
-		return _connectionWrapper;
-	}
+  @Override
+  public ConnectionWrapperImpl getConnection() throws SQLException {
+    ConnectionWrapperImpl _connectionWrapper = getConnectionWrapper();
+    assert getWrapped().getConnection() == _connectionWrapper.getWrapped();
+    return _connectionWrapper;
+  }
 
-	/**
-	 * @see  #wrapResultSet(java.sql.ResultSet)
-	 */
-	@Override
-	public ResultSetWrapperImpl getGeneratedKeys() throws SQLException {
-		return wrapResultSet(getWrapped().getGeneratedKeys());
-	}
+  /**
+   * @see  #wrapResultSet(java.sql.ResultSet)
+   */
+  @Override
+  public ResultSetWrapperImpl getGeneratedKeys() throws SQLException {
+    return wrapResultSet(getWrapped().getGeneratedKeys());
+  }
 }

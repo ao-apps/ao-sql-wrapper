@@ -35,28 +35,28 @@ import java.sql.SQLOutput;
  */
 public interface SQLDataWrapper extends Wrapper, SQLData, AutoCloseable {
 
-	/**
-	 * Gets the SQL data that is wrapped.
-	 */
-	@Override
-	SQLData getWrapped();
+  /**
+   * Gets the SQL data that is wrapped.
+   */
+  @Override
+  SQLData getWrapped();
 
-	/**
-	 * Releases resources associated with this wrapper.
-	 */
-	@Override
-	default void close() throws SQLException {
-		// Do nothing by default
-	}
+  /**
+   * Releases resources associated with this wrapper.
+   */
+  @Override
+  default void close() throws SQLException {
+    // Do nothing by default
+  }
 
-	@Override
-	default String getSQLTypeName() throws SQLException {
-		return getWrapped().getSQLTypeName();
-	}
+  @Override
+  default String getSQLTypeName() throws SQLException {
+    return getWrapped().getSQLTypeName();
+  }
 
-	@Override
-	void readSQL(SQLInput stream, String typeName) throws SQLException;
+  @Override
+  void readSQL(SQLInput stream, String typeName) throws SQLException;
 
-	@Override
-	void writeSQL(SQLOutput stream) throws SQLException;
+  @Override
+  void writeSQL(SQLOutput stream) throws SQLException;
 }

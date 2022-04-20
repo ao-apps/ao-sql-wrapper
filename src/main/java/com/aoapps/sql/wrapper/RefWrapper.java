@@ -34,38 +34,38 @@ import java.util.Map;
  */
 public interface RefWrapper extends Wrapper, Ref, AutoCloseable {
 
-	/**
-	 * Gets the ref that is wrapped.
-	 */
-	@Override
-	Ref getWrapped();
+  /**
+   * Gets the ref that is wrapped.
+   */
+  @Override
+  Ref getWrapped();
 
-	/**
-	 * Releases resources associated with this wrapper.
-	 */
-	@Override
-	default void close() throws SQLException {
-		// Do nothing by default
-	}
+  /**
+   * Releases resources associated with this wrapper.
+   */
+  @Override
+  default void close() throws SQLException {
+    // Do nothing by default
+  }
 
-	@Override
-	default String getBaseTypeName() throws SQLException {
-		return getWrapped().getBaseTypeName();
-	}
+  @Override
+  default String getBaseTypeName() throws SQLException {
+    return getWrapped().getBaseTypeName();
+  }
 
-	@Override
-	default Object getObject(Map<String, Class<?>> map) throws SQLException {
-		// TODO: How can we wrap SQLData on UDT maps?
-		return getWrapped().getObject(map);
-	}
+  @Override
+  default Object getObject(Map<String, Class<?>> map) throws SQLException {
+    // TODO: How can we wrap SQLData on UDT maps?
+    return getWrapped().getObject(map);
+  }
 
-	@Override
-	default Object getObject() throws SQLException {
-		return getWrapped().getObject();
-	}
+  @Override
+  default Object getObject() throws SQLException {
+    return getWrapped().getObject();
+  }
 
-	@Override
-	default void setObject(Object value) throws SQLException {
-		getWrapped().setObject(value);
-	}
+  @Override
+  default void setObject(Object value) throws SQLException {
+    getWrapped().setObject(value);
+  }
 }

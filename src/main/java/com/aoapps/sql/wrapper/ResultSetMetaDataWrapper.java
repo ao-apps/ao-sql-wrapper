@@ -33,122 +33,122 @@ import java.sql.SQLException;
  */
 public interface ResultSetMetaDataWrapper extends Wrapper, ResultSetMetaData, AutoCloseable {
 
-	/**
-	 * Gets the result set meta data that is wrapped.
-	 */
-	@Override
-	ResultSetMetaData getWrapped();
+  /**
+   * Gets the result set meta data that is wrapped.
+   */
+  @Override
+  ResultSetMetaData getWrapped();
 
-	/**
-	 * Releases resources associated with this wrapper.
-	 */
-	@Override
-	default void close() throws SQLException {
-		// Do nothing by default
-	}
+  /**
+   * Releases resources associated with this wrapper.
+   */
+  @Override
+  default void close() throws SQLException {
+    // Do nothing by default
+  }
 
-	@Override
-	default int getColumnCount() throws SQLException {
-		return getWrapped().getColumnCount();
-	}
+  @Override
+  default int getColumnCount() throws SQLException {
+    return getWrapped().getColumnCount();
+  }
 
-	@Override
-	default boolean isAutoIncrement(int column) throws SQLException {
-		return getWrapped().isAutoIncrement(column);
-	}
+  @Override
+  default boolean isAutoIncrement(int column) throws SQLException {
+    return getWrapped().isAutoIncrement(column);
+  }
 
-	@Override
-	default boolean isCaseSensitive(int column) throws SQLException {
-		return getWrapped().isCaseSensitive(column);
-	}
+  @Override
+  default boolean isCaseSensitive(int column) throws SQLException {
+    return getWrapped().isCaseSensitive(column);
+  }
 
-	@Override
-	default boolean isSearchable(int column) throws SQLException {
-		return getWrapped().isSearchable(column);
-	}
+  @Override
+  default boolean isSearchable(int column) throws SQLException {
+    return getWrapped().isSearchable(column);
+  }
 
-	@Override
-	default boolean isCurrency(int column) throws SQLException {
-		return getWrapped().isCurrency(column);
-	}
+  @Override
+  default boolean isCurrency(int column) throws SQLException {
+    return getWrapped().isCurrency(column);
+  }
 
-	@Override
-	default int isNullable(int column) throws SQLException {
-		return getWrapped().isNullable(column);
-	}
+  @Override
+  default int isNullable(int column) throws SQLException {
+    return getWrapped().isNullable(column);
+  }
 
-	@Override
-	default boolean isSigned(int column) throws SQLException {
-		return getWrapped().isSigned(column);
-	}
+  @Override
+  default boolean isSigned(int column) throws SQLException {
+    return getWrapped().isSigned(column);
+  }
 
-	@Override
-	default int getColumnDisplaySize(int column) throws SQLException {
-		return getWrapped().getColumnDisplaySize(column);
-	}
+  @Override
+  default int getColumnDisplaySize(int column) throws SQLException {
+    return getWrapped().getColumnDisplaySize(column);
+  }
 
-	@Override
-	default String getColumnLabel(int column) throws SQLException {
-		return getWrapped().getColumnLabel(column);
-	}
+  @Override
+  default String getColumnLabel(int column) throws SQLException {
+    return getWrapped().getColumnLabel(column);
+  }
 
-	@Override
-	default String getColumnName(int column) throws SQLException {
-		return getWrapped().getColumnName(column);
-	}
+  @Override
+  default String getColumnName(int column) throws SQLException {
+    return getWrapped().getColumnName(column);
+  }
 
-	@Override
-	default String getSchemaName(int column) throws SQLException {
-		return getWrapped().getSchemaName(column);
-	}
+  @Override
+  default String getSchemaName(int column) throws SQLException {
+    return getWrapped().getSchemaName(column);
+  }
 
-	@Override
-	default int getPrecision(int column) throws SQLException {
-		return getWrapped().getPrecision(column);
-	}
+  @Override
+  default int getPrecision(int column) throws SQLException {
+    return getWrapped().getPrecision(column);
+  }
 
-	@Override
-	default int getScale(int column) throws SQLException {
-		return getWrapped().getScale(column);
-	}
+  @Override
+  default int getScale(int column) throws SQLException {
+    return getWrapped().getScale(column);
+  }
 
-	@Override
-	default String getTableName(int column) throws SQLException {
-		return getWrapped().getTableName(column);
-	}
+  @Override
+  default String getTableName(int column) throws SQLException {
+    return getWrapped().getTableName(column);
+  }
 
-	@Override
-	default String getCatalogName(int column) throws SQLException {
-		return getWrapped().getCatalogName(column);
-	}
+  @Override
+  default String getCatalogName(int column) throws SQLException {
+    return getWrapped().getCatalogName(column);
+  }
 
-	@Override
-	default int getColumnType(int column) throws SQLException {
-		return getWrapped().getColumnType(column);
-	}
+  @Override
+  default int getColumnType(int column) throws SQLException {
+    return getWrapped().getColumnType(column);
+  }
 
-	@Override
-	default String getColumnTypeName(int column) throws SQLException {
-		return getWrapped().getColumnTypeName(column);
-	}
+  @Override
+  default String getColumnTypeName(int column) throws SQLException {
+    return getWrapped().getColumnTypeName(column);
+  }
 
-	@Override
-	default boolean isReadOnly(int column) throws SQLException {
-		return getWrapped().isReadOnly(column);
-	}
+  @Override
+  default boolean isReadOnly(int column) throws SQLException {
+    return getWrapped().isReadOnly(column);
+  }
 
-	@Override
-	default boolean isWritable(int column) throws SQLException {
-		return getWrapped().isWritable(column);
-	}
+  @Override
+  default boolean isWritable(int column) throws SQLException {
+    return getWrapped().isWritable(column);
+  }
 
-	@Override
-	default boolean isDefinitelyWritable(int column) throws SQLException {
-		return getWrapped().isDefinitelyWritable(column);
-	}
+  @Override
+  default boolean isDefinitelyWritable(int column) throws SQLException {
+    return getWrapped().isDefinitelyWritable(column);
+  }
 
-	@Override
-	default String getColumnClassName(int column) throws SQLException {
-		return getWrapped().getColumnClassName(column);
-	}
+  @Override
+  default String getColumnClassName(int column) throws SQLException {
+    return getWrapped().getColumnClassName(column);
+  }
 }

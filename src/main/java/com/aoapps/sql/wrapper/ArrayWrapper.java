@@ -34,68 +34,68 @@ import java.util.Map;
  */
 public interface ArrayWrapper extends Wrapper, Array, AutoCloseable {
 
-	/**
-	 * Gets the array that is wrapped.
-	 */
-	@Override
-	Array getWrapped();
+  /**
+   * Gets the array that is wrapped.
+   */
+  @Override
+  Array getWrapped();
 
-	/**
-	 * Calls {@link #free()}
-	 *
-	 * @see  #free()
-	 */
-	@Override
-	default void close() throws SQLException {
-		free();
-	}
+  /**
+   * Calls {@link #free()}
+   *
+   * @see  #free()
+   */
+  @Override
+  default void close() throws SQLException {
+    free();
+  }
 
-	@Override
-	default String getBaseTypeName() throws SQLException {
-		return getWrapped().getBaseTypeName();
-	}
+  @Override
+  default String getBaseTypeName() throws SQLException {
+    return getWrapped().getBaseTypeName();
+  }
 
-	@Override
-	default int getBaseType() throws SQLException {
-		return getWrapped().getBaseType();
-	}
+  @Override
+  default int getBaseType() throws SQLException {
+    return getWrapped().getBaseType();
+  }
 
-	@Override
-	default Object getArray() throws SQLException {
-		return getWrapped().getArray();
-	}
+  @Override
+  default Object getArray() throws SQLException {
+    return getWrapped().getArray();
+  }
 
-	@Override
-	default Object getArray(Map<String, Class<?>> map) throws SQLException {
-		// TODO: How can we wrap SQLData on UDT maps?
-		return getWrapped().getArray(map);
-	}
+  @Override
+  default Object getArray(Map<String, Class<?>> map) throws SQLException {
+    // TODO: How can we wrap SQLData on UDT maps?
+    return getWrapped().getArray(map);
+  }
 
-	@Override
-	default Object getArray(long index, int count) throws SQLException {
-		return getWrapped().getArray(index, count);
-	}
+  @Override
+  default Object getArray(long index, int count) throws SQLException {
+    return getWrapped().getArray(index, count);
+  }
 
-	@Override
-	default Object getArray(long index, int count, Map<String, Class<?>> map) throws SQLException {
-		// TODO: How can we wrap SQLData on UDT maps?
-		return getWrapped().getArray(index, count, map);
-	}
+  @Override
+  default Object getArray(long index, int count, Map<String, Class<?>> map) throws SQLException {
+    // TODO: How can we wrap SQLData on UDT maps?
+    return getWrapped().getArray(index, count, map);
+  }
 
-	@Override
-	ResultSetWrapper getResultSet() throws SQLException;
+  @Override
+  ResultSetWrapper getResultSet() throws SQLException;
 
-	@Override
-	ResultSetWrapper getResultSet(Map<String, Class<?>> map) throws SQLException;
+  @Override
+  ResultSetWrapper getResultSet(Map<String, Class<?>> map) throws SQLException;
 
-	@Override
-	ResultSetWrapper getResultSet(long index, int count) throws SQLException;
+  @Override
+  ResultSetWrapper getResultSet(long index, int count) throws SQLException;
 
-	@Override
-	ResultSetWrapper getResultSet(long index, int count, Map<String, Class<?>> map) throws SQLException;
+  @Override
+  ResultSetWrapper getResultSet(long index, int count, Map<String, Class<?>> map) throws SQLException;
 
-	@Override
-	default void free() throws SQLException {
-		getWrapped().free();
-	}
+  @Override
+  default void free() throws SQLException {
+    getWrapped().free();
+  }
 }

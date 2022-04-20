@@ -32,28 +32,28 @@ import java.sql.Ref;
  */
 public class RefWrapperImpl implements RefWrapper {
 
-	private final ConnectionWrapperImpl connectionWrapper;
-	private final Ref wrapped;
+  private final ConnectionWrapperImpl connectionWrapper;
+  private final Ref wrapped;
 
-	public RefWrapperImpl(ConnectionWrapperImpl connectionWrapper, Ref wrapped) {
-		this.connectionWrapper = connectionWrapper;
-		this.wrapped = wrapped;
-	}
+  public RefWrapperImpl(ConnectionWrapperImpl connectionWrapper, Ref wrapped) {
+    this.connectionWrapper = connectionWrapper;
+    this.wrapped = wrapped;
+  }
 
-	/**
-	 * Gets the connection wrapper.
-	 */
-	protected ConnectionWrapperImpl getConnectionWrapper() {
-		return connectionWrapper;
-	}
+  /**
+   * Gets the connection wrapper.
+   */
+  protected ConnectionWrapperImpl getConnectionWrapper() {
+    return connectionWrapper;
+  }
 
-	@Override
-	public Ref getWrapped() {
-		return wrapped;
-	}
+  @Override
+  public Ref getWrapped() {
+    return wrapped;
+  }
 
-	@Override
-	public String toString() {
-		return getWrapped().toString();
-	}
+  @Override
+  public String toString() {
+    return getWrapped().toString();
+  }
 }

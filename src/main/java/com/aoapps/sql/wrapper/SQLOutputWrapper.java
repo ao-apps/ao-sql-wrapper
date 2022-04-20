@@ -50,135 +50,135 @@ import java.sql.Timestamp;
  */
 public interface SQLOutputWrapper extends Wrapper, SQLOutput, AutoCloseable {
 
-	/**
-	 * Gets the SQL output that is wrapped.
-	 */
-	@Override
-	SQLOutput getWrapped();
+  /**
+   * Gets the SQL output that is wrapped.
+   */
+  @Override
+  SQLOutput getWrapped();
 
-	/**
-	 * Releases resources associated with this wrapper.
-	 *
-	 * @see  SQLDataWrapperImpl#writeSQL(java.sql.SQLOutput)
-	 */
-	@Override
-	default void close() throws SQLException {
-		// Do nothing by default
-	}
+  /**
+   * Releases resources associated with this wrapper.
+   *
+   * @see  SQLDataWrapperImpl#writeSQL(java.sql.SQLOutput)
+   */
+  @Override
+  default void close() throws SQLException {
+    // Do nothing by default
+  }
 
-	@Override
-	default void writeString(String x) throws SQLException {
-		getWrapped().writeString(x);
-	}
+  @Override
+  default void writeString(String x) throws SQLException {
+    getWrapped().writeString(x);
+  }
 
-	@Override
-	default void writeBoolean(boolean x) throws SQLException {
-		getWrapped().writeBoolean(x);
-	}
+  @Override
+  default void writeBoolean(boolean x) throws SQLException {
+    getWrapped().writeBoolean(x);
+  }
 
-	@Override
-	default void writeByte(byte x) throws SQLException {
-		getWrapped().writeByte(x);
-	}
+  @Override
+  default void writeByte(byte x) throws SQLException {
+    getWrapped().writeByte(x);
+  }
 
-	@Override
-	default void writeShort(short x) throws SQLException {
-		getWrapped().writeShort(x);
-	}
+  @Override
+  default void writeShort(short x) throws SQLException {
+    getWrapped().writeShort(x);
+  }
 
-	@Override
-	default void writeInt(int x) throws SQLException {
-		getWrapped().writeInt(x);
-	}
+  @Override
+  default void writeInt(int x) throws SQLException {
+    getWrapped().writeInt(x);
+  }
 
-	@Override
-	default void writeLong(long x) throws SQLException {
-		getWrapped().writeLong(x);
-	}
+  @Override
+  default void writeLong(long x) throws SQLException {
+    getWrapped().writeLong(x);
+  }
 
-	@Override
-	default void writeFloat(float x) throws SQLException {
-		getWrapped().writeFloat(x);
-	}
+  @Override
+  default void writeFloat(float x) throws SQLException {
+    getWrapped().writeFloat(x);
+  }
 
-	@Override
-	default void writeDouble(double x) throws SQLException {
-		getWrapped().writeDouble(x);
-	}
+  @Override
+  default void writeDouble(double x) throws SQLException {
+    getWrapped().writeDouble(x);
+  }
 
-	@Override
-	default void writeBigDecimal(BigDecimal x) throws SQLException {
-		getWrapped().writeBigDecimal(x);
-	}
+  @Override
+  default void writeBigDecimal(BigDecimal x) throws SQLException {
+    getWrapped().writeBigDecimal(x);
+  }
 
-	@Override
-	default void writeBytes(byte[] x) throws SQLException {
-		getWrapped().writeBytes(x);
-	}
+  @Override
+  default void writeBytes(byte[] x) throws SQLException {
+    getWrapped().writeBytes(x);
+  }
 
-	@Override
-	default void writeDate(Date x) throws SQLException {
-		getWrapped().writeDate(x);
-	}
+  @Override
+  default void writeDate(Date x) throws SQLException {
+    getWrapped().writeDate(x);
+  }
 
-	@Override
-	default void writeTime(Time x) throws SQLException {
-		getWrapped().writeTime(x);
-	}
+  @Override
+  default void writeTime(Time x) throws SQLException {
+    getWrapped().writeTime(x);
+  }
 
-	@Override
-	default void writeTimestamp(Timestamp x) throws SQLException {
-		getWrapped().writeTimestamp(x);
-	}
+  @Override
+  default void writeTimestamp(Timestamp x) throws SQLException {
+    getWrapped().writeTimestamp(x);
+  }
 
-	@Override
-	void writeCharacterStream(Reader x) throws SQLException;
+  @Override
+  void writeCharacterStream(Reader x) throws SQLException;
 
-	@Override
-	void writeAsciiStream(InputStream x) throws SQLException;
+  @Override
+  void writeAsciiStream(InputStream x) throws SQLException;
 
-	@Override
-	void writeBinaryStream(InputStream x) throws SQLException;
+  @Override
+  void writeBinaryStream(InputStream x) throws SQLException;
 
-	@Override
-	void writeObject(SQLData x) throws SQLException;
+  @Override
+  void writeObject(SQLData x) throws SQLException;
 
-	@Override
-	void writeRef(Ref x) throws SQLException;
+  @Override
+  void writeRef(Ref x) throws SQLException;
 
-	@Override
-	void writeBlob(Blob x) throws SQLException;
+  @Override
+  void writeBlob(Blob x) throws SQLException;
 
-	@Override
-	void writeClob(Clob x) throws SQLException;
+  @Override
+  void writeClob(Clob x) throws SQLException;
 
-	@Override
-	void writeStruct(Struct x) throws SQLException;
+  @Override
+  void writeStruct(Struct x) throws SQLException;
 
-	@Override
-	void writeArray(Array x) throws SQLException;
+  @Override
+  void writeArray(Array x) throws SQLException;
 
-	@Override
-	default void writeURL(URL x) throws SQLException {
-		getWrapped().writeURL(x);
-	}
+  @Override
+  default void writeURL(URL x) throws SQLException {
+    getWrapped().writeURL(x);
+  }
 
-	@Override
-	default void writeNString(String x) throws SQLException {
-		getWrapped().writeNString(x);
-	}
+  @Override
+  default void writeNString(String x) throws SQLException {
+    getWrapped().writeNString(x);
+  }
 
-	@Override
-	void writeNClob(NClob x) throws SQLException;
+  @Override
+  void writeNClob(NClob x) throws SQLException;
 
-	@Override
-	void writeRowId(RowId x) throws SQLException;
+  @Override
+  void writeRowId(RowId x) throws SQLException;
 
-	@Override
-	void writeSQLXML(SQLXML x) throws SQLException;
+  @Override
+  void writeSQLXML(SQLXML x) throws SQLException;
 
-	@Override
-	default void writeObject(Object x, SQLType targetSqlType) throws SQLException {
-		getWrapped().writeObject(x, targetSqlType);
-	}
+  @Override
+  default void writeObject(Object x, SQLType targetSqlType) throws SQLException {
+    getWrapped().writeObject(x, targetSqlType);
+  }
 }

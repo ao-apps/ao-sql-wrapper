@@ -32,9 +32,9 @@ import java.sql.NClob;
  */
 public interface NClobWrapper extends ClobWrapper, NClob {
 
-	/**
-	 * Gets the nclob that is wrapped.
-	 */
-	@Override
-	NClob getWrapped();
+  /**
+   * Gets the nclob that is wrapped.
+   */
+  @Override
+  NClob getWrapped();
 }

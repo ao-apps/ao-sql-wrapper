@@ -32,28 +32,28 @@ import java.sql.Struct;
  */
 public class StructWrapperImpl implements StructWrapper {
 
-	private final ConnectionWrapperImpl connectionWrapper;
-	private final Struct wrapped;
+  private final ConnectionWrapperImpl connectionWrapper;
+  private final Struct wrapped;
 
-	public StructWrapperImpl(ConnectionWrapperImpl connectionWrapper, Struct wrapped) {
-		this.connectionWrapper = connectionWrapper;
-		this.wrapped = wrapped;
-	}
+  public StructWrapperImpl(ConnectionWrapperImpl connectionWrapper, Struct wrapped) {
+    this.connectionWrapper = connectionWrapper;
+    this.wrapped = wrapped;
+  }
 
-	/**
-	 * Gets the connection wrapper.
-	 */
-	protected ConnectionWrapperImpl getConnectionWrapper() {
-		return connectionWrapper;
-	}
+  /**
+   * Gets the connection wrapper.
+   */
+  protected ConnectionWrapperImpl getConnectionWrapper() {
+    return connectionWrapper;
+  }
 
-	@Override
-	public Struct getWrapped() {
-		return wrapped;
-	}
+  @Override
+  public Struct getWrapped() {
+    return wrapped;
+  }
 
-	@Override
-	public String toString() {
-		return getWrapped().toString();
-	}
+  @Override
+  public String toString() {
+    return getWrapped().toString();
+  }
 }

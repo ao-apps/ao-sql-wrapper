@@ -35,56 +35,56 @@ import javax.xml.transform.Source;
  */
 public interface SQLXMLWrapper extends Wrapper, SQLXML, AutoCloseable {
 
-	/**
-	 * Gets the SQL XML that is wrapped.
-	 */
-	@Override
-	SQLXML getWrapped();
+  /**
+   * Gets the SQL XML that is wrapped.
+   */
+  @Override
+  SQLXML getWrapped();
 
-	/**
-	 * Calls {@link #free()}
-	 *
-	 * @see  #free()
-	 */
-	@Override
-	default void close() throws SQLException {
-		free();
-	}
+  /**
+   * Calls {@link #free()}
+   *
+   * @see  #free()
+   */
+  @Override
+  default void close() throws SQLException {
+    free();
+  }
 
-	@Override
-	default void free() throws SQLException {
-		getWrapped().free();
-	}
+  @Override
+  default void free() throws SQLException {
+    getWrapped().free();
+  }
 
-	@Override
-	InputStreamWrapper getBinaryStream() throws SQLException;
+  @Override
+  InputStreamWrapper getBinaryStream() throws SQLException;
 
-	@Override
-	OutputStreamWrapper setBinaryStream() throws SQLException;
+  @Override
+  OutputStreamWrapper setBinaryStream() throws SQLException;
 
-	@Override
-	ReaderWrapper getCharacterStream() throws SQLException;
+  @Override
+  ReaderWrapper getCharacterStream() throws SQLException;
 
-	@Override
-	WriterWrapper setCharacterStream() throws SQLException;
+  @Override
+  WriterWrapper setCharacterStream() throws SQLException;
 
-	@Override
-	default String getString() throws SQLException {
-		return getWrapped().getString();
-	}
+  @Override
+  default String getString() throws SQLException {
+    return getWrapped().getString();
+  }
 
-	@Override
-	default void setString(String value) throws SQLException {
-		getWrapped().setString(value);
-	}
+  @Override
+  default void setString(String value) throws SQLException {
+    getWrapped().setString(value);
+  }
 
-	@Override
-	default <T extends Source> T getSource(Class<T> sourceClass) throws SQLException {
-		return getWrapped().getSource(sourceClass);
-	}
+  @Override
+  default <T extends Source> T getSource(Class<T> sourceClass) throws SQLException {
+    return getWrapped().getSource(sourceClass);
+  }
 
-	@Override
-	default <T extends Result> T setResult(Class<T> resultClass) throws SQLException {
-		return getWrapped().setResult(resultClass);
-	}
+  @Override
+  default <T extends Result> T setResult(Class<T> resultClass) throws SQLException {
+    return getWrapped().setResult(resultClass);
+  }
 }
