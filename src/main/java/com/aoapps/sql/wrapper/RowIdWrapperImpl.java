@@ -64,7 +64,7 @@ public class RowIdWrapperImpl implements RowIdWrapper {
   @Override
   public boolean equals(Object obj) {
     if (obj instanceof RowId) {
-      obj = unwrapRowId((RowId)obj);
+      obj = unwrapRowId((RowId) obj);
     }
     return getWrapped().equals(obj);
   }

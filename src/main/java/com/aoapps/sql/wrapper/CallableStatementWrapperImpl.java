@@ -48,7 +48,7 @@ public class CallableStatementWrapperImpl extends PreparedStatementWrapperImpl i
 
   @Override
   public CallableStatement getWrapped() {
-    return (CallableStatement)super.getWrapped();
+    return (CallableStatement) super.getWrapped();
   }
 
   /**

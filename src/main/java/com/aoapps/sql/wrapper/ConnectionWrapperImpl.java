@@ -304,10 +304,10 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (array instanceof ArrayWrapperImpl) {
-      ArrayWrapperImpl arrayWrapper = (ArrayWrapperImpl)array;
+      ArrayWrapperImpl arrayWrapper = (ArrayWrapperImpl) array;
       if (
-        arrayWrapper.getConnectionWrapper() == this
-        && arrayWrapper.getStatementWrapper().orElse(null) == stmtWrapper
+          arrayWrapper.getConnectionWrapper() == this
+              && arrayWrapper.getStatementWrapper().orElse(null) == stmtWrapper
       ) {
         return arrayWrapper;
       }
@@ -327,7 +327,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (array instanceof ArrayWrapperImpl) {
-      ArrayWrapperImpl arrayWrapper = (ArrayWrapperImpl)array;
+      ArrayWrapperImpl arrayWrapper = (ArrayWrapperImpl) array;
       if (arrayWrapper.getConnectionWrapper() == this) {
         return arrayWrapper.getWrapped();
       }
@@ -348,7 +348,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (blob instanceof BlobWrapperImpl) {
-      BlobWrapperImpl blobWrapper = (BlobWrapperImpl)blob;
+      BlobWrapperImpl blobWrapper = (BlobWrapperImpl) blob;
       if (blobWrapper.getConnectionWrapper() == this) {
         return blobWrapper;
       }
@@ -369,7 +369,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (blob instanceof BlobWrapperImpl) {
-      BlobWrapperImpl blobWrapper = (BlobWrapperImpl)blob;
+      BlobWrapperImpl blobWrapper = (BlobWrapperImpl) blob;
       if (blobWrapper.getConnectionWrapper() == this) {
         return blobWrapper.getWrapped();
       }
@@ -387,7 +387,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (cstmt instanceof CallableStatementWrapperImpl) {
-      CallableStatementWrapperImpl stmtWrapper = (CallableStatementWrapperImpl)cstmt;
+      CallableStatementWrapperImpl stmtWrapper = (CallableStatementWrapperImpl) cstmt;
       if (stmtWrapper.getConnectionWrapper() == this) {
         return stmtWrapper;
       }
@@ -409,10 +409,10 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (clob instanceof NClob) {
-      return wrapNClob((NClob)clob);
+      return wrapNClob((NClob) clob);
     }
     if (clob instanceof ClobWrapperImpl) {
-      ClobWrapperImpl clobWrapper = (ClobWrapperImpl)clob;
+      ClobWrapperImpl clobWrapper = (ClobWrapperImpl) clob;
       if (clobWrapper.getConnectionWrapper() == this) {
         return clobWrapper;
       }
@@ -433,7 +433,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (clob instanceof ClobWrapperImpl) {
-      ClobWrapperImpl clobWrapper = (ClobWrapperImpl)clob;
+      ClobWrapperImpl clobWrapper = (ClobWrapperImpl) clob;
       if (clobWrapper.getConnectionWrapper() == this) {
         return clobWrapper.getWrapped();
       }
@@ -448,7 +448,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
    */
   protected DatabaseMetaDataWrapperImpl wrapDatabaseMetaData(DatabaseMetaData metaData) {
     if (metaData instanceof DatabaseMetaDataWrapperImpl) {
-      DatabaseMetaDataWrapperImpl metaDataWrapper = (DatabaseMetaDataWrapperImpl)metaData;
+      DatabaseMetaDataWrapperImpl metaDataWrapper = (DatabaseMetaDataWrapperImpl) metaData;
       if (metaDataWrapper.getConnectionWrapper() == this) {
         return metaDataWrapper;
       }
@@ -471,7 +471,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (in instanceof InputStreamWrapper) {
-      InputStreamWrapper inWrapper = (InputStreamWrapper)in;
+      InputStreamWrapper inWrapper = (InputStreamWrapper) in;
       if (inWrapper.getConnectionWrapper() == this) {
         return inWrapper;
       }
@@ -491,7 +491,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (in instanceof InputStreamWrapper) {
-      InputStreamWrapper inWrapper = (InputStreamWrapper)in;
+      InputStreamWrapper inWrapper = (InputStreamWrapper) in;
       if (inWrapper.getConnectionWrapper() == this) {
         return inWrapper.getWrapped();
       }
@@ -512,7 +512,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (nclob instanceof NClobWrapperImpl) {
-      NClobWrapperImpl nclobWrapper = (NClobWrapperImpl)nclob;
+      NClobWrapperImpl nclobWrapper = (NClobWrapperImpl) nclob;
       if (nclobWrapper.getConnectionWrapper() == this) {
         return nclobWrapper;
       }
@@ -532,7 +532,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (nclob instanceof NClobWrapperImpl) {
-      NClobWrapperImpl nclobWrapper = (NClobWrapperImpl)nclob;
+      NClobWrapperImpl nclobWrapper = (NClobWrapperImpl) nclob;
       if (nclobWrapper.getConnectionWrapper() == this) {
         return nclobWrapper.getWrapped();
       }
@@ -553,7 +553,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (out instanceof OutputStreamWrapper) {
-      OutputStreamWrapper outWrapper = (OutputStreamWrapper)out;
+      OutputStreamWrapper outWrapper = (OutputStreamWrapper) out;
       if (outWrapper.getConnectionWrapper() == this) {
         return outWrapper;
       }
@@ -572,7 +572,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (metaData instanceof ParameterMetaDataWrapperImpl) {
-      ParameterMetaDataWrapperImpl metaDataWrapper = (ParameterMetaDataWrapperImpl)metaData;
+      ParameterMetaDataWrapperImpl metaDataWrapper = (ParameterMetaDataWrapperImpl) metaData;
       if (metaDataWrapper.getConnectionWrapper() == this) {
         return metaDataWrapper;
       }
@@ -591,10 +591,10 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (pstmt instanceof CallableStatement) {
-      return wrapCallableStatement((CallableStatement)pstmt);
+      return wrapCallableStatement((CallableStatement) pstmt);
     }
     if (pstmt instanceof PreparedStatementWrapperImpl) {
-      PreparedStatementWrapperImpl stmtWrapper = (PreparedStatementWrapperImpl)pstmt;
+      PreparedStatementWrapperImpl stmtWrapper = (PreparedStatementWrapperImpl) pstmt;
       if (stmtWrapper.getConnectionWrapper() == this) {
         return stmtWrapper;
       }
@@ -617,7 +617,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (in instanceof ReaderWrapper) {
-      ReaderWrapper inWrapper = (ReaderWrapper)in;
+      ReaderWrapper inWrapper = (ReaderWrapper) in;
       if (inWrapper.getConnectionWrapper() == this) {
         return inWrapper;
       }
@@ -637,7 +637,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (in instanceof ReaderWrapper) {
-      ReaderWrapper inWrapper = (ReaderWrapper)in;
+      ReaderWrapper inWrapper = (ReaderWrapper) in;
       if (inWrapper.getConnectionWrapper() == this) {
         return inWrapper.getWrapped();
       }
@@ -658,7 +658,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (ref instanceof RefWrapperImpl) {
-      RefWrapperImpl refWrapper = (RefWrapperImpl)ref;
+      RefWrapperImpl refWrapper = (RefWrapperImpl) ref;
       if (refWrapper.getConnectionWrapper() == this) {
         return refWrapper;
       }
@@ -678,7 +678,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (ref instanceof RefWrapperImpl) {
-      RefWrapperImpl refWrapper = (RefWrapperImpl)ref;
+      RefWrapperImpl refWrapper = (RefWrapperImpl) ref;
       if (refWrapper.getConnectionWrapper() == this) {
         return refWrapper.getWrapped();
       }
@@ -700,18 +700,18 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (results instanceof ResultSetWrapperImpl) {
-      ResultSetWrapperImpl resultsWrapper = (ResultSetWrapperImpl)results;
+      ResultSetWrapperImpl resultsWrapper = (ResultSetWrapperImpl) results;
       if (
-        resultsWrapper.getConnectionWrapper() == this
-        && resultsWrapper.getStatementWrapper().orElse(null) == stmtWrapper
+          resultsWrapper.getConnectionWrapper() == this
+              && resultsWrapper.getStatementWrapper().orElse(null) == stmtWrapper
       ) {
         return resultsWrapper;
       }
     }
     Statement stmt = results.getStatement();
     if (
-      stmtWrapper == null
-      || stmtWrapper.getWrapped() != stmt
+        stmtWrapper == null
+            || stmtWrapper.getWrapped() != stmt
     ) {
       stmtWrapper = wrapStatement(stmt);
     }
@@ -730,7 +730,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (metaData instanceof ResultSetMetaDataWrapperImpl) {
-      ResultSetMetaDataWrapperImpl metaDataWrapper = (ResultSetMetaDataWrapperImpl)metaData;
+      ResultSetMetaDataWrapperImpl metaDataWrapper = (ResultSetMetaDataWrapperImpl) metaData;
       if (metaDataWrapper.getConnectionWrapper() == this) {
         return metaDataWrapper;
       }
@@ -751,7 +751,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (rowId instanceof RowIdWrapperImpl) {
-      RowIdWrapperImpl rowIdWrapper = (RowIdWrapperImpl)rowId;
+      RowIdWrapperImpl rowIdWrapper = (RowIdWrapperImpl) rowId;
       if (rowIdWrapper.getConnectionWrapper() == this) {
         return rowIdWrapper;
       }
@@ -772,7 +772,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (rowId instanceof RowIdWrapperImpl) {
-      RowIdWrapperImpl rowIdWrapper = (RowIdWrapperImpl)rowId;
+      RowIdWrapperImpl rowIdWrapper = (RowIdWrapperImpl) rowId;
       if (rowIdWrapper.getConnectionWrapper() == this) {
         return rowIdWrapper.getWrapped();
       }
@@ -790,7 +790,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (savepoint instanceof SavepointWrapperImpl) {
-      SavepointWrapperImpl savepointWrapper = (SavepointWrapperImpl)savepoint;
+      SavepointWrapperImpl savepointWrapper = (SavepointWrapperImpl) savepoint;
       if (savepointWrapper.getConnectionWrapper() == this) {
         return savepointWrapper;
       }
@@ -806,7 +806,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (savepoint instanceof SavepointWrapperImpl) {
-      SavepointWrapperImpl savepointWrapper = (SavepointWrapperImpl)savepoint;
+      SavepointWrapperImpl savepointWrapper = (SavepointWrapperImpl) savepoint;
       if (savepointWrapper.getConnectionWrapper() == this) {
         return savepointWrapper.getWrapped();
       }
@@ -825,7 +825,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (sqlData instanceof SQLDataWrapperImpl) {
-      SQLDataWrapperImpl sqlDataWrapper = (SQLDataWrapperImpl)sqlData;
+      SQLDataWrapperImpl sqlDataWrapper = (SQLDataWrapperImpl) sqlData;
       if (sqlDataWrapper.getConnectionWrapper() == this) {
         return sqlDataWrapper;
       }
@@ -844,7 +844,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (sqlInput instanceof SQLInputWrapperImpl) {
-      SQLInputWrapperImpl sqlInputWrapper = (SQLInputWrapperImpl)sqlInput;
+      SQLInputWrapperImpl sqlInputWrapper = (SQLInputWrapperImpl) sqlInput;
       if (sqlInputWrapper.getConnectionWrapper() == this) {
         return sqlInputWrapper;
       }
@@ -863,7 +863,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (sqlOutput instanceof SQLOutputWrapperImpl) {
-      SQLOutputWrapperImpl sqlOutputWrapper = (SQLOutputWrapperImpl)sqlOutput;
+      SQLOutputWrapperImpl sqlOutputWrapper = (SQLOutputWrapperImpl) sqlOutput;
       if (sqlOutputWrapper.getConnectionWrapper() == this) {
         return sqlOutputWrapper;
       }
@@ -884,7 +884,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (sqlXml instanceof SQLXMLWrapperImpl) {
-      SQLXMLWrapperImpl sqlXmlWrapper = (SQLXMLWrapperImpl)sqlXml;
+      SQLXMLWrapperImpl sqlXmlWrapper = (SQLXMLWrapperImpl) sqlXml;
       if (sqlXmlWrapper.getConnectionWrapper() == this) {
         return sqlXmlWrapper;
       }
@@ -904,7 +904,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (sqlXml instanceof SQLXMLWrapperImpl) {
-      SQLXMLWrapperImpl sqlXmlWrapper = (SQLXMLWrapperImpl)sqlXml;
+      SQLXMLWrapperImpl sqlXmlWrapper = (SQLXMLWrapperImpl) sqlXml;
       if (sqlXmlWrapper.getConnectionWrapper() == this) {
         return sqlXmlWrapper.getWrapped();
       }
@@ -924,10 +924,10 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (stmt instanceof PreparedStatement) {
-      return wrapPreparedStatement((PreparedStatement)stmt);
+      return wrapPreparedStatement((PreparedStatement) stmt);
     }
     if (stmt instanceof StatementWrapperImpl) {
-      StatementWrapperImpl stmtWrapper = (StatementWrapperImpl)stmt;
+      StatementWrapperImpl stmtWrapper = (StatementWrapperImpl) stmt;
       if (stmtWrapper.getConnectionWrapper() == this) {
         return stmtWrapper;
       }
@@ -945,7 +945,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (struct instanceof StructWrapperImpl) {
-      StructWrapperImpl structWrapper = (StructWrapperImpl)struct;
+      StructWrapperImpl structWrapper = (StructWrapperImpl) struct;
       if (structWrapper.getConnectionWrapper() == this) {
         return structWrapper;
       }
@@ -963,7 +963,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (struct instanceof StructWrapperImpl) {
-      StructWrapperImpl structWrapper = (StructWrapperImpl)struct;
+      StructWrapperImpl structWrapper = (StructWrapperImpl) struct;
       if (structWrapper.getConnectionWrapper() == this) {
         return structWrapper.getWrapped();
       }
@@ -983,7 +983,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
       return null;
     }
     if (out instanceof WriterWrapper) {
-      WriterWrapper outWrapper = (WriterWrapper)out;
+      WriterWrapper outWrapper = (WriterWrapper) out;
       if (outWrapper.getConnectionWrapper() == this) {
         return outWrapper;
       }

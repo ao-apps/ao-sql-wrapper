@@ -61,7 +61,7 @@ public class ReaderWrapper extends Reader implements Wrapper, NoClose {
   @Override
   public boolean isNoClose() {
     Reader in = getWrapped();
-    return (in instanceof NoClose) && ((NoClose)in).isNoClose();
+    return (in instanceof NoClose) && ((NoClose) in).isNoClose();
   }
 
   @Override

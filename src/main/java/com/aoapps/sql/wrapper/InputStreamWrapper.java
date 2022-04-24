@@ -60,7 +60,7 @@ public class InputStreamWrapper extends InputStream implements Wrapper, NoClose 
   @Override
   public boolean isNoClose() {
     InputStream in = getWrapped();
-    return (in instanceof NoClose) && ((NoClose)in).isNoClose();
+    return (in instanceof NoClose) && ((NoClose) in).isNoClose();
   }
 
   @Override

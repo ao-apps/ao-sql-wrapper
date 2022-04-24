@@ -202,7 +202,7 @@ public interface PreparedStatementWrapper extends StatementWrapper, PreparedStat
   }
 
   @Override
-  default void setNull (int parameterIndex, int sqlType, String typeName) throws SQLException {
+  default void setNull(int parameterIndex, int sqlType, String typeName) throws SQLException {
     getWrapped().setNull(parameterIndex, sqlType, typeName);
   }
 

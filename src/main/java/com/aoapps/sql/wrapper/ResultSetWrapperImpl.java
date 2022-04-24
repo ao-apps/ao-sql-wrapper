@@ -258,11 +258,11 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   protected StatementWrapperImpl wrapStatement(Statement stmt) {
     // First check if matches our statement wrapper
     if (
-      stmtWrapper == stmt
-      || (
-        stmtWrapper != null
-        && stmtWrapper.getWrapped() == stmt
-      )
+        stmtWrapper == stmt
+            || (
+            stmtWrapper != null
+                && stmtWrapper.getWrapped() == stmt
+        )
     ) {
       return stmtWrapper;
     } else {

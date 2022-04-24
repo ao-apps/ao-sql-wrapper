@@ -52,7 +52,7 @@ public interface Wrapper extends java.sql.Wrapper {
       return iface.cast(wrapped);
     }
     if (wrapped instanceof Wrapper) {
-      return ((Wrapper)wrapped).unwrap(iface);
+      return ((Wrapper) wrapped).unwrap(iface);
     } else {
       throw new SQLException("Nothing to unwrap for " + iface.getName());
     }
@@ -68,7 +68,7 @@ public interface Wrapper extends java.sql.Wrapper {
       return true;
     }
     if (wrapped instanceof Wrapper) {
-      return ((Wrapper)wrapped).isWrapperFor(iface);
+      return ((Wrapper) wrapped).isWrapperFor(iface);
     } else {
       return false;
     }

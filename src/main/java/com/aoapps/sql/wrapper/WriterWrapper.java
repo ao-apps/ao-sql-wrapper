@@ -60,7 +60,7 @@ public class WriterWrapper extends Writer implements Wrapper, NoClose {
   @Override
   public boolean isNoClose() {
     Writer out = getWrapped();
-    return (out instanceof NoClose) && ((NoClose)out).isNoClose();
+    return (out instanceof NoClose) && ((NoClose) out).isNoClose();
   }
 
   @Override

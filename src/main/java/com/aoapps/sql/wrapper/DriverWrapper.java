@@ -76,7 +76,7 @@ public abstract class DriverWrapper implements Driver {
       return null;
     }
     if (connection instanceof ConnectionWrapperImpl) {
-      ConnectionWrapperImpl _connectionWrapper = (ConnectionWrapperImpl)connection;
+      ConnectionWrapperImpl _connectionWrapper = (ConnectionWrapperImpl) connection;
       if (_connectionWrapper.getDriver().orElse(null) == this) {
         return _connectionWrapper;
       }
@@ -116,9 +116,9 @@ public abstract class DriverWrapper implements Driver {
     int sbLen = wrappedUrlLen + urlPrefix.length() + 1;
     StringBuilder sb = new StringBuilder(sbLen);
     sb
-      .append(JDBC_SCHEMA)
-      .append(urlPrefix).append(':')
-      .append(wrappedUrl, JDBC_SCHEMA.length(), wrappedUrlLen);
+        .append(JDBC_SCHEMA)
+        .append(urlPrefix).append(':')
+        .append(wrappedUrl, JDBC_SCHEMA.length(), wrappedUrlLen);
     assert sbLen == sb.length();
     return sb.toString();
   }

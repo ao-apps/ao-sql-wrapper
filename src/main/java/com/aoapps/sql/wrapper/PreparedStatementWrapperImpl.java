@@ -50,7 +50,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
 
   @Override
   public PreparedStatement getWrapped() {
-    return (PreparedStatement)super.getWrapped();
+    return (PreparedStatement) super.getWrapped();
   }
 
   /**

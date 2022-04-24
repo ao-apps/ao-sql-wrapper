@@ -38,6 +38,6 @@ public class NClobWrapperImpl extends ClobWrapperImpl implements NClobWrapper {
 
   @Override
   public NClob getWrapped() {
-    return (NClob)super.getWrapped();
+    return (NClob) super.getWrapped();
   }
 }
