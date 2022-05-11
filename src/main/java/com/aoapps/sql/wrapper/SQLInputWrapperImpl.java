@@ -149,6 +149,8 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapReader(java.io.Reader)
    */
   @Override
@@ -157,6 +159,8 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapInputStream(java.io.InputStream)
    */
   @Override
@@ -165,6 +169,8 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapInputStream(java.io.InputStream)
    */
   @Override
@@ -173,6 +179,8 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapRef(java.sql.Ref)
    */
   @Override
@@ -181,6 +189,8 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapBlob(java.sql.Blob)
    */
   @Override
@@ -189,6 +199,8 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapClob(java.sql.Clob)
    */
   @Override
@@ -197,6 +209,8 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapArray(java.sql.Array)
    */
   @Override
@@ -205,6 +219,8 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapNClob(java.sql.NClob)
    */
   @Override
@@ -213,6 +229,8 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapSQLXML(java.sql.SQLXML)
    */
   @Override
@@ -221,6 +239,8 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapRowId(java.sql.RowId)
    */
   @Override

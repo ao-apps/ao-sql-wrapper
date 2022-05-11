@@ -108,6 +108,8 @@ public class ClobWrapperImpl implements ClobWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapReader(java.io.Reader)
    */
   @Override
@@ -116,6 +118,8 @@ public class ClobWrapperImpl implements ClobWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapInputStream(java.io.InputStream)
    */
   @Override
@@ -124,6 +128,8 @@ public class ClobWrapperImpl implements ClobWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #unwrapClob(java.sql.Clob)
    */
   @Override
@@ -132,6 +138,8 @@ public class ClobWrapperImpl implements ClobWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapOutputStream(java.io.OutputStream)
    */
   @Override
@@ -140,6 +148,8 @@ public class ClobWrapperImpl implements ClobWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapWriter(Writer)
    */
   @Override
@@ -148,6 +158,8 @@ public class ClobWrapperImpl implements ClobWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapReader(java.io.Reader)
    */
   @Override

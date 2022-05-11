@@ -41,7 +41,7 @@ public interface SavepointWrapper extends Wrapper, Savepoint, AutoCloseable {
   Savepoint getWrapped();
 
   /**
-   * Calls {@link Connection#releaseSavepoint(java.sql.Savepoint)}
+   * Calls {@link Connection#releaseSavepoint(java.sql.Savepoint)}.
    *
    * @see  Connection#releaseSavepoint(java.sql.Savepoint)
    */

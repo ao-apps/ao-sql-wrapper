@@ -42,7 +42,7 @@ public interface SQLXMLWrapper extends Wrapper, SQLXML, AutoCloseable {
   SQLXML getWrapped();
 
   /**
-   * Calls {@link #free()}
+   * Calls {@link #free()}.
    *
    * @see  #free()
    */

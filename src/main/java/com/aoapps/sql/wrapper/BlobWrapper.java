@@ -40,7 +40,7 @@ public interface BlobWrapper extends Wrapper, Blob, AutoCloseable {
   Blob getWrapped();
 
   /**
-   * Calls {@link #free()}
+   * Calls {@link #free()}.
    *
    * @see  #free()
    */

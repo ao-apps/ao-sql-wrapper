@@ -41,7 +41,7 @@ public interface ArrayWrapper extends Wrapper, Array, AutoCloseable {
   Array getWrapped();
 
   /**
-   * Calls {@link #free()}
+   * Calls {@link #free()}.
    *
    * @see  #free()
    */

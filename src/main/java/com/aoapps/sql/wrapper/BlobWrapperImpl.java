@@ -88,6 +88,8 @@ public class BlobWrapperImpl implements BlobWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapInputStream(java.io.InputStream)
    */
   @Override
@@ -96,6 +98,8 @@ public class BlobWrapperImpl implements BlobWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #unwrapBlob(java.sql.Blob)
    */
   @Override
@@ -104,6 +108,8 @@ public class BlobWrapperImpl implements BlobWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapOutputStream(java.io.OutputStream)
    */
   @Override
@@ -112,6 +118,8 @@ public class BlobWrapperImpl implements BlobWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapInputStream(java.io.InputStream)
    */
   @Override

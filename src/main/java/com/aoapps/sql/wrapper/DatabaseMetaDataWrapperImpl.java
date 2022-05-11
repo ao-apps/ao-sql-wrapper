@@ -113,6 +113,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -121,6 +123,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -129,6 +133,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -137,6 +143,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -145,6 +153,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -153,6 +163,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -161,6 +173,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -169,6 +183,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -177,6 +193,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -185,6 +203,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -193,6 +213,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -201,6 +223,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -209,6 +233,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -217,6 +243,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -225,6 +253,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -233,6 +263,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -241,6 +273,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -249,6 +283,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -258,12 +294,14 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
 
   @Override
   public ConnectionWrapperImpl getConnection() throws SQLException {
-    ConnectionWrapperImpl _connectionWrapper = getConnectionWrapper();
-    assert getWrapped().getConnection() == _connectionWrapper.getWrapped();
-    return _connectionWrapper;
+    ConnectionWrapperImpl myConnectionWrapper = getConnectionWrapper();
+    assert getWrapped().getConnection() == myConnectionWrapper.getWrapped();
+    return myConnectionWrapper;
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -272,6 +310,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -280,6 +320,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -288,6 +330,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -296,6 +340,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -304,6 +350,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -312,6 +360,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -320,6 +370,8 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override

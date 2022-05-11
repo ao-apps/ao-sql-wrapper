@@ -59,6 +59,8 @@ public interface DatabaseMetaDataWrapper extends Wrapper, DatabaseMetaData, Auto
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @return  When this wrapper is associated with a wrapping driver, inserts the driver prefix into the JDBC URL.
    *
    * @see  DriverWrapper#toWrapperUrl(java.lang.String)
@@ -107,6 +109,8 @@ public interface DatabaseMetaDataWrapper extends Wrapper, DatabaseMetaData, Auto
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @return  When this wrapper is associated with a wrapping driver, uses wrapping-driver-provided modification of
    *          the wrapped driver's name.
    *
@@ -116,6 +120,8 @@ public interface DatabaseMetaDataWrapper extends Wrapper, DatabaseMetaData, Auto
   String getDriverName() throws SQLException;
 
   /**
+   * {@inheritDoc}
+   *
    * @return  When this wrapper is associated with a wrapping driver, uses wrapping-driver-provided modification of
    *          the wrapped driver's version.
    *
@@ -125,6 +131,8 @@ public interface DatabaseMetaDataWrapper extends Wrapper, DatabaseMetaData, Auto
   String getDriverVersion() throws SQLException;
 
   /**
+   * {@inheritDoc}
+   *
    * @return  When this wrapper is associated with a wrapping driver, uses wrapping-driver-provided modification of
    *          the wrapped driver's version.
    *
@@ -134,6 +142,8 @@ public interface DatabaseMetaDataWrapper extends Wrapper, DatabaseMetaData, Auto
   int getDriverMajorVersion();
 
   /**
+   * {@inheritDoc}
+   *
    * @return  When this wrapper is associated with a wrapping driver, uses wrapping-driver-provided modification of
    *          the wrapped driver's version.
    *
@@ -824,34 +834,39 @@ public interface DatabaseMetaDataWrapper extends Wrapper, DatabaseMetaData, Auto
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @return  The lower of the wrapped JDBC version and this API JDBC version (currently JDBC 4.2 for Java 8).
    */
   // Java 9: 4.3
   @Override
   default int getJDBCMajorVersion() throws SQLException {
-    final int MAJOR = 4;
-    return Math.min(MAJOR, getWrapped().getJDBCMajorVersion());
+    final int major = 4;
+    return Math.min(major, getWrapped().getJDBCMajorVersion());
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @return  The lower of the wrapped JDBC version and this API JDBC version (currently JDBC 4.2 for Java 8).
    */
   // Java 9: 4.3
   @Override
   default int getJDBCMinorVersion() throws SQLException {
-    final int MAJOR = 4, MINOR = 2;
+    final int major = 4;
+    final int minor = 2;
     DatabaseMetaData wrapped = getWrapped();
     int wrappedMajor = wrapped.getJDBCMajorVersion();
-    if (wrappedMajor < MAJOR) {
+    if (wrappedMajor < major) {
       // Wrapped has lower major, use its minor directly
       return wrapped.getJDBCMinorVersion();
-    } else if (wrappedMajor > MAJOR) {
+    } else if (wrappedMajor > major) {
       // Wrapped has higher major, use our minor directly
-      return MINOR;
+      return minor;
     } else {
       // Same major, use lower minor
-      assert wrappedMajor == MAJOR;
-      return Math.min(MINOR, wrapped.getJDBCMinorVersion());
+      assert wrappedMajor == major;
+      return Math.min(minor, wrapped.getJDBCMinorVersion());
     }
   }
 

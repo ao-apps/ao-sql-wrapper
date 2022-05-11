@@ -40,7 +40,7 @@ public interface ClobWrapper extends Wrapper, Clob, AutoCloseable {
   Clob getWrapped();
 
   /**
-   * Calls {@link #free()}
+   * Calls {@link #free()}.
    *
    * @see  #free()
    */

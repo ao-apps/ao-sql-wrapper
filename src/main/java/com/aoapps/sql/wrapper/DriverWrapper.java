@@ -76,9 +76,9 @@ public abstract class DriverWrapper implements Driver {
       return null;
     }
     if (connection instanceof ConnectionWrapperImpl) {
-      ConnectionWrapperImpl _connectionWrapper = (ConnectionWrapperImpl) connection;
-      if (_connectionWrapper.getDriver().orElse(null) == this) {
-        return _connectionWrapper;
+      ConnectionWrapperImpl myConnectionWrapper = (ConnectionWrapperImpl) connection;
+      if (myConnectionWrapper.getDriver().orElse(null) == this) {
+        return myConnectionWrapper;
       }
     }
     return newConnectionWrapper(connection);
@@ -182,7 +182,7 @@ public abstract class DriverWrapper implements Driver {
         return wrapConnection(DriverManager.getDriver(wrappedUrl).connect(url, info));
       } catch (SQLException e) {
         // DriverManager.getDriver(String) throws exception when no match found
-        // Fall-through to return null
+        // fall-through to return null
       }
     }
     return null;

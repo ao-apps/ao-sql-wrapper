@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ao-sql-wrapper - JDBC API wrapper.
+Copyright (C) 2022  AO Industries, Inc.
+    support@aoindustries.com
+    7262 Bull Pen Cir
+    Mobile, AL 36695
+
+This file is part of ao-sql-wrapper.
+
+ao-sql-wrapper is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+ao-sql-wrapper is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with ao-sql-wrapper.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE suppressions PUBLIC
+  "-//Checkstyle//DTD SuppressionFilter Configuration 1.2//EN"
+  "https://checkstyle.org/dtds/suppressions_1_2.dtd">
+
+<suppressions>
+
+  <!-- Consistency with standard JDBC API names -->
+  <suppress
+    checks="ParameterName"
+    files="[/\\]com[/\\]aoapps[/\\]sql[/\\]wrapper[/\\]"
+    message="'(nClob|nString)'"
+  />
+  <suppress
+    checks="AbbreviationAsWordInName"
+    files="[/\\]com[/\\]aoapps[/\\]sql[/\\]wrapper[/\\]"
+    message="'new(NClob|SQLData|SQLInput|SQLOutput|SQLXML)Wrapper'"
+  />
+  <suppress
+    checks="AbbreviationAsWordInName"
+    files="[/\\]com[/\\]aoapps[/\\]sql[/\\]wrapper[/\\]"
+    message="'(wrap|unwrap)(NClob|SQLData|SQLInput|SQLOutput|SQLXML)'"
+  />
+  <suppress
+    checks="AbbreviationAsWordInName"
+    files="[/\\]com[/\\]aoapps[/\\]sql[/\\]wrapper[/\\](NClob|SQLData|SQLInput|SQLOutput|SQLXML)Wrapper\.java"
+    message="'(NClob|SQLData|SQLInput|SQLOutput|SQLXML)Wrapper'"
+  />
+  <suppress
+    checks="AbbreviationAsWordInName"
+    files="[/\\]com[/\\]aoapps[/\\]sql[/\\]wrapper[/\\](NClob|SQLData|SQLInput|SQLOutput|SQLXML)WrapperImpl\.java"
+    message="'(NClob|SQLData|SQLInput|SQLOutput|SQLXML)WrapperImpl'"
+  />
+
+  <!-- Will not reorder overloads -->
+  <suppress checks="OverloadMethodsDeclarationOrder" />
+
+</suppressions>

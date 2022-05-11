@@ -46,6 +46,8 @@ public interface ConnectionWrapper extends Wrapper, Connection {
   Connection getWrapped();
 
   /**
+   * {@inheritDoc}
+   *
    * @deprecated  Please use {@link #getWrapped()}
    */
   @Deprecated

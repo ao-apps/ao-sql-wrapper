@@ -40,6 +40,9 @@ public class ArrayWrapperImpl implements ArrayWrapper {
   private final StatementWrapperImpl stmtWrapper;
   private final Array wrapped;
 
+  /**
+   * Wraps an {@link Array}.
+   */
   public ArrayWrapperImpl(ConnectionWrapperImpl connectionWrapper, StatementWrapperImpl stmtWrapper, Array wrapped) {
     this.connectionWrapper = connectionWrapper;
     this.stmtWrapper = stmtWrapper;
@@ -80,6 +83,8 @@ public class ArrayWrapperImpl implements ArrayWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -88,6 +93,8 @@ public class ArrayWrapperImpl implements ArrayWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -97,6 +104,8 @@ public class ArrayWrapperImpl implements ArrayWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
@@ -105,6 +114,8 @@ public class ArrayWrapperImpl implements ArrayWrapper {
   }
 
   /**
+   * {@inheritDoc}
+   *
    * @see  #wrapResultSet(java.sql.ResultSet)
    */
   @Override
