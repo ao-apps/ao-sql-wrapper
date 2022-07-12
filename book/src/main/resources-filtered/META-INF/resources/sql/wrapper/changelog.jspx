@@ -37,7 +37,7 @@ along with ao-sql-wrapper.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2020-11-02T21:58:59-06:00"
-    dateModified="2022-05-15T00:08:08-05:00"
+    dateModified="2022-07-11T21:59:29-05:00"
   >
     <c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
       <changelog:release
@@ -47,7 +47,11 @@ along with ao-sql-wrapper.  If not, see <https://www.gnu.org/licenses/>.
         artifactId="@{documented.artifactId}"
         repository="@{nexusUrl}content/repositories/snapshots/"
         scmUrl="@{project.scm.url}"
-      />
+      >
+        <ul>
+          <li>Deferred calling wrapped <code>ResultSet.getStatement()</code> until first needed.</li>
+        </ul>
+      </changelog:release>
     </c:if>
 
     <changelog:release

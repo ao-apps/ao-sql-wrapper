@@ -708,13 +708,6 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
         return resultsWrapper;
       }
     }
-    Statement stmt = results.getStatement();
-    if (
-        stmtWrapper == null
-            || stmtWrapper.getWrapped() != stmt
-    ) {
-      stmtWrapper = wrapStatement(stmt);
-    }
     return newResultSetWrapper(stmtWrapper, results);
   }
 
