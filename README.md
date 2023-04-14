@@ -22,7 +22,7 @@ JDBC API wrapper.
 * [Project Home](https://oss.aoapps.com/sql/wrapper/)
 * [Changelog](https://oss.aoapps.com/sql/wrapper/changelog)
 * [API Docs](https://oss.aoapps.com/sql/wrapper/apidocs/)
-* [Maven Central Repository](https://central.sonatype.com/search?namespace=com.aoapps&q=a%3Aao-sql-wrapper)
+* [Maven Central Repository](https://central.sonatype.com/artifact/com.aoapps/ao-sql-wrapper)
 * [GitHub](https://github.com/ao-apps/ao-sql-wrapper)
 
 ## Contact Us
