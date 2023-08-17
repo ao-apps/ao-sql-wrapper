@@ -30,7 +30,7 @@ along with ao-sql-wrapper.  If not, see <https://www.gnu.org/licenses/>.
   </parent>
 
   <groupId>com.aoapps</groupId><artifactId>ao-sql-wrapper</artifactId><version>2.1.1-POST-SNAPSHOT</version>
-  <packaging>bundle</packaging>
+  <packaging>jar</packaging>
 
   <properties>
     <module.name>com.aoapps.sql.wrapper</module.name>
