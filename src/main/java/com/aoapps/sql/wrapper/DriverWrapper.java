@@ -1,6 +1,6 @@
 /*
  * ao-sql-wrapper - JDBC API wrapper.
- * Copyright (C) 2020, 2021, 2022  AO Industries, Inc.
+ * Copyright (C) 2020, 2021, 2022, 2024  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -125,10 +125,9 @@ public abstract class DriverWrapper implements Driver {
 
   /**
    * Gets the driver name for the given wrapped-driver's name.
-   * <p>
-   * This default implementation prefixes the wrapped-driver's name with
-   * <code>{@link #getUrlPrefix()} + ':'</code>.
-   * </p>
+   *
+   * <p>This default implementation prefixes the wrapped-driver's name with
+   * <code>{@link #getUrlPrefix()} + ':'</code>.</p>
    *
    * @see  DatabaseMetaDataWrapper#getDriverName()
    */
@@ -138,10 +137,9 @@ public abstract class DriverWrapper implements Driver {
 
   /**
    * Gets the driver version for the given wrapped-driver's version.
-   * <p>
-   * This default implementation prefixes the wrapped-driver's version with
-   * <code>{@link #getVersion()} + ':'</code>.
-   * </p>
+   *
+   * <p>This default implementation prefixes the wrapped-driver's version with
+   * <code>{@link #getVersion()} + ':'</code>.</p>
    *
    * @see  DatabaseMetaDataWrapper#getDriverVersion()
    * @see  #getVersion()
@@ -152,9 +150,8 @@ public abstract class DriverWrapper implements Driver {
 
   /**
    * Gets the driver major version for the given wrapped-driver's major version.
-   * <p>
-   * This default implementation returns {@link #getMajorVersion()}.
-   * </p>
+   *
+   * <p>This default implementation returns {@link #getMajorVersion()}.</p>
    *
    * @see  DatabaseMetaDataWrapper#getDriverMajorVersion()
    */
@@ -164,9 +161,8 @@ public abstract class DriverWrapper implements Driver {
 
   /**
    * Gets the driver minor version for the given wrapped-driver's minor version.
-   * <p>
-   * This default implementation returns {@link #getMinorVersion()}.
-   * </p>
+   *
+   * <p>This default implementation returns {@link #getMinorVersion()}.</p>
    *
    * @see  DatabaseMetaDataWrapper#getDriverMinorVersion()
    */

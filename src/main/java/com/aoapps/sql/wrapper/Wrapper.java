@@ -1,6 +1,6 @@
 /*
  * ao-sql-wrapper - JDBC API wrapper.
- * Copyright (C) 2020, 2021, 2022  AO Industries, Inc.
+ * Copyright (C) 2020, 2021, 2022, 2024  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -35,10 +35,9 @@ public interface Wrapper extends java.sql.Wrapper {
 
   /**
    * Gets the wrapper that is wrapped.
-   * <p>
-   * Note: This does not return {@link java.sql.Wrapper} because we use {@link Wrapper} on some objects that are not
-   * themselves {@link java.sql.Wrapper}, such as {@link Array}.
-   * </p>
+   *
+   * <p>Note: This does not return {@link java.sql.Wrapper} because we use {@link Wrapper} on some objects that are not
+   * themselves {@link java.sql.Wrapper}, such as {@link Array}.</p>
    */
   Object getWrapped();
 
