@@ -1,6 +1,6 @@
 /*
  * ao-sql-wrapper - JDBC API wrapper.
- * Copyright (C) 2020, 2021, 2022  AO Industries, Inc.
+ * Copyright (C) 2020, 2021, 2022, 2025  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -836,9 +836,8 @@ public interface DatabaseMetaDataWrapper extends Wrapper, DatabaseMetaData, Auto
   /**
    * {@inheritDoc}
    *
-   * @return  The lower of the wrapped JDBC version and this API JDBC version (currently JDBC 4.2 for Java 8).
+   * @return  The lower of the wrapped JDBC version and this API JDBC version (currently JDBC 4.3 for Java 9).
    */
-  // Java 9: 4.3
   @Override
   default int getJDBCMajorVersion() throws SQLException {
     final int major = 4;
@@ -848,13 +847,12 @@ public interface DatabaseMetaDataWrapper extends Wrapper, DatabaseMetaData, Auto
   /**
    * {@inheritDoc}
    *
-   * @return  The lower of the wrapped JDBC version and this API JDBC version (currently JDBC 4.2 for Java 8).
+   * @return  The lower of the wrapped JDBC version and this API JDBC version (currently JDBC 4.3 for Java 9).
    */
-  // Java 9: 4.3
   @Override
   default int getJDBCMinorVersion() throws SQLException {
     final int major = 4;
-    final int minor = 2;
+    final int minor = 3;
     DatabaseMetaData wrapped = getWrapped();
     int wrappedMajor = wrapped.getJDBCMajorVersion();
     if (wrappedMajor < major) {
@@ -930,7 +928,10 @@ public interface DatabaseMetaDataWrapper extends Wrapper, DatabaseMetaData, Auto
     return getWrapped().supportsRefCursors();
   }
 
-  // Java 9: boolean supportsSharding() throws SQLException;
+  @Override
+  default boolean supportsSharding() throws SQLException {
+    return getWrapped().supportsSharding();
+  }
 
-  // Note: When going to JDBC version above 4.2, update getJDBCMajorVersion() and getJDBCMinorVersion() above.
+  // Note: When going to JDBC version above 4.3, update getJDBCMajorVersion() and getJDBCMinorVersion() above.
 }

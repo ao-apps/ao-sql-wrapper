@@ -1,6 +1,6 @@
 /*
  * ao-sql-wrapper - JDBC API wrapper.
- * Copyright (C) 2020, 2021, 2022  AO Industries, Inc.
+ * Copyright (C) 2020, 2021, 2022, 2025  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -110,7 +110,7 @@ public interface CallableStatementWrapper extends PreparedStatementWrapper, Call
   }
 
   @Override
-  @Deprecated // Java 9: (since="1.2")
+  @Deprecated(since = "1.2")
   default BigDecimal getBigDecimal(int parameterIndex, int scale) throws SQLException {
     return getWrapped().getBigDecimal(parameterIndex, scale);
   }

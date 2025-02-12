@@ -1,6 +1,6 @@
 /*
  * ao-sql-wrapper - JDBC API wrapper.
- * Copyright (C) 2020, 2021, 2022  AO Industries, Inc.
+ * Copyright (C) 2020, 2021, 2022, 2025  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -113,7 +113,7 @@ public interface ResultSetWrapper extends Wrapper, ResultSet {
   }
 
   @Override
-  @Deprecated // Java 9: (since="1.2")
+  @Deprecated(since = "1.2")
   default BigDecimal getBigDecimal(int columnIndex, int scale) throws SQLException {
     return getWrapped().getBigDecimal(columnIndex, scale);
   }
@@ -142,7 +142,7 @@ public interface ResultSetWrapper extends Wrapper, ResultSet {
   InputStreamWrapper getAsciiStream(int columnIndex) throws SQLException;
 
   @Override
-  @Deprecated // Java 9: (since="1.2")
+  @Deprecated(since = "1.2")
   InputStreamWrapper getUnicodeStream(int columnIndex) throws SQLException;
 
   @Override
@@ -189,7 +189,7 @@ public interface ResultSetWrapper extends Wrapper, ResultSet {
   }
 
   @Override
-  @Deprecated // Java 9: (since="1.2")
+  @Deprecated(since = "1.2")
   default BigDecimal getBigDecimal(String columnLabel, int scale) throws SQLException {
     return getWrapped().getBigDecimal(columnLabel, scale);
   }
@@ -218,7 +218,7 @@ public interface ResultSetWrapper extends Wrapper, ResultSet {
   InputStreamWrapper getAsciiStream(String columnLabel) throws SQLException;
 
   @Override
-  @Deprecated // Java 9: (since="1.2")
+  @Deprecated(since = "1.2")
   InputStreamWrapper getUnicodeStream(String columnLabel) throws SQLException;
 
   @Override

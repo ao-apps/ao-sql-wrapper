@@ -1,6 +1,6 @@
 /*
  * ao-sql-wrapper - JDBC API wrapper.
- * Copyright (C) 2020, 2021, 2022  AO Industries, Inc.
+ * Copyright (C) 2020, 2021, 2022, 2025  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -26,6 +26,7 @@ package com.aoapps.sql.wrapper;
 import com.aoapps.lang.io.NoClose;
 import java.io.IOException;
 import java.io.Reader;
+import java.io.Writer;
 import java.nio.CharBuffer;
 
 /**
@@ -119,5 +120,8 @@ public class ReaderWrapper extends Reader implements Wrapper, NoClose {
     getWrapped().close();
   }
 
-  // Java 10: public long transferTo(Writer out) throws IOException;
+  @Override
+  public long transferTo(Writer out) throws IOException {
+    return getWrapped().transferTo(out);
+  }
 }

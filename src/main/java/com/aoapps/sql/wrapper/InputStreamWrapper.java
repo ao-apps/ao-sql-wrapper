@@ -1,6 +1,6 @@
 /*
  * ao-sql-wrapper - JDBC API wrapper.
- * Copyright (C) 2020, 2021, 2022  AO Industries, Inc.
+ * Copyright (C) 2020, 2021, 2022, 2025  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -26,6 +26,7 @@ package com.aoapps.sql.wrapper;
 import com.aoapps.lang.io.NoClose;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 
 /**
  * Wraps an {@link InputStream}.
@@ -83,9 +84,20 @@ public class InputStreamWrapper extends InputStream implements Wrapper, NoClose 
     return getWrapped().read(b, off, len);
   }
 
-  // Java 9: byte[] readAllBytes() throws IOException;
-  // Java 11: byte[] readNBytes(int len) throws IOException;
-  // Java 9: int readNBytes(byte[] b, int off, int len) throws IOException;
+  @Override
+  public byte[] readAllBytes() throws IOException {
+    return getWrapped().readAllBytes();
+  }
+
+  @Override
+  public byte[] readNBytes(int len) throws IOException {
+    return getWrapped().readNBytes(len);
+  }
+
+  @Override
+  public int readNBytes(byte[] b, int off, int len) throws IOException {
+    return getWrapped().readNBytes(b, off, len);
+  }
 
   @Override
   public long skip(long n) throws IOException {
@@ -117,5 +129,8 @@ public class InputStreamWrapper extends InputStream implements Wrapper, NoClose 
     return getWrapped().markSupported();
   }
 
-  // Java 9: long transferTo(OutputStream out) throws IOException;
+  @Override
+  public long transferTo(OutputStream out) throws IOException {
+    return getWrapped().transferTo(out);
+  }
 }

@@ -1,6 +1,6 @@
 /*
  * ao-sql-wrapper - JDBC API wrapper.
- * Copyright (C) 2020, 2021, 2022  AO Industries, Inc.
+ * Copyright (C) 2020, 2021, 2022, 2025  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -282,8 +282,23 @@ public interface StatementWrapper extends Wrapper, Statement {
     return getWrapped().executeLargeUpdate(sql, columnNames);
   }
 
-  // Java 9: String enquoteLiteral(String val)  throws SQLException;
-  // Java 9: String enquoteIdentifier(String identifier, boolean alwaysQuote) throws SQLException
-  // Java 9: boolean isSimpleIdentifier(String identifier) throws SQLException
-  // Java 9: String enquoteNCharLiteral(String val)  throws SQLException
+  @Override
+  default String enquoteLiteral(String val) throws SQLException {
+    return getWrapped().enquoteLiteral(val);
+  }
+
+  @Override
+  default String enquoteIdentifier(String identifier, boolean alwaysQuote) throws SQLException {
+    return getWrapped().enquoteIdentifier(identifier, alwaysQuote);
+  }
+
+  @Override
+  default boolean isSimpleIdentifier(String identifier) throws SQLException {
+    return getWrapped().isSimpleIdentifier(identifier);
+  }
+
+  @Override
+  default String enquoteNCharLiteral(String val) throws SQLException {
+    return getWrapped().enquoteNCharLiteral(val);
+  }
 }
