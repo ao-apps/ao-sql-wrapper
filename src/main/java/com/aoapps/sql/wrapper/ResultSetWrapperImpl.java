@@ -265,7 +265,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
             || (
             stmtWrapper != null
                 && stmtWrapper.getWrapped() == stmt
-        )
+          )
     ) {
       return stmtWrapper;
     } else {
