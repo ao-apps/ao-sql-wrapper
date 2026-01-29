@@ -60,7 +60,7 @@ public abstract class DriverWrapper implements Driver {
   /**
    * Creates a new {@link ConnectionWrapperImpl}.
    *
-   * @see  #wrapConnection(java.sql.Connection)
+   * @see  DriverWrapper#wrapConnection(java.sql.Connection)
    */
   protected ConnectionWrapperImpl newConnectionWrapper(Connection connection) {
     return new ConnectionWrapperImpl(this, connection);
@@ -69,7 +69,7 @@ public abstract class DriverWrapper implements Driver {
   /**
    * Wraps a {@link Connection}, if not already wrapped by this wrapper.
    *
-   * @see  #newConnectionWrapper(java.sql.Connection)
+   * @see  DriverWrapper#newConnectionWrapper(java.sql.Connection)
    */
   protected ConnectionWrapperImpl wrapConnection(Connection connection) {
     if (connection == null) {
@@ -103,7 +103,7 @@ public abstract class DriverWrapper implements Driver {
    *
    * @return  The modified URL, with prefix in the URL.
    *
-   * @throws  SQLException  When the wrapped URL does not begin with {@link #JDBC_SCHEMA}
+   * @throws  SQLException  When the wrapped URL does not begin with {@link DriverWrapper#JDBC_SCHEMA}
    *
    * @see  DatabaseMetaDataWrapper#getURL()
    */
@@ -127,7 +127,7 @@ public abstract class DriverWrapper implements Driver {
    * Gets the driver name for the given wrapped-driver's name.
    *
    * <p>This default implementation prefixes the wrapped-driver's name with
-   * <code>{@link #getUrlPrefix()} + ':'</code>.</p>
+   * <code>{@link DriverWrapper#getUrlPrefix()} + ':'</code>.</p>
    *
    * @see  DatabaseMetaDataWrapper#getDriverName()
    */
@@ -139,10 +139,10 @@ public abstract class DriverWrapper implements Driver {
    * Gets the driver version for the given wrapped-driver's version.
    *
    * <p>This default implementation prefixes the wrapped-driver's version with
-   * <code>{@link #getVersion()} + ':'</code>.</p>
+   * <code>{@link DriverWrapper#getVersion()} + ':'</code>.</p>
    *
    * @see  DatabaseMetaDataWrapper#getDriverVersion()
-   * @see  #getVersion()
+   * @see  DriverWrapper#getVersion()
    */
   protected String getDriverVersion(String wrappedVersion) {
     return getVersion() + ':' + wrappedVersion;
@@ -151,7 +151,7 @@ public abstract class DriverWrapper implements Driver {
   /**
    * Gets the driver major version for the given wrapped-driver's major version.
    *
-   * <p>This default implementation returns {@link #getMajorVersion()}.</p>
+   * <p>This default implementation returns {@link DriverWrapper#getMajorVersion()}.</p>
    *
    * @see  DatabaseMetaDataWrapper#getDriverMajorVersion()
    */
@@ -162,7 +162,7 @@ public abstract class DriverWrapper implements Driver {
   /**
    * Gets the driver minor version for the given wrapped-driver's minor version.
    *
-   * <p>This default implementation returns {@link #getMinorVersion()}.</p>
+   * <p>This default implementation returns {@link DriverWrapper#getMinorVersion()}.</p>
    *
    * @see  DatabaseMetaDataWrapper#getDriverMinorVersion()
    */
@@ -198,7 +198,7 @@ public abstract class DriverWrapper implements Driver {
    * Gets the full version string, which may be used for
    * {@linkplain DatabaseMetaDataWrapper#getDriverVersion() the driver version meta data associated with connections}.
    *
-   * @see  #getDriverVersion(java.lang.String)
+   * @see  DriverWrapper#getDriverVersion(java.lang.String)
    */
   protected abstract String getVersion();
 

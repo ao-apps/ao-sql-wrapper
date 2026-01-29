@@ -155,7 +155,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  PreparedStatementWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl executeQuery() throws SQLException {
@@ -165,7 +165,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  PreparedStatementWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void setAsciiStream(int parameterIndex, InputStream x, int length) throws SQLException {
@@ -175,7 +175,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  PreparedStatementWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   @Deprecated(since = "1.2")
@@ -186,7 +186,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  PreparedStatementWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void setBinaryStream(int parameterIndex, InputStream x, int length) throws SQLException {
@@ -196,7 +196,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  PreparedStatementWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void setCharacterStream(int parameterIndex, Reader reader, int length) throws SQLException {
@@ -206,7 +206,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapRef(java.sql.Ref)
+   * @see  PreparedStatementWrapperImpl#unwrapRef(java.sql.Ref)
    */
   @Override
   public void setRef(int parameterIndex, Ref x) throws SQLException {
@@ -216,7 +216,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapBlob(java.sql.Blob)
+   * @see  PreparedStatementWrapperImpl#unwrapBlob(java.sql.Blob)
    */
   @Override
   public void setBlob(int parameterIndex, Blob x) throws SQLException {
@@ -226,7 +226,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapClob(java.sql.Clob)
+   * @see  PreparedStatementWrapperImpl#unwrapClob(java.sql.Clob)
    */
   @Override
   public void setClob(int parameterIndex, Clob x) throws SQLException {
@@ -236,7 +236,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapArray(java.sql.Array)
+   * @see  PreparedStatementWrapperImpl#unwrapArray(java.sql.Array)
    */
   @Override
   public void setArray(int parameterIndex, Array x) throws SQLException {
@@ -246,7 +246,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSetMetaData(java.sql.ResultSetMetaData)
+   * @see  PreparedStatementWrapperImpl#wrapResultSetMetaData(java.sql.ResultSetMetaData)
    */
   @Override
   public ResultSetMetaDataWrapperImpl getMetaData() throws SQLException {
@@ -256,7 +256,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapParameterMetaData(java.sql.ParameterMetaData)
+   * @see  PreparedStatementWrapperImpl#wrapParameterMetaData(java.sql.ParameterMetaData)
    */
   @Override
   public ParameterMetaDataWrapperImpl getParameterMetaData() throws SQLException {
@@ -266,7 +266,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapRowId(java.sql.RowId)
+   * @see  PreparedStatementWrapperImpl#unwrapRowId(java.sql.RowId)
    */
   @Override
   public void setRowId(int parameterIndex, RowId x) throws SQLException {
@@ -276,7 +276,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  PreparedStatementWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void setNCharacterStream(int parameterIndex, Reader value, long length) throws SQLException {
@@ -286,7 +286,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapNClob(java.sql.NClob)
+   * @see  PreparedStatementWrapperImpl#unwrapNClob(java.sql.NClob)
    */
   @Override
   public void setNClob(int parameterIndex, NClob value) throws SQLException {
@@ -296,7 +296,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  PreparedStatementWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void setClob(int parameterIndex, Reader reader, long length) throws SQLException {
@@ -306,7 +306,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  PreparedStatementWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void setBlob(int parameterIndex, InputStream inputStream, long length) throws SQLException {
@@ -316,7 +316,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  PreparedStatementWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void setNClob(int parameterIndex, Reader reader, long length) throws SQLException {
@@ -326,7 +326,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapSQLXML(java.sql.SQLXML)
+   * @see  PreparedStatementWrapperImpl#unwrapSQLXML(java.sql.SQLXML)
    */
   @Override
   public void setSQLXML(int parameterIndex, SQLXML xmlObject) throws SQLException {
@@ -336,7 +336,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  PreparedStatementWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void setAsciiStream(int parameterIndex, InputStream x, long length) throws SQLException {
@@ -346,7 +346,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  PreparedStatementWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void setBinaryStream(int parameterIndex, InputStream x, long length) throws SQLException {
@@ -356,7 +356,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  PreparedStatementWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void setCharacterStream(int parameterIndex, Reader reader, long length) throws SQLException {
@@ -366,7 +366,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  PreparedStatementWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void setAsciiStream(int parameterIndex, InputStream x) throws SQLException {
@@ -376,7 +376,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  PreparedStatementWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void setBinaryStream(int parameterIndex, InputStream x) throws SQLException {
@@ -386,7 +386,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  PreparedStatementWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void setCharacterStream(int parameterIndex, Reader reader) throws SQLException {
@@ -396,7 +396,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  PreparedStatementWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void setNCharacterStream(int parameterIndex, Reader value) throws SQLException {
@@ -406,7 +406,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  PreparedStatementWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void setClob(int parameterIndex, Reader reader) throws SQLException {
@@ -416,7 +416,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  PreparedStatementWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void setBlob(int parameterIndex, InputStream inputStream) throws SQLException {
@@ -426,7 +426,7 @@ public class PreparedStatementWrapperImpl extends StatementWrapperImpl implement
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  PreparedStatementWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void setNClob(int parameterIndex, Reader reader) throws SQLException {

@@ -85,7 +85,7 @@ public class ArrayWrapperImpl implements ArrayWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  ArrayWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getResultSet() throws SQLException {
@@ -95,7 +95,7 @@ public class ArrayWrapperImpl implements ArrayWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  ArrayWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getResultSet(Map<String, Class<?>> map) throws SQLException {
@@ -106,7 +106,7 @@ public class ArrayWrapperImpl implements ArrayWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  ArrayWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getResultSet(long index, int count) throws SQLException {
@@ -116,7 +116,7 @@ public class ArrayWrapperImpl implements ArrayWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  ArrayWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getResultSet(long index, int count, Map<String, Class<?>> map) throws SQLException {

@@ -87,7 +87,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link ArrayWrapperImpl}.
    *
-   * @see  #wrapArray(com.aoapps.sql.wrapper.StatementWrapperImpl, java.sql.Array)
+   * @see  ConnectionWrapperImpl#wrapArray(com.aoapps.sql.wrapper.StatementWrapperImpl, java.sql.Array)
    */
   protected ArrayWrapperImpl newArrayWrapper(StatementWrapperImpl stmtWrapper, Array array) {
     return new ArrayWrapperImpl(this, stmtWrapper, array);
@@ -96,7 +96,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link BlobWrapperImpl}.
    *
-   * @see  #wrapBlob(java.sql.Blob)
+   * @see  ConnectionWrapperImpl#wrapBlob(java.sql.Blob)
    */
   protected BlobWrapperImpl newBlobWrapper(Blob blob) {
     return new BlobWrapperImpl(this, blob);
@@ -105,7 +105,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link CallableStatementWrapperImpl}.
    *
-   * @see  #wrapCallableStatement(java.sql.CallableStatement)
+   * @see  ConnectionWrapperImpl#wrapCallableStatement(java.sql.CallableStatement)
    */
   protected CallableStatementWrapperImpl newCallableStatementWrapper(CallableStatement cstmt) {
     return new CallableStatementWrapperImpl(this, cstmt);
@@ -114,7 +114,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link ClobWrapperImpl}.
    *
-   * @see  #wrapClob(java.sql.Clob)
+   * @see  ConnectionWrapperImpl#wrapClob(java.sql.Clob)
    */
   protected ClobWrapperImpl newClobWrapper(Clob clob) {
     return new ClobWrapperImpl(this, clob);
@@ -123,7 +123,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link DatabaseMetaDataWrapperImpl}.
    *
-   * @see  #wrapDatabaseMetaData(java.sql.DatabaseMetaData)
+   * @see  ConnectionWrapperImpl#wrapDatabaseMetaData(java.sql.DatabaseMetaData)
    */
   protected DatabaseMetaDataWrapperImpl newDatabaseMetaDataWrapper(DatabaseMetaData metaData) {
     return new DatabaseMetaDataWrapperImpl(this, metaData);
@@ -132,7 +132,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link InputStreamWrapper}.
    *
-   * @see  #wrapInputStream(java.io.InputStream)
+   * @see  ConnectionWrapperImpl#wrapInputStream(java.io.InputStream)
    */
   protected InputStreamWrapper newInputStreamWrapper(InputStream in) {
     return new InputStreamWrapper(this, in);
@@ -141,7 +141,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link NClobWrapperImpl}.
    *
-   * @see  #wrapNClob(java.sql.NClob)
+   * @see  ConnectionWrapperImpl#wrapNClob(java.sql.NClob)
    */
   protected NClobWrapperImpl newNClobWrapper(NClob nclob) {
     return new NClobWrapperImpl(this, nclob);
@@ -150,7 +150,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link OutputStreamWrapper}.
    *
-   * @see  #wrapOutputStream(java.io.OutputStream)
+   * @see  ConnectionWrapperImpl#wrapOutputStream(java.io.OutputStream)
    */
   protected OutputStreamWrapper newOutputStreamWrapper(OutputStream out) {
     return new OutputStreamWrapper(this, out);
@@ -159,7 +159,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link ParameterMetaDataWrapperImpl}.
    *
-   * @see  #wrapParameterMetaData(java.sql.ParameterMetaData)
+   * @see  ConnectionWrapperImpl#wrapParameterMetaData(java.sql.ParameterMetaData)
    */
   protected ParameterMetaDataWrapperImpl newParameterMetaDataWrapper(ParameterMetaData metaData) {
     return new ParameterMetaDataWrapperImpl(this, metaData);
@@ -168,7 +168,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link PreparedStatementWrapperImpl}.
    *
-   * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
+   * @see  ConnectionWrapperImpl#wrapPreparedStatement(java.sql.PreparedStatement)
    */
   protected PreparedStatementWrapperImpl newPreparedStatementWrapper(PreparedStatement pstmt) {
     return new PreparedStatementWrapperImpl(this, pstmt);
@@ -177,7 +177,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link ReaderWrapper}.
    *
-   * @see  #wrapReader(java.io.Reader)
+   * @see  ConnectionWrapperImpl#wrapReader(java.io.Reader)
    */
   protected ReaderWrapper newReaderWrapper(Reader in) {
     return new ReaderWrapper(this, in);
@@ -186,7 +186,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link RefWrapperImpl}.
    *
-   * @see  #wrapRef(java.sql.Ref)
+   * @see  ConnectionWrapperImpl#wrapRef(java.sql.Ref)
    */
   protected RefWrapperImpl newRefWrapper(Ref ref) {
     return new RefWrapperImpl(this, ref);
@@ -195,7 +195,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link ResultSetWrapperImpl}.
    *
-   * @see  #wrapResultSet(com.aoapps.sql.wrapper.StatementWrapperImpl, java.sql.ResultSet)
+   * @see  ConnectionWrapperImpl#wrapResultSet(com.aoapps.sql.wrapper.StatementWrapperImpl, java.sql.ResultSet)
    */
   protected ResultSetWrapperImpl newResultSetWrapper(StatementWrapperImpl stmtWrapper, ResultSet results) {
     return new ResultSetWrapperImpl(this, stmtWrapper, results);
@@ -204,7 +204,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link ResultSetMetaDataWrapperImpl}.
    *
-   * @see  #wrapResultSetMetaData(java.sql.ResultSetMetaData)
+   * @see  ConnectionWrapperImpl#wrapResultSetMetaData(java.sql.ResultSetMetaData)
    */
   protected ResultSetMetaDataWrapperImpl newResultSetMetaDataWrapper(ResultSetMetaData metaData) {
     return new ResultSetMetaDataWrapperImpl(this, metaData);
@@ -213,7 +213,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link RowIdWrapperImpl}.
    *
-   * @see  #wrapRowId(RowId)
+   * @see  ConnectionWrapperImpl#wrapRowId(RowId)
    */
   protected RowIdWrapperImpl newRowIdWrapper(RowId rowId) {
     return new RowIdWrapperImpl(this, rowId);
@@ -222,7 +222,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link SQLDataWrapperImpl}.
    *
-   * @see  #wrapSQLData(java.sql.SQLData)
+   * @see  ConnectionWrapperImpl#wrapSQLData(java.sql.SQLData)
    */
   protected SQLDataWrapperImpl newSQLDataWrapper(SQLData sqlData) {
     return new SQLDataWrapperImpl(this, sqlData);
@@ -231,7 +231,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link SQLInputWrapperImpl}.
    *
-   * @see  #wrapSQLInput(java.sql.SQLInput)
+   * @see  ConnectionWrapperImpl#wrapSQLInput(java.sql.SQLInput)
    */
   protected SQLInputWrapperImpl newSQLInputWrapper(SQLInput sqlInput) {
     return new SQLInputWrapperImpl(this, sqlInput);
@@ -240,7 +240,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link SQLOutputWrapperImpl}.
    *
-   * @see  #wrapSQLOutput(java.sql.SQLOutput)
+   * @see  ConnectionWrapperImpl#wrapSQLOutput(java.sql.SQLOutput)
    */
   protected SQLOutputWrapperImpl newSQLOutputWrapper(SQLOutput sqlOutput) {
     return new SQLOutputWrapperImpl(this, sqlOutput);
@@ -249,7 +249,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link SQLXMLWrapperImpl}.
    *
-   * @see  #wrapSQLXML(SQLXML)
+   * @see  ConnectionWrapperImpl#wrapSQLXML(SQLXML)
    */
   protected SQLXMLWrapperImpl newSQLXMLWrapper(SQLXML sqlXml) {
     return new SQLXMLWrapperImpl(this, sqlXml);
@@ -258,7 +258,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link SavepointWrapperImpl}.
    *
-   * @see  #wrapSavepoint(Savepoint)
+   * @see  ConnectionWrapperImpl#wrapSavepoint(Savepoint)
    */
   protected SavepointWrapperImpl newSavepointWrapper(Savepoint savepoint) {
     return new SavepointWrapperImpl(this, savepoint);
@@ -267,7 +267,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link StatementWrapperImpl}.
    *
-   * @see  #wrapStatement(java.sql.Statement)
+   * @see  ConnectionWrapperImpl#wrapStatement(java.sql.Statement)
    */
   protected StatementWrapperImpl newStatementWrapper(Statement stmt) {
     return new StatementWrapperImpl(this, stmt);
@@ -276,7 +276,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link StructWrapperImpl}.
    *
-   * @see  #wrapStruct(Struct)
+   * @see  ConnectionWrapperImpl#wrapStruct(Struct)
    */
   protected StructWrapperImpl newStructWrapper(Struct struct) {
     return new StructWrapperImpl(this, struct);
@@ -285,7 +285,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Creates a new {@link WriterWrapper}.
    *
-   * @see  #wrapWriter(java.io.Writer)
+   * @see  ConnectionWrapperImpl#wrapWriter(java.io.Writer)
    */
   protected WriterWrapper newWriterWrapper(Writer out) {
     return new WriterWrapper(this, out);
@@ -294,7 +294,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps an {@link Array}, if not already wrapped by this wrapper.
    *
-   * @see  #newArrayWrapper(com.aoapps.sql.wrapper.StatementWrapperImpl, java.sql.Array)
+   * @see  ConnectionWrapperImpl#newArrayWrapper(com.aoapps.sql.wrapper.StatementWrapperImpl, java.sql.Array)
    * @see  CallableStatementWrapperImpl#wrapArray(java.sql.Array)
    * @see  ResultSetWrapperImpl#wrapArray(java.sql.Array)
    * @see  SQLInputWrapperImpl#wrapArray(java.sql.Array)
@@ -338,7 +338,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link Blob}, if not already wrapped by this wrapper.
    *
-   * @see  #newBlobWrapper(java.sql.Blob)
+   * @see  ConnectionWrapperImpl#newBlobWrapper(java.sql.Blob)
    * @see  CallableStatementWrapperImpl#wrapBlob(java.sql.Blob)
    * @see  ResultSetWrapperImpl#wrapBlob(java.sql.Blob)
    * @see  SQLInputWrapperImpl#wrapBlob(java.sql.Blob)
@@ -380,7 +380,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link CallableStatement}, if not already wrapped by this wrapper.
    *
-   * @see  #newCallableStatementWrapper(java.sql.CallableStatement)
+   * @see  ConnectionWrapperImpl#newCallableStatementWrapper(java.sql.CallableStatement)
    */
   protected CallableStatementWrapperImpl wrapCallableStatement(CallableStatement cstmt) {
     if (cstmt == null) {
@@ -398,8 +398,8 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link Clob}, if not already wrapped by this wrapper.
    *
-   * @see  #newClobWrapper(java.sql.Clob)
-   * @see  #wrapNClob(java.sql.NClob)
+   * @see  ConnectionWrapperImpl#newClobWrapper(java.sql.Clob)
+   * @see  ConnectionWrapperImpl#wrapNClob(java.sql.NClob)
    * @see  CallableStatementWrapperImpl#wrapClob(java.sql.Clob)
    * @see  ResultSetWrapperImpl#wrapClob(java.sql.Clob)
    * @see  SQLInputWrapperImpl#wrapClob(java.sql.Clob)
@@ -444,7 +444,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link DatabaseMetaData}, if not already wrapped by this wrapper.
    *
-   * @see  #newDatabaseMetaDataWrapper(java.sql.DatabaseMetaData)
+   * @see  ConnectionWrapperImpl#newDatabaseMetaDataWrapper(java.sql.DatabaseMetaData)
    */
   protected DatabaseMetaDataWrapperImpl wrapDatabaseMetaData(DatabaseMetaData metaData) {
     if (metaData instanceof DatabaseMetaDataWrapperImpl) {
@@ -459,7 +459,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps an {@link InputStream}, if not already wrapped by this wrapper.
    *
-   * @see  #newInputStreamWrapper(java.io.InputStream)
+   * @see  ConnectionWrapperImpl#newInputStreamWrapper(java.io.InputStream)
    * @see  BlobWrapperImpl#wrapInputStream(java.io.InputStream)
    * @see  ClobWrapperImpl#wrapInputStream(java.io.InputStream)
    * @see  ResultSetWrapperImpl#wrapInputStream(java.io.InputStream)
@@ -502,7 +502,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link NClob}, if not already wrapped by this wrapper.
    *
-   * @see  #newNClobWrapper(java.sql.NClob)
+   * @see  ConnectionWrapperImpl#newNClobWrapper(java.sql.NClob)
    * @see  CallableStatementWrapperImpl#wrapNClob(java.sql.NClob)
    * @see  ResultSetWrapperImpl#wrapNClob(java.sql.NClob)
    * @see  SQLInputWrapperImpl#wrapNClob(java.sql.NClob)
@@ -543,7 +543,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps an {@link OutputStream}, if not already wrapped by this wrapper.
    *
-   * @see  #newOutputStreamWrapper(java.io.OutputStream)
+   * @see  ConnectionWrapperImpl#newOutputStreamWrapper(java.io.OutputStream)
    * @see  BlobWrapperImpl#wrapOutputStream(java.io.OutputStream)
    * @see  ClobWrapperImpl#wrapOutputStream(java.io.OutputStream)
    * @see  SQLXMLWrapperImpl#wrapOutputStream(java.io.OutputStream)
@@ -564,7 +564,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link ParameterMetaData}, if not already wrapped by this wrapper.
    *
-   * @see  #newParameterMetaDataWrapper(java.sql.ParameterMetaData)
+   * @see  ConnectionWrapperImpl#newParameterMetaDataWrapper(java.sql.ParameterMetaData)
    * @see  PreparedStatementWrapperImpl#wrapParameterMetaData(java.sql.ParameterMetaData)
    */
   protected ParameterMetaDataWrapperImpl wrapParameterMetaData(ParameterMetaData metaData) {
@@ -583,8 +583,8 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link PreparedStatement}, if not already wrapped by this wrapper.
    *
-   * @see  #newPreparedStatementWrapper(java.sql.PreparedStatement)
-   * @see  #wrapCallableStatement(java.sql.CallableStatement)
+   * @see  ConnectionWrapperImpl#newPreparedStatementWrapper(java.sql.PreparedStatement)
+   * @see  ConnectionWrapperImpl#wrapCallableStatement(java.sql.CallableStatement)
    */
   protected PreparedStatementWrapperImpl wrapPreparedStatement(PreparedStatement pstmt) {
     if (pstmt == null) {
@@ -605,7 +605,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link Reader}, if not already wrapped by this wrapper.
    *
-   * @see  #newReaderWrapper(java.io.Reader)
+   * @see  ConnectionWrapperImpl#newReaderWrapper(java.io.Reader)
    * @see  CallableStatementWrapperImpl#wrapReader(java.io.Reader)
    * @see  ClobWrapperImpl#wrapReader(java.io.Reader)
    * @see  ResultSetWrapperImpl#wrapReader(java.io.Reader)
@@ -648,7 +648,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link Ref}, if not already wrapped by this wrapper.
    *
-   * @see  #newRefWrapper(java.sql.Ref)
+   * @see  ConnectionWrapperImpl#newRefWrapper(java.sql.Ref)
    * @see  CallableStatementWrapperImpl#wrapRef(java.sql.Ref)
    * @see  ResultSetWrapperImpl#wrapRef(java.sql.Ref)
    * @see  SQLInputWrapperImpl#wrapRef(java.sql.Ref)
@@ -689,8 +689,8 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link ResultSet}, if not already wrapped by this wrapper.
    *
-   * @see  #wrapStatement(java.sql.Statement)
-   * @see  #newResultSetWrapper(com.aoapps.sql.wrapper.StatementWrapperImpl, java.sql.ResultSet)
+   * @see  ConnectionWrapperImpl#wrapStatement(java.sql.Statement)
+   * @see  ConnectionWrapperImpl#newResultSetWrapper(com.aoapps.sql.wrapper.StatementWrapperImpl, java.sql.ResultSet)
    * @see  ArrayWrapperImpl#wrapResultSet(java.sql.ResultSet)
    * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    * @see  StatementWrapperImpl#wrapResultSet(java.sql.ResultSet)
@@ -714,7 +714,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link ResultSetMetaData}, if not already wrapped by this wrapper.
    *
-   * @see  #newResultSetMetaDataWrapper(java.sql.ResultSetMetaData)
+   * @see  ConnectionWrapperImpl#newResultSetMetaDataWrapper(java.sql.ResultSetMetaData)
    * @see  PreparedStatementWrapperImpl#wrapResultSetMetaData(java.sql.ResultSetMetaData)
    * @see  ResultSetWrapperImpl#wrapResultSetMetaData(java.sql.ResultSetMetaData)
    */
@@ -734,7 +734,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link RowId}, if not already wrapped by this wrapper.
    *
-   * @see  #newRowIdWrapper(java.sql.RowId)
+   * @see  ConnectionWrapperImpl#newRowIdWrapper(java.sql.RowId)
    * @see  CallableStatementWrapperImpl#wrapRowId(java.sql.RowId)
    * @see  ResultSetWrapperImpl#wrapRowId(java.sql.RowId)
    * @see  SQLInputWrapperImpl#wrapRowId(java.sql.RowId)
@@ -776,7 +776,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link Savepoint}, if not already wrapped by this wrapper.
    *
-   * @see  #newSavepointWrapper(java.sql.Savepoint)
+   * @see  ConnectionWrapperImpl#newSavepointWrapper(java.sql.Savepoint)
    */
   protected SavepointWrapperImpl wrapSavepoint(Savepoint savepoint) {
     if (savepoint == null) {
@@ -810,7 +810,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link SQLData}, if not already wrapped by this wrapper.
    *
-   * @see  #newSQLDataWrapper(java.sql.SQLData)
+   * @see  ConnectionWrapperImpl#newSQLDataWrapper(java.sql.SQLData)
    * @see  SQLOutputWrapperImpl#wrapSQLData(java.sql.SQLData)
    */
   protected SQLDataWrapperImpl wrapSQLData(SQLData sqlData) {
@@ -829,7 +829,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link SQLInput}, if not already wrapped by this wrapper.
    *
-   * @see  #newSQLInputWrapper(java.sql.SQLInput)
+   * @see  ConnectionWrapperImpl#newSQLInputWrapper(java.sql.SQLInput)
    * @see  SQLDataWrapperImpl#wrapSQLInput(java.sql.SQLInput)
    */
   protected SQLInputWrapperImpl wrapSQLInput(SQLInput sqlInput) {
@@ -848,7 +848,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link SQLOutput}, if not already wrapped by this wrapper.
    *
-   * @see  #newSQLOutputWrapper(java.sql.SQLOutput)
+   * @see  ConnectionWrapperImpl#newSQLOutputWrapper(java.sql.SQLOutput)
    * @see  SQLDataWrapperImpl#wrapSQLOutput(java.sql.SQLOutput)
    */
   protected SQLOutputWrapperImpl wrapSQLOutput(SQLOutput sqlOutput) {
@@ -867,7 +867,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link SQLXML}, if not already wrapped by this wrapper.
    *
-   * @see  #newSQLXMLWrapper(java.sql.SQLXML)
+   * @see  ConnectionWrapperImpl#newSQLXMLWrapper(java.sql.SQLXML)
    * @see  CallableStatementWrapperImpl#wrapSQLXML(java.sql.SQLXML)
    * @see  ResultSetWrapperImpl#wrapSQLXML(java.sql.SQLXML)
    * @see  SQLInputWrapperImpl#wrapSQLXML(java.sql.SQLXML)
@@ -908,8 +908,8 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link Statement}, if not already wrapped by this wrapper.
    *
-   * @see  #newStatementWrapper(java.sql.Statement)
-   * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
+   * @see  ConnectionWrapperImpl#newStatementWrapper(java.sql.Statement)
+   * @see  ConnectionWrapperImpl#wrapPreparedStatement(java.sql.PreparedStatement)
    * @see  ResultSetWrapperImpl#wrapStatement(java.sql.Statement)
    */
   protected StatementWrapperImpl wrapStatement(Statement stmt) {
@@ -931,7 +931,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link Struct}, if not already wrapped by this wrapper.
    *
-   * @see  #newStructWrapper(java.sql.Struct)
+   * @see  ConnectionWrapperImpl#newStructWrapper(java.sql.Struct)
    */
   protected StructWrapperImpl wrapStruct(Struct struct) {
     if (struct == null) {
@@ -967,7 +967,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * Wraps a {@link Writer}, if not already wrapped by this wrapper.
    *
-   * @see  #newWriterWrapper(java.io.Writer)
+   * @see  ConnectionWrapperImpl#newWriterWrapper(java.io.Writer)
    * @see  ClobWrapperImpl#wrapWriter(java.io.Writer)
    * @see  SQLXMLWrapperImpl#wrapWriter(java.io.Writer)
    */
@@ -987,7 +987,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapStatement(java.sql.Statement)
+   * @see  ConnectionWrapperImpl#wrapStatement(java.sql.Statement)
    */
   @Override
   public StatementWrapperImpl createStatement() throws SQLException {
@@ -997,7 +997,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
+   * @see  ConnectionWrapperImpl#wrapPreparedStatement(java.sql.PreparedStatement)
    */
   @Override
   public PreparedStatementWrapperImpl prepareStatement(String sql) throws SQLException {
@@ -1007,7 +1007,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapCallableStatement(java.sql.CallableStatement)
+   * @see  ConnectionWrapperImpl#wrapCallableStatement(java.sql.CallableStatement)
    */
   @Override
   public CallableStatementWrapperImpl prepareCall(String sql) throws SQLException {
@@ -1027,7 +1027,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapDatabaseMetaData(java.sql.DatabaseMetaData)
+   * @see  ConnectionWrapperImpl#wrapDatabaseMetaData(java.sql.DatabaseMetaData)
    */
   @Override
   public DatabaseMetaDataWrapperImpl getMetaData() throws SQLException {
@@ -1037,7 +1037,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapStatement(java.sql.Statement)
+   * @see  ConnectionWrapperImpl#wrapStatement(java.sql.Statement)
    */
   @Override
   public StatementWrapperImpl createStatement(int resultSetType, int resultSetConcurrency) throws SQLException {
@@ -1047,7 +1047,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
+   * @see  ConnectionWrapperImpl#wrapPreparedStatement(java.sql.PreparedStatement)
    */
   @Override
   public PreparedStatementWrapperImpl prepareStatement(String sql, int resultSetType, int resultSetConcurrency) throws SQLException {
@@ -1057,7 +1057,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapCallableStatement(java.sql.CallableStatement)
+   * @see  ConnectionWrapperImpl#wrapCallableStatement(java.sql.CallableStatement)
    */
   @Override
   public CallableStatementWrapperImpl prepareCall(String sql, int resultSetType, int resultSetConcurrency) throws SQLException {
@@ -1067,7 +1067,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapSavepoint(java.sql.Savepoint)
+   * @see  ConnectionWrapperImpl#wrapSavepoint(java.sql.Savepoint)
    */
   @Override
   public SavepointWrapperImpl setSavepoint() throws SQLException {
@@ -1077,7 +1077,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapSavepoint(java.sql.Savepoint)
+   * @see  ConnectionWrapperImpl#wrapSavepoint(java.sql.Savepoint)
    */
   @Override
   public SavepointWrapperImpl setSavepoint(String name) throws SQLException {
@@ -1087,7 +1087,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapSavepoint(java.sql.Savepoint)
+   * @see  ConnectionWrapperImpl#unwrapSavepoint(java.sql.Savepoint)
    */
   @Override
   public void rollback(Savepoint savepoint) throws SQLException {
@@ -1097,7 +1097,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapSavepoint(java.sql.Savepoint)
+   * @see  ConnectionWrapperImpl#unwrapSavepoint(java.sql.Savepoint)
    */
   @Override
   public void releaseSavepoint(Savepoint savepoint) throws SQLException {
@@ -1107,7 +1107,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapStatement(java.sql.Statement)
+   * @see  ConnectionWrapperImpl#wrapStatement(java.sql.Statement)
    */
   @Override
   public StatementWrapperImpl createStatement(int resultSetType, int resultSetConcurrency, int resultSetHoldability) throws SQLException {
@@ -1117,7 +1117,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
+   * @see  ConnectionWrapperImpl#wrapPreparedStatement(java.sql.PreparedStatement)
    */
   @Override
   public PreparedStatementWrapperImpl prepareStatement(String sql, int resultSetType, int resultSetConcurrency, int resultSetHoldability) throws SQLException {
@@ -1127,7 +1127,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapCallableStatement(java.sql.CallableStatement)
+   * @see  ConnectionWrapperImpl#wrapCallableStatement(java.sql.CallableStatement)
    */
   @Override
   public CallableStatementWrapperImpl prepareCall(String sql, int resultSetType, int resultSetConcurrency, int resultSetHoldability) throws SQLException {
@@ -1137,7 +1137,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
+   * @see  ConnectionWrapperImpl#wrapPreparedStatement(java.sql.PreparedStatement)
    */
   @Override
   public PreparedStatementWrapperImpl prepareStatement(String sql, int autoGeneratedKeys) throws SQLException {
@@ -1147,7 +1147,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
+   * @see  ConnectionWrapperImpl#wrapPreparedStatement(java.sql.PreparedStatement)
    */
   @Override
   public PreparedStatementWrapperImpl prepareStatement(String sql, int[] columnIndexes) throws SQLException {
@@ -1157,7 +1157,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapPreparedStatement(java.sql.PreparedStatement)
+   * @see  ConnectionWrapperImpl#wrapPreparedStatement(java.sql.PreparedStatement)
    */
   @Override
   public PreparedStatementWrapperImpl prepareStatement(String sql, String[] columnNames) throws SQLException {
@@ -1167,7 +1167,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapClob(java.sql.Clob)
+   * @see  ConnectionWrapperImpl#wrapClob(java.sql.Clob)
    */
   @Override
   public ClobWrapperImpl createClob() throws SQLException {
@@ -1177,7 +1177,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapBlob(java.sql.Blob)
+   * @see  ConnectionWrapperImpl#wrapBlob(java.sql.Blob)
    */
   @Override
   public BlobWrapperImpl createBlob() throws SQLException {
@@ -1187,7 +1187,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapNClob(java.sql.NClob)
+   * @see  ConnectionWrapperImpl#wrapNClob(java.sql.NClob)
    */
   @Override
   public NClobWrapperImpl createNClob() throws SQLException {
@@ -1197,7 +1197,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapSQLXML(java.sql.SQLXML)
+   * @see  ConnectionWrapperImpl#wrapSQLXML(java.sql.SQLXML)
    */
   @Override
   public SQLXMLWrapperImpl createSQLXML() throws SQLException {
@@ -1207,7 +1207,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapArray(com.aoapps.sql.wrapper.StatementWrapperImpl, java.sql.Array)
+   * @see  ConnectionWrapperImpl#wrapArray(com.aoapps.sql.wrapper.StatementWrapperImpl, java.sql.Array)
    */
   @Override
   public ArrayWrapperImpl createArrayOf(String typeName, Object[] elements) throws SQLException {
@@ -1217,7 +1217,7 @@ public class ConnectionWrapperImpl implements ConnectionWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapStruct(java.sql.Struct)
+   * @see  ConnectionWrapperImpl#wrapStruct(java.sql.Struct)
    */
   @Override
   public StructWrapperImpl createStruct(String typeName, Object[] attributes) throws SQLException {

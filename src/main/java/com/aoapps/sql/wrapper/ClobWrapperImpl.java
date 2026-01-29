@@ -110,7 +110,7 @@ public class ClobWrapperImpl implements ClobWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapReader(java.io.Reader)
+   * @see  ClobWrapperImpl#wrapReader(java.io.Reader)
    */
   @Override
   public ReaderWrapper getCharacterStream() throws SQLException {
@@ -120,7 +120,7 @@ public class ClobWrapperImpl implements ClobWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapInputStream(java.io.InputStream)
+   * @see  ClobWrapperImpl#wrapInputStream(java.io.InputStream)
    */
   @Override
   public InputStreamWrapper getAsciiStream() throws SQLException {
@@ -130,7 +130,7 @@ public class ClobWrapperImpl implements ClobWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapClob(java.sql.Clob)
+   * @see  ClobWrapperImpl#unwrapClob(java.sql.Clob)
    */
   @Override
   public long position(Clob pattern, long start) throws SQLException {
@@ -140,7 +140,7 @@ public class ClobWrapperImpl implements ClobWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapOutputStream(java.io.OutputStream)
+   * @see  ClobWrapperImpl#wrapOutputStream(java.io.OutputStream)
    */
   @Override
   public OutputStreamWrapper setAsciiStream(long pos) throws SQLException {
@@ -150,7 +150,7 @@ public class ClobWrapperImpl implements ClobWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapWriter(Writer)
+   * @see  ClobWrapperImpl#wrapWriter(Writer)
    */
   @Override
   public WriterWrapper setCharacterStream(long pos) throws SQLException {
@@ -160,7 +160,7 @@ public class ClobWrapperImpl implements ClobWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapReader(java.io.Reader)
+   * @see  ClobWrapperImpl#wrapReader(java.io.Reader)
    */
   @Override
   public ReaderWrapper getCharacterStream(long pos, long length) throws SQLException {

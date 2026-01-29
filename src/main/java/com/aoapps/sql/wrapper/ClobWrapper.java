@@ -40,9 +40,9 @@ public interface ClobWrapper extends Wrapper, Clob, AutoCloseable {
   Clob getWrapped();
 
   /**
-   * Calls {@link #free()}.
+   * Calls {@link ClobWrapper#free()}.
    *
-   * @see  #free()
+   * @see  ClobWrapper#free()
    */
   @Override
   default void close() throws SQLException {

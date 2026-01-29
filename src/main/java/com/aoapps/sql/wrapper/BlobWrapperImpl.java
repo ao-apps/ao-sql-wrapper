@@ -90,7 +90,7 @@ public class BlobWrapperImpl implements BlobWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapInputStream(java.io.InputStream)
+   * @see  BlobWrapperImpl#wrapInputStream(java.io.InputStream)
    */
   @Override
   public InputStreamWrapper getBinaryStream() throws SQLException {
@@ -100,7 +100,7 @@ public class BlobWrapperImpl implements BlobWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapBlob(java.sql.Blob)
+   * @see  BlobWrapperImpl#unwrapBlob(java.sql.Blob)
    */
   @Override
   public long position(Blob pattern, long start) throws SQLException {
@@ -110,7 +110,7 @@ public class BlobWrapperImpl implements BlobWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapOutputStream(java.io.OutputStream)
+   * @see  BlobWrapperImpl#wrapOutputStream(java.io.OutputStream)
    */
   @Override
   public OutputStreamWrapper setBinaryStream(long pos) throws SQLException {
@@ -120,7 +120,7 @@ public class BlobWrapperImpl implements BlobWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapInputStream(java.io.InputStream)
+   * @see  BlobWrapperImpl#wrapInputStream(java.io.InputStream)
    */
   @Override
   public InputStreamWrapper getBinaryStream(long pos, long length) throws SQLException {

@@ -151,7 +151,7 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapReader(java.io.Reader)
+   * @see  SQLInputWrapperImpl#wrapReader(java.io.Reader)
    */
   @Override
   public ReaderWrapper readCharacterStream() throws SQLException {
@@ -161,7 +161,7 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapInputStream(java.io.InputStream)
+   * @see  SQLInputWrapperImpl#wrapInputStream(java.io.InputStream)
    */
   @Override
   public InputStreamWrapper readAsciiStream() throws SQLException {
@@ -171,7 +171,7 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapInputStream(java.io.InputStream)
+   * @see  SQLInputWrapperImpl#wrapInputStream(java.io.InputStream)
    */
   @Override
   public InputStreamWrapper readBinaryStream() throws SQLException {
@@ -181,7 +181,7 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapRef(java.sql.Ref)
+   * @see  SQLInputWrapperImpl#wrapRef(java.sql.Ref)
    */
   @Override
   public RefWrapperImpl readRef() throws SQLException {
@@ -191,7 +191,7 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapBlob(java.sql.Blob)
+   * @see  SQLInputWrapperImpl#wrapBlob(java.sql.Blob)
    */
   @Override
   public BlobWrapperImpl readBlob() throws SQLException {
@@ -201,7 +201,7 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapClob(java.sql.Clob)
+   * @see  SQLInputWrapperImpl#wrapClob(java.sql.Clob)
    */
   @Override
   public ClobWrapperImpl readClob() throws SQLException {
@@ -211,7 +211,7 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapArray(java.sql.Array)
+   * @see  SQLInputWrapperImpl#wrapArray(java.sql.Array)
    */
   @Override
   public ArrayWrapperImpl readArray() throws SQLException {
@@ -221,7 +221,7 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapNClob(java.sql.NClob)
+   * @see  SQLInputWrapperImpl#wrapNClob(java.sql.NClob)
    */
   @Override
   public NClobWrapperImpl readNClob() throws SQLException {
@@ -231,7 +231,7 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapSQLXML(java.sql.SQLXML)
+   * @see  SQLInputWrapperImpl#wrapSQLXML(java.sql.SQLXML)
    */
   @Override
   public SQLXMLWrapperImpl readSQLXML() throws SQLException {
@@ -241,7 +241,7 @@ public class SQLInputWrapperImpl implements SQLInputWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapRowId(java.sql.RowId)
+   * @see  SQLInputWrapperImpl#wrapRowId(java.sql.RowId)
    */
   @Override
   public RowIdWrapperImpl readRowId() throws SQLException {

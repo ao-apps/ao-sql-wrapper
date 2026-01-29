@@ -40,9 +40,9 @@ public interface BlobWrapper extends Wrapper, Blob, AutoCloseable {
   Blob getWrapped();
 
   /**
-   * Calls {@link #free()}.
+   * Calls {@link BlobWrapper#free()}.
    *
-   * @see  #free()
+   * @see  BlobWrapper#free()
    */
   @Override
   default void close() throws SQLException {

@@ -277,7 +277,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#wrapInputStream(java.io.InputStream)
    */
   @Override
   public InputStreamWrapper getAsciiStream(int columnIndex) throws SQLException {
@@ -287,7 +287,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#wrapInputStream(java.io.InputStream)
    */
   @Override
   @Deprecated(since = "1.2")
@@ -298,7 +298,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#wrapInputStream(java.io.InputStream)
    */
   @Override
   public InputStreamWrapper getBinaryStream(int columnIndex) throws SQLException {
@@ -308,7 +308,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#wrapInputStream(java.io.InputStream)
    */
   @Override
   public InputStreamWrapper getAsciiStream(String columnLabel) throws SQLException {
@@ -318,7 +318,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#wrapInputStream(java.io.InputStream)
    */
   @Override
   @Deprecated(since = "1.2")
@@ -329,7 +329,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#wrapInputStream(java.io.InputStream)
    */
   @Override
   public InputStreamWrapper getBinaryStream(String columnLabel) throws SQLException {
@@ -339,7 +339,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSetMetaData(java.sql.ResultSetMetaData)
+   * @see  ResultSetWrapperImpl#wrapResultSetMetaData(java.sql.ResultSetMetaData)
    */
   @Override
   public ResultSetMetaDataWrapperImpl getMetaData() throws SQLException {
@@ -349,7 +349,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#wrapReader(java.io.Reader)
    */
   @Override
   public ReaderWrapper getCharacterStream(int columnIndex) throws SQLException {
@@ -359,7 +359,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#wrapReader(java.io.Reader)
    */
   @Override
   public ReaderWrapper getCharacterStream(String columnLabel) throws SQLException {
@@ -369,7 +369,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateAsciiStream(int columnIndex, InputStream x, int length) throws SQLException {
@@ -379,7 +379,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateBinaryStream(int columnIndex, InputStream x, int length) throws SQLException {
@@ -389,7 +389,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateCharacterStream(int columnIndex, Reader x, int length) throws SQLException {
@@ -399,7 +399,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateAsciiStream(String columnLabel, InputStream x, int length) throws SQLException {
@@ -409,7 +409,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateBinaryStream(String columnLabel, InputStream x, int length) throws SQLException {
@@ -419,7 +419,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateCharacterStream(String columnLabel, Reader reader, int length) throws SQLException {
@@ -429,7 +429,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapStatement(java.sql.Statement)
+   * @see  ResultSetWrapperImpl#wrapStatement(java.sql.Statement)
    */
   @Override
   public StatementWrapperImpl getStatement() throws SQLException {
@@ -439,7 +439,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapRef(java.sql.Ref)
+   * @see  ResultSetWrapperImpl#wrapRef(java.sql.Ref)
    */
   @Override
   public RefWrapperImpl getRef(int columnIndex) throws SQLException {
@@ -449,7 +449,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapBlob(java.sql.Blob)
+   * @see  ResultSetWrapperImpl#wrapBlob(java.sql.Blob)
    */
   @Override
   public BlobWrapperImpl getBlob(int columnIndex) throws SQLException {
@@ -459,7 +459,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapClob(java.sql.Clob)
+   * @see  ResultSetWrapperImpl#wrapClob(java.sql.Clob)
    */
   @Override
   public ClobWrapperImpl getClob(int columnIndex) throws SQLException {
@@ -469,7 +469,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapArray(java.sql.Array)
+   * @see  ResultSetWrapperImpl#wrapArray(java.sql.Array)
    */
   @Override
   public ArrayWrapperImpl getArray(int columnIndex) throws SQLException {
@@ -479,7 +479,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapRef(java.sql.Ref)
+   * @see  ResultSetWrapperImpl#wrapRef(java.sql.Ref)
    */
   @Override
   public RefWrapperImpl getRef(String columnLabel) throws SQLException {
@@ -489,7 +489,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapBlob(java.sql.Blob)
+   * @see  ResultSetWrapperImpl#wrapBlob(java.sql.Blob)
    */
   @Override
   public BlobWrapperImpl getBlob(String columnLabel) throws SQLException {
@@ -499,7 +499,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapClob(java.sql.Clob)
+   * @see  ResultSetWrapperImpl#wrapClob(java.sql.Clob)
    */
   @Override
   public ClobWrapperImpl getClob(String columnLabel) throws SQLException {
@@ -509,7 +509,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapArray(java.sql.Array)
+   * @see  ResultSetWrapperImpl#wrapArray(java.sql.Array)
    */
   @Override
   public ArrayWrapperImpl getArray(String columnLabel) throws SQLException {
@@ -519,7 +519,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapRef(java.sql.Ref)
+   * @see  ResultSetWrapperImpl#unwrapRef(java.sql.Ref)
    */
   @Override
   public void updateRef(int columnIndex, Ref x) throws SQLException {
@@ -529,7 +529,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapRef(java.sql.Ref)
+   * @see  ResultSetWrapperImpl#unwrapRef(java.sql.Ref)
    */
   @Override
   public void updateRef(String columnLabel, Ref x) throws SQLException {
@@ -539,7 +539,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapBlob(java.sql.Blob)
+   * @see  ResultSetWrapperImpl#unwrapBlob(java.sql.Blob)
    */
   @Override
   public void updateBlob(int columnIndex, Blob x) throws SQLException {
@@ -549,7 +549,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapBlob(java.sql.Blob)
+   * @see  ResultSetWrapperImpl#unwrapBlob(java.sql.Blob)
    */
   @Override
   public void updateBlob(String columnLabel, Blob x) throws SQLException {
@@ -559,7 +559,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapClob(java.sql.Clob)
+   * @see  ResultSetWrapperImpl#unwrapClob(java.sql.Clob)
    */
   @Override
   public void updateClob(int columnIndex, Clob x) throws SQLException {
@@ -569,7 +569,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapClob(java.sql.Clob)
+   * @see  ResultSetWrapperImpl#unwrapClob(java.sql.Clob)
    */
   @Override
   public void updateClob(String columnLabel, Clob x) throws SQLException {
@@ -579,7 +579,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapArray(java.sql.Array)
+   * @see  ResultSetWrapperImpl#unwrapArray(java.sql.Array)
    */
   @Override
   public void updateArray(int columnIndex, Array x) throws SQLException {
@@ -589,7 +589,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapArray(java.sql.Array)
+   * @see  ResultSetWrapperImpl#unwrapArray(java.sql.Array)
    */
   @Override
   public void updateArray(String columnLabel, Array x) throws SQLException {
@@ -599,7 +599,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapRowId(java.sql.RowId)
+   * @see  ResultSetWrapperImpl#wrapRowId(java.sql.RowId)
    */
   @Override
   public RowIdWrapperImpl getRowId(int columnIndex) throws SQLException {
@@ -609,7 +609,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapRowId(java.sql.RowId)
+   * @see  ResultSetWrapperImpl#wrapRowId(java.sql.RowId)
    */
   @Override
   public RowIdWrapperImpl getRowId(String columnLabel) throws SQLException {
@@ -619,7 +619,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapRowId(java.sql.RowId)
+   * @see  ResultSetWrapperImpl#unwrapRowId(java.sql.RowId)
    */
   @Override
   public void updateRowId(int columnIndex, RowId x) throws SQLException {
@@ -629,7 +629,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapRowId(java.sql.RowId)
+   * @see  ResultSetWrapperImpl#unwrapRowId(java.sql.RowId)
    */
   @Override
   public void updateRowId(String columnLabel, RowId x) throws SQLException {
@@ -639,7 +639,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapNClob(java.sql.NClob)
+   * @see  ResultSetWrapperImpl#unwrapNClob(java.sql.NClob)
    */
   @Override
   public void updateNClob(int columnIndex, NClob nClob) throws SQLException {
@@ -649,7 +649,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapNClob(java.sql.NClob)
+   * @see  ResultSetWrapperImpl#unwrapNClob(java.sql.NClob)
    */
   @Override
   public void updateNClob(String columnLabel, NClob nClob) throws SQLException {
@@ -659,7 +659,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapNClob(java.sql.NClob)
+   * @see  ResultSetWrapperImpl#wrapNClob(java.sql.NClob)
    */
   @Override
   public NClobWrapperImpl getNClob(int columnIndex) throws SQLException {
@@ -669,7 +669,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapNClob(java.sql.NClob)
+   * @see  ResultSetWrapperImpl#wrapNClob(java.sql.NClob)
    */
   @Override
   public NClobWrapperImpl getNClob(String columnLabel) throws SQLException {
@@ -679,7 +679,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapSQLXML(java.sql.SQLXML)
+   * @see  ResultSetWrapperImpl#wrapSQLXML(java.sql.SQLXML)
    */
   @Override
   public SQLXMLWrapperImpl getSQLXML(int columnIndex) throws SQLException {
@@ -689,7 +689,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapSQLXML(java.sql.SQLXML)
+   * @see  ResultSetWrapperImpl#wrapSQLXML(java.sql.SQLXML)
    */
   @Override
   public SQLXMLWrapperImpl getSQLXML(String columnLabel) throws SQLException {
@@ -699,7 +699,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapSQLXML(java.sql.SQLXML)
+   * @see  ResultSetWrapperImpl#unwrapSQLXML(java.sql.SQLXML)
    */
   @Override
   public void updateSQLXML(int columnIndex, SQLXML xmlObject) throws SQLException {
@@ -709,7 +709,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapSQLXML(java.sql.SQLXML)
+   * @see  ResultSetWrapperImpl#unwrapSQLXML(java.sql.SQLXML)
    */
   @Override
   public void updateSQLXML(String columnLabel, SQLXML xmlObject) throws SQLException {
@@ -719,7 +719,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#wrapReader(java.io.Reader)
    */
   @Override
   public ReaderWrapper getNCharacterStream(int columnIndex) throws SQLException {
@@ -729,7 +729,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#wrapReader(java.io.Reader)
    */
   @Override
   public ReaderWrapper getNCharacterStream(String columnLabel) throws SQLException {
@@ -739,7 +739,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateNCharacterStream(int columnIndex, Reader x, long length) throws SQLException {
@@ -749,7 +749,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateNCharacterStream(String columnLabel, Reader reader, long length) throws SQLException {
@@ -759,7 +759,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateAsciiStream(int columnIndex, InputStream x, long length) throws SQLException {
@@ -769,7 +769,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateBinaryStream(int columnIndex, InputStream x, long length) throws SQLException {
@@ -779,7 +779,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateCharacterStream(int columnIndex, Reader x, long length) throws SQLException {
@@ -789,7 +789,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateAsciiStream(String columnLabel, InputStream x, long length) throws SQLException {
@@ -799,7 +799,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateBinaryStream(String columnLabel, InputStream x, long length) throws SQLException {
@@ -809,7 +809,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateCharacterStream(String columnLabel, Reader reader, long length) throws SQLException {
@@ -819,7 +819,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateBlob(int columnIndex, InputStream inputStream, long length) throws SQLException {
@@ -829,7 +829,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateBlob(String columnLabel, InputStream inputStream, long length) throws SQLException {
@@ -839,7 +839,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateClob(int columnIndex, Reader reader, long length) throws SQLException {
@@ -849,7 +849,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateClob(String columnLabel, Reader reader, long length) throws SQLException {
@@ -859,7 +859,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateNClob(int columnIndex, Reader reader, long length) throws SQLException {
@@ -869,7 +869,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateNClob(String columnLabel, Reader reader, long length) throws SQLException {
@@ -879,7 +879,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateNCharacterStream(int columnIndex, Reader x) throws SQLException {
@@ -889,7 +889,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateNCharacterStream(String columnLabel, Reader reader) throws SQLException {
@@ -899,7 +899,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateAsciiStream(int columnIndex, InputStream x) throws SQLException {
@@ -909,7 +909,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateBinaryStream(int columnIndex, InputStream x) throws SQLException {
@@ -919,7 +919,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateCharacterStream(int columnIndex, Reader x) throws SQLException {
@@ -929,7 +929,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateAsciiStream(String columnLabel, InputStream x) throws SQLException {
@@ -939,7 +939,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateBinaryStream(String columnLabel, InputStream x) throws SQLException {
@@ -949,7 +949,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateCharacterStream(String columnLabel, Reader reader) throws SQLException {
@@ -959,7 +959,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateBlob(int columnIndex, InputStream inputStream) throws SQLException {
@@ -969,7 +969,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapInputStream(java.io.InputStream)
+   * @see  ResultSetWrapperImpl#unwrapInputStream(java.io.InputStream)
    */
   @Override
   public void updateBlob(String columnLabel, InputStream inputStream) throws SQLException {
@@ -979,7 +979,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateClob(int columnIndex, Reader reader) throws SQLException {
@@ -989,7 +989,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateClob(String columnLabel, Reader reader) throws SQLException {
@@ -999,7 +999,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateNClob(int columnIndex, Reader reader) throws SQLException {
@@ -1009,7 +1009,7 @@ public class ResultSetWrapperImpl implements ResultSetWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #unwrapReader(java.io.Reader)
+   * @see  ResultSetWrapperImpl#unwrapReader(java.io.Reader)
    */
   @Override
   public void updateNClob(String columnLabel, Reader reader) throws SQLException {

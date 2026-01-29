@@ -101,7 +101,7 @@ public class SQLXMLWrapperImpl implements SQLXMLWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapInputStream(java.io.InputStream)
+   * @see  SQLXMLWrapperImpl#wrapInputStream(java.io.InputStream)
    */
   @Override
   public InputStreamWrapper getBinaryStream() throws SQLException {
@@ -111,7 +111,7 @@ public class SQLXMLWrapperImpl implements SQLXMLWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapOutputStream(java.io.OutputStream)
+   * @see  SQLXMLWrapperImpl#wrapOutputStream(java.io.OutputStream)
    */
   @Override
   public OutputStreamWrapper setBinaryStream() throws SQLException {
@@ -121,7 +121,7 @@ public class SQLXMLWrapperImpl implements SQLXMLWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapReader(java.io.Reader)
+   * @see  SQLXMLWrapperImpl#wrapReader(java.io.Reader)
    */
   @Override
   public ReaderWrapper getCharacterStream() throws SQLException {
@@ -131,7 +131,7 @@ public class SQLXMLWrapperImpl implements SQLXMLWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapWriter(Writer)
+   * @see  SQLXMLWrapperImpl#wrapWriter(Writer)
    */
   @Override
   public WriterWrapper setCharacterStream() throws SQLException {

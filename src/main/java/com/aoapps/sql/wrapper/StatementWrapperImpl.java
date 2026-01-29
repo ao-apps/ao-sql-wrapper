@@ -71,7 +71,7 @@ public class StatementWrapperImpl implements StatementWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  StatementWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl executeQuery(String sql) throws SQLException {
@@ -81,7 +81,7 @@ public class StatementWrapperImpl implements StatementWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  StatementWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getResultSet() throws SQLException {
@@ -98,7 +98,7 @@ public class StatementWrapperImpl implements StatementWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  StatementWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getGeneratedKeys() throws SQLException {

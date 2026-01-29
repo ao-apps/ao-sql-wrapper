@@ -115,7 +115,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getProcedures(String catalog, String schemaPattern, String procedureNamePattern) throws SQLException {
@@ -125,7 +125,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getProcedureColumns(String catalog, String schemaPattern, String procedureNamePattern, String columnNamePattern) throws SQLException {
@@ -135,7 +135,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getTables(String catalog, String schemaPattern, String tableNamePattern, String[] types) throws SQLException {
@@ -145,7 +145,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getSchemas() throws SQLException {
@@ -155,7 +155,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getCatalogs() throws SQLException {
@@ -165,7 +165,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getTableTypes() throws SQLException {
@@ -175,7 +175,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getColumns(String catalog, String schemaPattern, String tableNamePattern, String columnNamePattern) throws SQLException {
@@ -185,7 +185,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getColumnPrivileges(String catalog, String schema, String table, String columnNamePattern) throws SQLException {
@@ -195,7 +195,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getTablePrivileges(String catalog, String schemaPattern, String tableNamePattern) throws SQLException {
@@ -205,7 +205,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getBestRowIdentifier(String catalog, String schema, String table, int scope, boolean nullable) throws SQLException {
@@ -215,7 +215,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getVersionColumns(String catalog, String schema, String table) throws SQLException {
@@ -225,7 +225,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getPrimaryKeys(String catalog, String schema, String table) throws SQLException {
@@ -235,7 +235,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getImportedKeys(String catalog, String schema, String table) throws SQLException {
@@ -245,7 +245,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getExportedKeys(String catalog, String schema, String table) throws SQLException {
@@ -255,7 +255,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getCrossReference(String parentCatalog, String parentSchema, String parentTable, String foreignCatalog, String foreignSchema, String foreignTable) throws SQLException {
@@ -265,7 +265,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getTypeInfo() throws SQLException {
@@ -275,7 +275,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getIndexInfo(String catalog, String schema, String table, boolean unique, boolean approximate) throws SQLException {
@@ -285,7 +285,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getUDTs(String catalog, String schemaPattern, String typeNamePattern, int[] types) throws SQLException {
@@ -302,7 +302,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getSuperTypes(String catalog, String schemaPattern, String typeNamePattern) throws SQLException {
@@ -312,7 +312,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getSuperTables(String catalog, String schemaPattern, String tableNamePattern) throws SQLException {
@@ -322,7 +322,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getAttributes(String catalog, String schemaPattern, String typeNamePattern, String attributeNamePattern) throws SQLException {
@@ -332,7 +332,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getSchemas(String catalog, String schemaPattern) throws SQLException {
@@ -342,7 +342,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getClientInfoProperties() throws SQLException {
@@ -352,7 +352,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getFunctions(String catalog, String schemaPattern, String functionNamePattern) throws SQLException {
@@ -362,7 +362,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getFunctionColumns(String catalog, String schemaPattern, String functionNamePattern, String columnNamePattern) throws SQLException {
@@ -372,7 +372,7 @@ public class DatabaseMetaDataWrapperImpl implements DatabaseMetaDataWrapper {
   /**
    * {@inheritDoc}
    *
-   * @see  #wrapResultSet(java.sql.ResultSet)
+   * @see  DatabaseMetaDataWrapperImpl#wrapResultSet(java.sql.ResultSet)
    */
   @Override
   public ResultSetWrapperImpl getPseudoColumns(String catalog, String schemaPattern, String tableNamePattern, String columnNamePattern) throws SQLException {

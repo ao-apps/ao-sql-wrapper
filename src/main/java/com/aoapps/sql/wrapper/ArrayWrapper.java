@@ -41,9 +41,9 @@ public interface ArrayWrapper extends Wrapper, Array, AutoCloseable {
   Array getWrapped();
 
   /**
-   * Calls {@link #free()}.
+   * Calls {@link ArrayWrapper#free()}.
    *
-   * @see  #free()
+   * @see  ArrayWrapper#free()
    */
   @Override
   default void close() throws SQLException {
