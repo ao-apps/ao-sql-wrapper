@@ -1,6 +1,6 @@
 /*
  * ao-sql-wrapper - JDBC API wrapper.
- * Copyright (C) 2020, 2021, 2022  AO Industries, Inc.
+ * Copyright (C) 2020, 2021, 2022, 2026  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -205,8 +205,8 @@ public class SQLOutputWrapperImpl implements SQLOutputWrapper {
    */
   @Override
   public void writeObject(SQLData x) throws SQLException {
-    try (SQLDataWrapperImpl xWrapper = wrapSQLData(x)) {
-      getWrapped().writeObject(xWrapper);
+    try (SQLDataWrapperImpl wrapper = wrapSQLData(x)) {
+      getWrapped().writeObject(wrapper);
     }
   }
 

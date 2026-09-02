@@ -1,6 +1,6 @@
 /*
  * ao-sql-wrapper - JDBC API wrapper.
- * Copyright (C) 2020, 2021, 2022, 2025  AO Industries, Inc.
+ * Copyright (C) 2020, 2021, 2022, 2025, 2026  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -861,7 +861,7 @@ public interface ResultSetWrapper extends Wrapper, ResultSet {
   }
 
   @Override
-  default void updateObject(int columnIndex, Object x, SQLType targetSqlType, int scaleOrLength)  throws SQLException {
+  default void updateObject(int columnIndex, Object x, SQLType targetSqlType, int scaleOrLength) throws SQLException {
     getWrapped().updateObject(columnIndex, x, targetSqlType, scaleOrLength);
   }
 
